@@ -35,27 +35,30 @@
             this.char_Class = new System.Windows.Forms.Label();
             this.char_Race = new System.Windows.Forms.Label();
             this.statPanel = new System.Windows.Forms.Panel();
+            this.survivalScore = new System.Windows.Forms.Label();
+            this.perceptionScore = new System.Windows.Forms.Label();
+            this.medicineScore = new System.Windows.Forms.Label();
+            this.insightScore = new System.Windows.Forms.Label();
+            this.animalHandlingScore = new System.Windows.Forms.Label();
+            this.athleticsScore = new System.Windows.Forms.Label();
+            this.racialTraitsNAbilities = new System.Windows.Forms.Label();
+            this.ClassTraitsNAbilities = new System.Windows.Forms.Label();
             this.HiddenskillProficiencies = new System.Windows.Forms.Label();
             this.permanentAbilitySaves = new System.Windows.Forms.Label();
             this.languagesTextBox = new System.Windows.Forms.RichTextBox();
             this.proficienciesTextBox = new System.Windows.Forms.RichTextBox();
-            this.languages = new System.Windows.Forms.Label();
             this.proficiencies = new System.Windows.Forms.Label();
             this.profBonusScore = new System.Windows.Forms.Label();
             this.profBonus = new System.Windows.Forms.Label();
+            this.languages = new System.Windows.Forms.Label();
             this.survival = new System.Windows.Forms.Label();
-            this.survivalScore = new System.Windows.Forms.Label();
             this.perception = new System.Windows.Forms.Label();
-            this.perceptionScore = new System.Windows.Forms.Label();
             this.medicine = new System.Windows.Forms.Label();
-            this.medicineScore = new System.Windows.Forms.Label();
             this.insight = new System.Windows.Forms.Label();
-            this.insightScore = new System.Windows.Forms.Label();
+            this.religionScore = new System.Windows.Forms.Label();
             this.animalHandling = new System.Windows.Forms.Label();
-            this.animalHandlingScore = new System.Windows.Forms.Label();
             this.skills_Wisdom = new System.Windows.Forms.Label();
             this.religion = new System.Windows.Forms.Label();
-            this.religionScore = new System.Windows.Forms.Label();
             this.nature = new System.Windows.Forms.Label();
             this.natureScore = new System.Windows.Forms.Label();
             this.investigation = new System.Windows.Forms.Label();
@@ -82,7 +85,6 @@
             this.skills_Intelligence = new System.Windows.Forms.Label();
             this.skills_Dexterity = new System.Windows.Forms.Label();
             this.athletics = new System.Windows.Forms.Label();
-            this.athleticsScore = new System.Windows.Forms.Label();
             this.skills_Strength = new System.Windows.Forms.Label();
             this.ClassTraits = new System.Windows.Forms.RichTextBox();
             this.CharismaSave = new System.Windows.Forms.Label();
@@ -100,6 +102,7 @@
             this.DexteritySave = new System.Windows.Forms.Label();
             this.DexterityMod = new System.Windows.Forms.Label();
             this.DexterityScore = new System.Windows.Forms.Label();
+            this.abscoreTitles = new System.Windows.Forms.Label();
             this.StrengthSave = new System.Windows.Forms.Label();
             this.StrengthMod = new System.Windows.Forms.Label();
             this.StrengthScore = new System.Windows.Forms.Label();
@@ -110,7 +113,6 @@
             this.Intelligence = new System.Windows.Forms.Label();
             this.Dexterity = new System.Windows.Forms.Label();
             this.Strength = new System.Windows.Forms.Label();
-            this.abscoreTitles = new System.Windows.Forms.Label();
             this.stats_abilityScoreSaveThrows = new System.Windows.Forms.Label();
             this.RacialTraits = new System.Windows.Forms.RichTextBox();
             this.charactersDataGridView = new System.Windows.Forms.DataGridView();
@@ -261,6 +263,8 @@
             this.hitDiceScore = new System.Windows.Forms.Label();
             this.inventoryPanel = new System.Windows.Forms.Panel();
             this.moneyNTreasurePanel = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.editMoneyButton = new System.Windows.Forms.Button();
             this.moneyNTreasureMarker = new System.Windows.Forms.Label();
             this.totalMoneyValue = new System.Windows.Forms.Label();
@@ -358,10 +362,6 @@
             this.editHealthButton = new System.Windows.Forms.Button();
             this.shortRestButton = new System.Windows.Forms.Button();
             this.longRestButton = new System.Windows.Forms.Button();
-            this.ClassTraitsNAbilities = new System.Windows.Forms.Label();
-            this.racialTraitsNAbilities = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.statPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.charactersDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.charactersBindingSource)).BeginInit();
@@ -395,9 +395,10 @@
             this.nextXp.AutoSize = true;
             this.nextXp.BackColor = System.Drawing.Color.Transparent;
             this.nextXp.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nextXp.Location = new System.Drawing.Point(329, 79);
+            this.nextXp.Location = new System.Drawing.Point(247, 64);
+            this.nextXp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nextXp.Name = "nextXp";
-            this.nextXp.Size = new System.Drawing.Size(110, 23);
+            this.nextXp.Size = new System.Drawing.Size(86, 19);
             this.nextXp.TabIndex = 43;
             this.nextXp.Text = "Next Level:";
             // 
@@ -406,9 +407,10 @@
             this.nowXp.AutoSize = true;
             this.nowXp.BackColor = System.Drawing.Color.Transparent;
             this.nowXp.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nowXp.Location = new System.Drawing.Point(327, 50);
+            this.nowXp.Location = new System.Drawing.Point(245, 41);
+            this.nowXp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nowXp.Name = "nowXp";
-            this.nowXp.Size = new System.Drawing.Size(112, 23);
+            this.nowXp.Size = new System.Drawing.Size(88, 19);
             this.nowXp.TabIndex = 42;
             this.nowXp.Text = "Current Xp:";
             // 
@@ -417,9 +419,10 @@
             this.char_Class.AutoSize = true;
             this.char_Class.BackColor = System.Drawing.Color.Transparent;
             this.char_Class.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.char_Class.Location = new System.Drawing.Point(69, 78);
+            this.char_Class.Location = new System.Drawing.Point(52, 63);
+            this.char_Class.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.char_Class.Name = "char_Class";
-            this.char_Class.Size = new System.Drawing.Size(102, 23);
+            this.char_Class.Size = new System.Drawing.Size(81, 19);
             this.char_Class.TabIndex = 38;
             this.char_Class.Text = "Char_Class";
             // 
@@ -428,9 +431,10 @@
             this.char_Race.AutoSize = true;
             this.char_Race.BackColor = System.Drawing.Color.Transparent;
             this.char_Race.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.char_Race.Location = new System.Drawing.Point(68, 49);
+            this.char_Race.Location = new System.Drawing.Point(51, 40);
+            this.char_Race.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.char_Race.Name = "char_Race";
-            this.char_Race.Size = new System.Drawing.Size(99, 23);
+            this.char_Race.Size = new System.Drawing.Size(78, 19);
             this.char_Race.TabIndex = 37;
             this.char_Race.Text = "Char_Race";
             // 
@@ -517,19 +521,115 @@
             this.statPanel.Controls.Add(this.Strength);
             this.statPanel.Controls.Add(this.stats_abilityScoreSaveThrows);
             this.statPanel.Controls.Add(this.RacialTraits);
-            this.statPanel.Location = new System.Drawing.Point(131, 103);
+            this.statPanel.Location = new System.Drawing.Point(98, 84);
+            this.statPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.statPanel.Name = "statPanel";
-            this.statPanel.Size = new System.Drawing.Size(1090, 561);
+            this.statPanel.Size = new System.Drawing.Size(818, 456);
             this.statPanel.TabIndex = 36;
+            // 
+            // survivalScore
+            // 
+            this.survivalScore.BackColor = System.Drawing.Color.Transparent;
+            this.survivalScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.survivalScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.survivalScore.Location = new System.Drawing.Point(413, 219);
+            this.survivalScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.survivalScore.Name = "survivalScore";
+            this.survivalScore.Size = new System.Drawing.Size(45, 28);
+            this.survivalScore.TabIndex = 74;
+            this.survivalScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // perceptionScore
+            // 
+            this.perceptionScore.BackColor = System.Drawing.Color.Transparent;
+            this.perceptionScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.perceptionScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.perceptionScore.Location = new System.Drawing.Point(413, 195);
+            this.perceptionScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.perceptionScore.Name = "perceptionScore";
+            this.perceptionScore.Size = new System.Drawing.Size(45, 28);
+            this.perceptionScore.TabIndex = 72;
+            this.perceptionScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // medicineScore
+            // 
+            this.medicineScore.BackColor = System.Drawing.Color.Transparent;
+            this.medicineScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.medicineScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.medicineScore.Location = new System.Drawing.Point(413, 171);
+            this.medicineScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.medicineScore.Name = "medicineScore";
+            this.medicineScore.Size = new System.Drawing.Size(45, 28);
+            this.medicineScore.TabIndex = 70;
+            this.medicineScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // insightScore
+            // 
+            this.insightScore.BackColor = System.Drawing.Color.Transparent;
+            this.insightScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.insightScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.insightScore.Location = new System.Drawing.Point(413, 148);
+            this.insightScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.insightScore.Name = "insightScore";
+            this.insightScore.Size = new System.Drawing.Size(45, 28);
+            this.insightScore.TabIndex = 68;
+            this.insightScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // animalHandlingScore
+            // 
+            this.animalHandlingScore.BackColor = System.Drawing.Color.Transparent;
+            this.animalHandlingScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.animalHandlingScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.animalHandlingScore.Location = new System.Drawing.Point(413, 124);
+            this.animalHandlingScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.animalHandlingScore.Name = "animalHandlingScore";
+            this.animalHandlingScore.Size = new System.Drawing.Size(45, 28);
+            this.animalHandlingScore.TabIndex = 66;
+            this.animalHandlingScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // athleticsScore
+            // 
+            this.athleticsScore.BackColor = System.Drawing.Color.Transparent;
+            this.athleticsScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.athleticsScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.athleticsScore.Location = new System.Drawing.Point(413, 67);
+            this.athleticsScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.athleticsScore.Name = "athleticsScore";
+            this.athleticsScore.Size = new System.Drawing.Size(45, 28);
+            this.athleticsScore.TabIndex = 33;
+            this.athleticsScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // racialTraitsNAbilities
+            // 
+            this.racialTraitsNAbilities.AutoSize = true;
+            this.racialTraitsNAbilities.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.racialTraitsNAbilities.Location = new System.Drawing.Point(590, 253);
+            this.racialTraitsNAbilities.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.racialTraitsNAbilities.Name = "racialTraitsNAbilities";
+            this.racialTraitsNAbilities.Size = new System.Drawing.Size(178, 19);
+            this.racialTraitsNAbilities.TabIndex = 86;
+            this.racialTraitsNAbilities.Text = "Racial Traits and Abilities";
+            // 
+            // ClassTraitsNAbilities
+            // 
+            this.ClassTraitsNAbilities.AutoSize = true;
+            this.ClassTraitsNAbilities.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClassTraitsNAbilities.Location = new System.Drawing.Point(305, 253);
+            this.ClassTraitsNAbilities.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ClassTraitsNAbilities.Name = "ClassTraitsNAbilities";
+            this.ClassTraitsNAbilities.Size = new System.Drawing.Size(173, 19);
+            this.ClassTraitsNAbilities.TabIndex = 85;
+            this.ClassTraitsNAbilities.Text = "Class Traits and Abilities";
             // 
             // HiddenskillProficiencies
             // 
             this.HiddenskillProficiencies.BackColor = System.Drawing.Color.Transparent;
             this.HiddenskillProficiencies.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HiddenskillProficiencies.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.HiddenskillProficiencies.Location = new System.Drawing.Point(524, 12);
+            this.HiddenskillProficiencies.Location = new System.Drawing.Point(393, 10);
+            this.HiddenskillProficiencies.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.HiddenskillProficiencies.Name = "HiddenskillProficiencies";
-            this.HiddenskillProficiencies.Size = new System.Drawing.Size(59, 26);
+            this.HiddenskillProficiencies.Size = new System.Drawing.Size(44, 21);
             this.HiddenskillProficiencies.TabIndex = 84;
             this.HiddenskillProficiencies.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.HiddenskillProficiencies.Visible = false;
@@ -539,9 +639,10 @@
             this.permanentAbilitySaves.BackColor = System.Drawing.Color.Transparent;
             this.permanentAbilitySaves.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.permanentAbilitySaves.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.permanentAbilitySaves.Location = new System.Drawing.Point(413, 13);
+            this.permanentAbilitySaves.Location = new System.Drawing.Point(310, 11);
+            this.permanentAbilitySaves.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.permanentAbilitySaves.Name = "permanentAbilitySaves";
-            this.permanentAbilitySaves.Size = new System.Drawing.Size(59, 26);
+            this.permanentAbilitySaves.Size = new System.Drawing.Size(44, 21);
             this.permanentAbilitySaves.TabIndex = 83;
             this.permanentAbilitySaves.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.permanentAbilitySaves.Visible = false;
@@ -549,38 +650,31 @@
             // languagesTextBox
             // 
             this.languagesTextBox.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.languagesTextBox.Location = new System.Drawing.Point(187, 337);
+            this.languagesTextBox.Location = new System.Drawing.Point(140, 274);
+            this.languagesTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.languagesTextBox.Name = "languagesTextBox";
-            this.languagesTextBox.Size = new System.Drawing.Size(155, 219);
+            this.languagesTextBox.Size = new System.Drawing.Size(117, 179);
             this.languagesTextBox.TabIndex = 82;
             this.languagesTextBox.Text = "";
             // 
             // proficienciesTextBox
             // 
             this.proficienciesTextBox.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.proficienciesTextBox.Location = new System.Drawing.Point(3, 337);
+            this.proficienciesTextBox.Location = new System.Drawing.Point(2, 274);
+            this.proficienciesTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.proficienciesTextBox.Name = "proficienciesTextBox";
-            this.proficienciesTextBox.Size = new System.Drawing.Size(172, 219);
+            this.proficienciesTextBox.Size = new System.Drawing.Size(130, 179);
             this.proficienciesTextBox.TabIndex = 81;
             this.proficienciesTextBox.Text = "";
-            // 
-            // languages
-            // 
-            this.languages.AutoSize = true;
-            this.languages.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.languages.Location = new System.Drawing.Point(204, 311);
-            this.languages.Name = "languages";
-            this.languages.Size = new System.Drawing.Size(98, 23);
-            this.languages.TabIndex = 80;
-            this.languages.Text = "Languages";
             // 
             // proficiencies
             // 
             this.proficiencies.AutoSize = true;
             this.proficiencies.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.proficiencies.Location = new System.Drawing.Point(6, 311);
+            this.proficiencies.Location = new System.Drawing.Point(4, 253);
+            this.proficiencies.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.proficiencies.Name = "proficiencies";
-            this.proficiencies.Size = new System.Drawing.Size(118, 23);
+            this.proficiencies.Size = new System.Drawing.Size(94, 19);
             this.proficiencies.TabIndex = 79;
             this.proficiencies.Text = "Proficiencies";
             // 
@@ -589,9 +683,10 @@
             this.profBonusScore.BackColor = System.Drawing.Color.Transparent;
             this.profBonusScore.Font = new System.Drawing.Font("High Tower Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.profBonusScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.profBonusScore.Location = new System.Drawing.Point(295, 276);
+            this.profBonusScore.Location = new System.Drawing.Point(221, 224);
+            this.profBonusScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.profBonusScore.Name = "profBonusScore";
-            this.profBonusScore.Size = new System.Drawing.Size(78, 39);
+            this.profBonusScore.Size = new System.Drawing.Size(58, 32);
             this.profBonusScore.TabIndex = 78;
             this.profBonusScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -600,129 +695,104 @@
             this.profBonus.AutoSize = true;
             this.profBonus.BackColor = System.Drawing.Color.Transparent;
             this.profBonus.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.profBonus.Location = new System.Drawing.Point(3, 276);
+            this.profBonus.Location = new System.Drawing.Point(2, 224);
+            this.profBonus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.profBonus.Name = "profBonus";
-            this.profBonus.Size = new System.Drawing.Size(267, 39);
+            this.profBonus.Size = new System.Drawing.Size(217, 32);
             this.profBonus.TabIndex = 77;
             this.profBonus.Text = "Proficiency Bonus";
+            // 
+            // languages
+            // 
+            this.languages.AutoSize = true;
+            this.languages.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.languages.Location = new System.Drawing.Point(153, 253);
+            this.languages.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.languages.Name = "languages";
+            this.languages.Size = new System.Drawing.Size(78, 19);
+            this.languages.TabIndex = 80;
+            this.languages.Text = "Languages";
             // 
             // survival
             // 
             this.survival.AutoSize = true;
             this.survival.BackColor = System.Drawing.Color.Transparent;
             this.survival.Font = new System.Drawing.Font("High Tower Text", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.survival.Location = new System.Drawing.Point(407, 276);
+            this.survival.Location = new System.Drawing.Point(305, 224);
+            this.survival.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.survival.Name = "survival";
-            this.survival.Size = new System.Drawing.Size(78, 22);
+            this.survival.Size = new System.Drawing.Size(55, 18);
             this.survival.TabIndex = 75;
             this.survival.Text = "Survival";
-            // 
-            // survivalScore
-            // 
-            this.survivalScore.BackColor = System.Drawing.Color.Transparent;
-            this.survivalScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.survivalScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.survivalScore.Location = new System.Drawing.Point(551, 269);
-            this.survivalScore.Name = "survivalScore";
-            this.survivalScore.Size = new System.Drawing.Size(60, 34);
-            this.survivalScore.TabIndex = 74;
-            this.survivalScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // perception
             // 
             this.perception.AutoSize = true;
             this.perception.BackColor = System.Drawing.Color.Transparent;
             this.perception.Font = new System.Drawing.Font("High Tower Text", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.perception.Location = new System.Drawing.Point(407, 247);
+            this.perception.Location = new System.Drawing.Point(305, 201);
+            this.perception.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.perception.Name = "perception";
-            this.perception.Size = new System.Drawing.Size(97, 22);
+            this.perception.Size = new System.Drawing.Size(72, 18);
             this.perception.TabIndex = 73;
             this.perception.Text = "Perception";
-            // 
-            // perceptionScore
-            // 
-            this.perceptionScore.BackColor = System.Drawing.Color.Transparent;
-            this.perceptionScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.perceptionScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.perceptionScore.Location = new System.Drawing.Point(551, 240);
-            this.perceptionScore.Name = "perceptionScore";
-            this.perceptionScore.Size = new System.Drawing.Size(60, 34);
-            this.perceptionScore.TabIndex = 72;
-            this.perceptionScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // medicine
             // 
             this.medicine.AutoSize = true;
             this.medicine.BackColor = System.Drawing.Color.Transparent;
             this.medicine.Font = new System.Drawing.Font("High Tower Text", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.medicine.Location = new System.Drawing.Point(407, 218);
+            this.medicine.Location = new System.Drawing.Point(305, 177);
+            this.medicine.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.medicine.Name = "medicine";
-            this.medicine.Size = new System.Drawing.Size(88, 22);
+            this.medicine.Size = new System.Drawing.Size(63, 18);
             this.medicine.TabIndex = 71;
             this.medicine.Text = "Medicine";
-            // 
-            // medicineScore
-            // 
-            this.medicineScore.BackColor = System.Drawing.Color.Transparent;
-            this.medicineScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.medicineScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.medicineScore.Location = new System.Drawing.Point(551, 211);
-            this.medicineScore.Name = "medicineScore";
-            this.medicineScore.Size = new System.Drawing.Size(60, 34);
-            this.medicineScore.TabIndex = 70;
-            this.medicineScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // insight
             // 
             this.insight.AutoSize = true;
             this.insight.BackColor = System.Drawing.Color.Transparent;
             this.insight.Font = new System.Drawing.Font("High Tower Text", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.insight.Location = new System.Drawing.Point(407, 189);
+            this.insight.Location = new System.Drawing.Point(305, 154);
+            this.insight.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.insight.Name = "insight";
-            this.insight.Size = new System.Drawing.Size(68, 22);
+            this.insight.Size = new System.Drawing.Size(47, 18);
             this.insight.TabIndex = 69;
             this.insight.Text = "Insight";
             // 
-            // insightScore
+            // religionScore
             // 
-            this.insightScore.BackColor = System.Drawing.Color.Transparent;
-            this.insightScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.insightScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.insightScore.Location = new System.Drawing.Point(551, 182);
-            this.insightScore.Name = "insightScore";
-            this.insightScore.Size = new System.Drawing.Size(60, 34);
-            this.insightScore.TabIndex = 68;
-            this.insightScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.religionScore.BackColor = System.Drawing.Color.Transparent;
+            this.religionScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.religionScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.religionScore.Location = new System.Drawing.Point(751, 203);
+            this.religionScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.religionScore.Name = "religionScore";
+            this.religionScore.Size = new System.Drawing.Size(45, 28);
+            this.religionScore.TabIndex = 61;
+            this.religionScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // animalHandling
             // 
             this.animalHandling.AutoSize = true;
             this.animalHandling.BackColor = System.Drawing.Color.Transparent;
             this.animalHandling.Font = new System.Drawing.Font("High Tower Text", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.animalHandling.Location = new System.Drawing.Point(407, 160);
+            this.animalHandling.Location = new System.Drawing.Point(305, 130);
+            this.animalHandling.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.animalHandling.Name = "animalHandling";
-            this.animalHandling.Size = new System.Drawing.Size(156, 22);
+            this.animalHandling.Size = new System.Drawing.Size(105, 18);
             this.animalHandling.TabIndex = 67;
             this.animalHandling.Text = "Animal Handling";
-            // 
-            // animalHandlingScore
-            // 
-            this.animalHandlingScore.BackColor = System.Drawing.Color.Transparent;
-            this.animalHandlingScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.animalHandlingScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.animalHandlingScore.Location = new System.Drawing.Point(551, 153);
-            this.animalHandlingScore.Name = "animalHandlingScore";
-            this.animalHandlingScore.Size = new System.Drawing.Size(60, 34);
-            this.animalHandlingScore.TabIndex = 66;
-            this.animalHandlingScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // skills_Wisdom
             // 
             this.skills_Wisdom.BackColor = System.Drawing.Color.Transparent;
             this.skills_Wisdom.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.skills_Wisdom.Location = new System.Drawing.Point(403, 130);
+            this.skills_Wisdom.Location = new System.Drawing.Point(302, 106);
+            this.skills_Wisdom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.skills_Wisdom.Name = "skills_Wisdom";
-            this.skills_Wisdom.Size = new System.Drawing.Size(108, 29);
+            this.skills_Wisdom.Size = new System.Drawing.Size(81, 24);
             this.skills_Wisdom.TabIndex = 65;
             this.skills_Wisdom.Text = "Wisdom";
             // 
@@ -731,31 +801,22 @@
             this.religion.AutoSize = true;
             this.religion.BackColor = System.Drawing.Color.Transparent;
             this.religion.Font = new System.Drawing.Font("High Tower Text", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.religion.Location = new System.Drawing.Point(896, 257);
+            this.religion.Location = new System.Drawing.Point(672, 209);
+            this.religion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.religion.Name = "religion";
-            this.religion.Size = new System.Drawing.Size(79, 22);
+            this.religion.Size = new System.Drawing.Size(56, 18);
             this.religion.TabIndex = 62;
             this.religion.Text = "Religion";
-            // 
-            // religionScore
-            // 
-            this.religionScore.BackColor = System.Drawing.Color.Transparent;
-            this.religionScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.religionScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.religionScore.Location = new System.Drawing.Point(1001, 250);
-            this.religionScore.Name = "religionScore";
-            this.religionScore.Size = new System.Drawing.Size(60, 34);
-            this.religionScore.TabIndex = 61;
-            this.religionScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // nature
             // 
             this.nature.AutoSize = true;
             this.nature.BackColor = System.Drawing.Color.Transparent;
             this.nature.Font = new System.Drawing.Font("High Tower Text", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nature.Location = new System.Drawing.Point(896, 218);
+            this.nature.Location = new System.Drawing.Point(672, 177);
+            this.nature.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nature.Name = "nature";
-            this.nature.Size = new System.Drawing.Size(67, 22);
+            this.nature.Size = new System.Drawing.Size(51, 18);
             this.nature.TabIndex = 60;
             this.nature.Text = "Nature";
             // 
@@ -764,9 +825,10 @@
             this.natureScore.BackColor = System.Drawing.Color.Transparent;
             this.natureScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.natureScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.natureScore.Location = new System.Drawing.Point(1000, 211);
+            this.natureScore.Location = new System.Drawing.Point(750, 171);
+            this.natureScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.natureScore.Name = "natureScore";
-            this.natureScore.Size = new System.Drawing.Size(60, 34);
+            this.natureScore.Size = new System.Drawing.Size(45, 28);
             this.natureScore.TabIndex = 59;
             this.natureScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -775,9 +837,10 @@
             this.investigation.AutoSize = true;
             this.investigation.BackColor = System.Drawing.Color.Transparent;
             this.investigation.Font = new System.Drawing.Font("High Tower Text", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.investigation.Location = new System.Drawing.Point(896, 180);
+            this.investigation.Location = new System.Drawing.Point(672, 146);
+            this.investigation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.investigation.Name = "investigation";
-            this.investigation.Size = new System.Drawing.Size(116, 22);
+            this.investigation.Size = new System.Drawing.Size(82, 18);
             this.investigation.TabIndex = 58;
             this.investigation.Text = "Investigation";
             // 
@@ -786,9 +849,10 @@
             this.investigationScore.BackColor = System.Drawing.Color.Transparent;
             this.investigationScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.investigationScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.investigationScore.Location = new System.Drawing.Point(1001, 173);
+            this.investigationScore.Location = new System.Drawing.Point(751, 141);
+            this.investigationScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.investigationScore.Name = "investigationScore";
-            this.investigationScore.Size = new System.Drawing.Size(60, 34);
+            this.investigationScore.Size = new System.Drawing.Size(45, 28);
             this.investigationScore.TabIndex = 57;
             this.investigationScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -797,9 +861,10 @@
             this.history.AutoSize = true;
             this.history.BackColor = System.Drawing.Color.Transparent;
             this.history.Font = new System.Drawing.Font("High Tower Text", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.history.Location = new System.Drawing.Point(896, 135);
+            this.history.Location = new System.Drawing.Point(672, 110);
+            this.history.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.history.Name = "history";
-            this.history.Size = new System.Drawing.Size(71, 22);
+            this.history.Size = new System.Drawing.Size(54, 18);
             this.history.TabIndex = 56;
             this.history.Text = "History";
             // 
@@ -808,9 +873,10 @@
             this.historyScore.BackColor = System.Drawing.Color.Transparent;
             this.historyScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.historyScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.historyScore.Location = new System.Drawing.Point(1000, 128);
+            this.historyScore.Location = new System.Drawing.Point(750, 104);
+            this.historyScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.historyScore.Name = "historyScore";
-            this.historyScore.Size = new System.Drawing.Size(60, 34);
+            this.historyScore.Size = new System.Drawing.Size(45, 28);
             this.historyScore.TabIndex = 55;
             this.historyScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -819,9 +885,10 @@
             this.arcana.AutoSize = true;
             this.arcana.BackColor = System.Drawing.Color.Transparent;
             this.arcana.Font = new System.Drawing.Font("High Tower Text", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.arcana.Location = new System.Drawing.Point(896, 101);
+            this.arcana.Location = new System.Drawing.Point(672, 82);
+            this.arcana.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.arcana.Name = "arcana";
-            this.arcana.Size = new System.Drawing.Size(69, 22);
+            this.arcana.Size = new System.Drawing.Size(50, 18);
             this.arcana.TabIndex = 54;
             this.arcana.Text = "Arcana";
             // 
@@ -830,9 +897,10 @@
             this.arcanaScore.BackColor = System.Drawing.Color.Transparent;
             this.arcanaScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.arcanaScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.arcanaScore.Location = new System.Drawing.Point(1001, 94);
+            this.arcanaScore.Location = new System.Drawing.Point(751, 76);
+            this.arcanaScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.arcanaScore.Name = "arcanaScore";
-            this.arcanaScore.Size = new System.Drawing.Size(60, 34);
+            this.arcanaScore.Size = new System.Drawing.Size(45, 28);
             this.arcanaScore.TabIndex = 53;
             this.arcanaScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -841,9 +909,10 @@
             this.persuasion.AutoSize = true;
             this.persuasion.BackColor = System.Drawing.Color.Transparent;
             this.persuasion.Font = new System.Drawing.Font("High Tower Text", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.persuasion.Location = new System.Drawing.Point(626, 290);
+            this.persuasion.Location = new System.Drawing.Point(470, 236);
+            this.persuasion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.persuasion.Name = "persuasion";
-            this.persuasion.Size = new System.Drawing.Size(98, 22);
+            this.persuasion.Size = new System.Drawing.Size(73, 18);
             this.persuasion.TabIndex = 52;
             this.persuasion.Text = "Persuasion";
             // 
@@ -852,9 +921,10 @@
             this.persuasionScore.BackColor = System.Drawing.Color.Transparent;
             this.persuasionScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.persuasionScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.persuasionScore.Location = new System.Drawing.Point(754, 283);
+            this.persuasionScore.Location = new System.Drawing.Point(566, 230);
+            this.persuasionScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.persuasionScore.Name = "persuasionScore";
-            this.persuasionScore.Size = new System.Drawing.Size(60, 34);
+            this.persuasionScore.Size = new System.Drawing.Size(45, 28);
             this.persuasionScore.TabIndex = 51;
             this.persuasionScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -863,9 +933,10 @@
             this.performance.AutoSize = true;
             this.performance.BackColor = System.Drawing.Color.Transparent;
             this.performance.Font = new System.Drawing.Font("High Tower Text", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.performance.Location = new System.Drawing.Point(626, 257);
+            this.performance.Location = new System.Drawing.Point(470, 209);
+            this.performance.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.performance.Name = "performance";
-            this.performance.Size = new System.Drawing.Size(113, 22);
+            this.performance.Size = new System.Drawing.Size(86, 18);
             this.performance.TabIndex = 50;
             this.performance.Text = "Performance";
             // 
@@ -874,9 +945,10 @@
             this.performanceScore.BackColor = System.Drawing.Color.Transparent;
             this.performanceScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.performanceScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.performanceScore.Location = new System.Drawing.Point(754, 250);
+            this.performanceScore.Location = new System.Drawing.Point(566, 203);
+            this.performanceScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.performanceScore.Name = "performanceScore";
-            this.performanceScore.Size = new System.Drawing.Size(60, 34);
+            this.performanceScore.Size = new System.Drawing.Size(45, 28);
             this.performanceScore.TabIndex = 49;
             this.performanceScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -885,9 +957,10 @@
             this.intimidation.AutoSize = true;
             this.intimidation.BackColor = System.Drawing.Color.Transparent;
             this.intimidation.Font = new System.Drawing.Font("High Tower Text", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.intimidation.Location = new System.Drawing.Point(626, 228);
+            this.intimidation.Location = new System.Drawing.Point(470, 185);
+            this.intimidation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.intimidation.Name = "intimidation";
-            this.intimidation.Size = new System.Drawing.Size(115, 22);
+            this.intimidation.Size = new System.Drawing.Size(76, 18);
             this.intimidation.TabIndex = 48;
             this.intimidation.Text = "Intimidation";
             // 
@@ -896,9 +969,10 @@
             this.intimidationScore.BackColor = System.Drawing.Color.Transparent;
             this.intimidationScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.intimidationScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.intimidationScore.Location = new System.Drawing.Point(754, 221);
+            this.intimidationScore.Location = new System.Drawing.Point(566, 180);
+            this.intimidationScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.intimidationScore.Name = "intimidationScore";
-            this.intimidationScore.Size = new System.Drawing.Size(60, 34);
+            this.intimidationScore.Size = new System.Drawing.Size(45, 28);
             this.intimidationScore.TabIndex = 47;
             this.intimidationScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -907,9 +981,10 @@
             this.deception.AutoSize = true;
             this.deception.BackColor = System.Drawing.Color.Transparent;
             this.deception.Font = new System.Drawing.Font("High Tower Text", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deception.Location = new System.Drawing.Point(626, 197);
+            this.deception.Location = new System.Drawing.Point(470, 160);
+            this.deception.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.deception.Name = "deception";
-            this.deception.Size = new System.Drawing.Size(93, 22);
+            this.deception.Size = new System.Drawing.Size(69, 18);
             this.deception.TabIndex = 46;
             this.deception.Text = "Deception";
             // 
@@ -918,9 +993,10 @@
             this.deceptionScore.BackColor = System.Drawing.Color.Transparent;
             this.deceptionScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deceptionScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.deceptionScore.Location = new System.Drawing.Point(754, 190);
+            this.deceptionScore.Location = new System.Drawing.Point(566, 154);
+            this.deceptionScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.deceptionScore.Name = "deceptionScore";
-            this.deceptionScore.Size = new System.Drawing.Size(60, 34);
+            this.deceptionScore.Size = new System.Drawing.Size(45, 28);
             this.deceptionScore.TabIndex = 45;
             this.deceptionScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -928,9 +1004,10 @@
             // 
             this.skills_Charisma.BackColor = System.Drawing.Color.Transparent;
             this.skills_Charisma.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.skills_Charisma.Location = new System.Drawing.Point(616, 166);
+            this.skills_Charisma.Location = new System.Drawing.Point(462, 135);
+            this.skills_Charisma.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.skills_Charisma.Name = "skills_Charisma";
-            this.skills_Charisma.Size = new System.Drawing.Size(103, 31);
+            this.skills_Charisma.Size = new System.Drawing.Size(77, 25);
             this.skills_Charisma.TabIndex = 44;
             this.skills_Charisma.Text = "Charisma";
             // 
@@ -939,9 +1016,10 @@
             this.stealth.AutoSize = true;
             this.stealth.BackColor = System.Drawing.Color.Transparent;
             this.stealth.Font = new System.Drawing.Font("High Tower Text", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stealth.Location = new System.Drawing.Point(626, 141);
+            this.stealth.Location = new System.Drawing.Point(470, 115);
+            this.stealth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.stealth.Name = "stealth";
-            this.stealth.Size = new System.Drawing.Size(67, 22);
+            this.stealth.Size = new System.Drawing.Size(47, 18);
             this.stealth.TabIndex = 43;
             this.stealth.Text = "Stealth";
             // 
@@ -950,9 +1028,10 @@
             this.stealthScore.BackColor = System.Drawing.Color.Transparent;
             this.stealthScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.stealthScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.stealthScore.Location = new System.Drawing.Point(754, 134);
+            this.stealthScore.Location = new System.Drawing.Point(566, 109);
+            this.stealthScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.stealthScore.Name = "stealthScore";
-            this.stealthScore.Size = new System.Drawing.Size(60, 34);
+            this.stealthScore.Size = new System.Drawing.Size(45, 28);
             this.stealthScore.TabIndex = 42;
             this.stealthScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -961,9 +1040,10 @@
             this.sleightOfHand.AutoSize = true;
             this.sleightOfHand.BackColor = System.Drawing.Color.Transparent;
             this.sleightOfHand.Font = new System.Drawing.Font("High Tower Text", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sleightOfHand.Location = new System.Drawing.Point(626, 109);
+            this.sleightOfHand.Location = new System.Drawing.Point(470, 89);
+            this.sleightOfHand.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sleightOfHand.Name = "sleightOfHand";
-            this.sleightOfHand.Size = new System.Drawing.Size(135, 22);
+            this.sleightOfHand.Size = new System.Drawing.Size(95, 18);
             this.sleightOfHand.TabIndex = 41;
             this.sleightOfHand.Text = "Sleight of hand";
             // 
@@ -972,9 +1052,10 @@
             this.sleightOfHandScore.BackColor = System.Drawing.Color.Transparent;
             this.sleightOfHandScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sleightOfHandScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.sleightOfHandScore.Location = new System.Drawing.Point(754, 103);
+            this.sleightOfHandScore.Location = new System.Drawing.Point(566, 84);
+            this.sleightOfHandScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sleightOfHandScore.Name = "sleightOfHandScore";
-            this.sleightOfHandScore.Size = new System.Drawing.Size(60, 34);
+            this.sleightOfHandScore.Size = new System.Drawing.Size(45, 28);
             this.sleightOfHandScore.TabIndex = 40;
             this.sleightOfHandScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -983,9 +1064,10 @@
             this.acrobatics.AutoSize = true;
             this.acrobatics.BackColor = System.Drawing.Color.Transparent;
             this.acrobatics.Font = new System.Drawing.Font("High Tower Text", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.acrobatics.Location = new System.Drawing.Point(626, 79);
+            this.acrobatics.Location = new System.Drawing.Point(470, 64);
+            this.acrobatics.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.acrobatics.Name = "acrobatics";
-            this.acrobatics.Size = new System.Drawing.Size(97, 22);
+            this.acrobatics.Size = new System.Drawing.Size(71, 18);
             this.acrobatics.TabIndex = 39;
             this.acrobatics.Text = "Acrobatics";
             // 
@@ -994,9 +1076,10 @@
             this.acrobaticsScore.BackColor = System.Drawing.Color.Transparent;
             this.acrobaticsScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.acrobaticsScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.acrobaticsScore.Location = new System.Drawing.Point(754, 73);
+            this.acrobaticsScore.Location = new System.Drawing.Point(566, 59);
+            this.acrobaticsScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.acrobaticsScore.Name = "acrobaticsScore";
-            this.acrobaticsScore.Size = new System.Drawing.Size(60, 34);
+            this.acrobaticsScore.Size = new System.Drawing.Size(45, 28);
             this.acrobaticsScore.TabIndex = 38;
             this.acrobaticsScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -1004,9 +1087,10 @@
             // 
             this.skills_Intelligence.BackColor = System.Drawing.Color.Transparent;
             this.skills_Intelligence.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.skills_Intelligence.Location = new System.Drawing.Point(880, 55);
+            this.skills_Intelligence.Location = new System.Drawing.Point(660, 45);
+            this.skills_Intelligence.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.skills_Intelligence.Name = "skills_Intelligence";
-            this.skills_Intelligence.Size = new System.Drawing.Size(115, 30);
+            this.skills_Intelligence.Size = new System.Drawing.Size(86, 24);
             this.skills_Intelligence.TabIndex = 37;
             this.skills_Intelligence.Text = "Intelligence";
             // 
@@ -1014,9 +1098,10 @@
             // 
             this.skills_Dexterity.BackColor = System.Drawing.Color.Transparent;
             this.skills_Dexterity.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.skills_Dexterity.Location = new System.Drawing.Point(616, 51);
+            this.skills_Dexterity.Location = new System.Drawing.Point(462, 41);
+            this.skills_Dexterity.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.skills_Dexterity.Name = "skills_Dexterity";
-            this.skills_Dexterity.Size = new System.Drawing.Size(111, 30);
+            this.skills_Dexterity.Size = new System.Drawing.Size(83, 24);
             this.skills_Dexterity.TabIndex = 36;
             this.skills_Dexterity.Text = "Dexterity";
             // 
@@ -1025,39 +1110,31 @@
             this.athletics.AutoSize = true;
             this.athletics.BackColor = System.Drawing.Color.Transparent;
             this.athletics.Font = new System.Drawing.Font("High Tower Text", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.athletics.Location = new System.Drawing.Point(407, 89);
+            this.athletics.Location = new System.Drawing.Point(305, 72);
+            this.athletics.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.athletics.Name = "athletics";
-            this.athletics.Size = new System.Drawing.Size(83, 22);
+            this.athletics.Size = new System.Drawing.Size(59, 18);
             this.athletics.TabIndex = 35;
             this.athletics.Text = "Athletics";
-            // 
-            // athleticsScore
-            // 
-            this.athleticsScore.BackColor = System.Drawing.Color.Transparent;
-            this.athleticsScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.athleticsScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.athleticsScore.Location = new System.Drawing.Point(551, 82);
-            this.athleticsScore.Name = "athleticsScore";
-            this.athleticsScore.Size = new System.Drawing.Size(60, 34);
-            this.athleticsScore.TabIndex = 33;
-            this.athleticsScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // skills_Strength
             // 
             this.skills_Strength.BackColor = System.Drawing.Color.Transparent;
             this.skills_Strength.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.skills_Strength.Location = new System.Drawing.Point(403, 51);
+            this.skills_Strength.Location = new System.Drawing.Point(302, 41);
+            this.skills_Strength.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.skills_Strength.Name = "skills_Strength";
-            this.skills_Strength.Size = new System.Drawing.Size(97, 29);
+            this.skills_Strength.Size = new System.Drawing.Size(73, 24);
             this.skills_Strength.TabIndex = 34;
             this.skills_Strength.Text = "Strength";
             // 
             // ClassTraits
             // 
             this.ClassTraits.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClassTraits.Location = new System.Drawing.Point(348, 337);
+            this.ClassTraits.Location = new System.Drawing.Point(261, 274);
+            this.ClassTraits.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ClassTraits.Name = "ClassTraits";
-            this.ClassTraits.Size = new System.Drawing.Size(367, 219);
+            this.ClassTraits.Size = new System.Drawing.Size(276, 179);
             this.ClassTraits.TabIndex = 32;
             this.ClassTraits.Text = "";
             // 
@@ -1066,9 +1143,10 @@
             this.CharismaSave.BackColor = System.Drawing.Color.Transparent;
             this.CharismaSave.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CharismaSave.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.CharismaSave.Location = new System.Drawing.Point(313, 237);
+            this.CharismaSave.Location = new System.Drawing.Point(235, 193);
+            this.CharismaSave.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.CharismaSave.Name = "CharismaSave";
-            this.CharismaSave.Size = new System.Drawing.Size(60, 34);
+            this.CharismaSave.Size = new System.Drawing.Size(45, 28);
             this.CharismaSave.TabIndex = 27;
             this.CharismaSave.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.CharismaSave.Visible = false;
@@ -1078,9 +1156,10 @@
             this.CharismaMod.BackColor = System.Drawing.Color.Transparent;
             this.CharismaMod.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CharismaMod.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.CharismaMod.Location = new System.Drawing.Point(230, 237);
+            this.CharismaMod.Location = new System.Drawing.Point(172, 193);
+            this.CharismaMod.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.CharismaMod.Name = "CharismaMod";
-            this.CharismaMod.Size = new System.Drawing.Size(60, 34);
+            this.CharismaMod.Size = new System.Drawing.Size(45, 28);
             this.CharismaMod.TabIndex = 26;
             this.CharismaMod.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -1089,9 +1168,10 @@
             this.CharismaScore.BackColor = System.Drawing.Color.Transparent;
             this.CharismaScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CharismaScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.CharismaScore.Location = new System.Drawing.Point(149, 237);
+            this.CharismaScore.Location = new System.Drawing.Point(112, 193);
+            this.CharismaScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.CharismaScore.Name = "CharismaScore";
-            this.CharismaScore.Size = new System.Drawing.Size(60, 34);
+            this.CharismaScore.Size = new System.Drawing.Size(45, 28);
             this.CharismaScore.TabIndex = 25;
             this.CharismaScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -1100,9 +1180,10 @@
             this.WisdomSave.BackColor = System.Drawing.Color.Transparent;
             this.WisdomSave.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WisdomSave.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.WisdomSave.Location = new System.Drawing.Point(313, 202);
+            this.WisdomSave.Location = new System.Drawing.Point(235, 164);
+            this.WisdomSave.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.WisdomSave.Name = "WisdomSave";
-            this.WisdomSave.Size = new System.Drawing.Size(60, 34);
+            this.WisdomSave.Size = new System.Drawing.Size(45, 28);
             this.WisdomSave.TabIndex = 24;
             this.WisdomSave.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.WisdomSave.Visible = false;
@@ -1112,9 +1193,10 @@
             this.WisdomMod.BackColor = System.Drawing.Color.Transparent;
             this.WisdomMod.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WisdomMod.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.WisdomMod.Location = new System.Drawing.Point(230, 202);
+            this.WisdomMod.Location = new System.Drawing.Point(172, 164);
+            this.WisdomMod.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.WisdomMod.Name = "WisdomMod";
-            this.WisdomMod.Size = new System.Drawing.Size(60, 34);
+            this.WisdomMod.Size = new System.Drawing.Size(45, 28);
             this.WisdomMod.TabIndex = 23;
             this.WisdomMod.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -1123,9 +1205,10 @@
             this.WisdomScore.BackColor = System.Drawing.Color.Transparent;
             this.WisdomScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WisdomScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.WisdomScore.Location = new System.Drawing.Point(149, 202);
+            this.WisdomScore.Location = new System.Drawing.Point(112, 164);
+            this.WisdomScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.WisdomScore.Name = "WisdomScore";
-            this.WisdomScore.Size = new System.Drawing.Size(60, 34);
+            this.WisdomScore.Size = new System.Drawing.Size(45, 28);
             this.WisdomScore.TabIndex = 22;
             this.WisdomScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -1134,9 +1217,10 @@
             this.ConstitutionSave.BackColor = System.Drawing.Color.Transparent;
             this.ConstitutionSave.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConstitutionSave.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.ConstitutionSave.Location = new System.Drawing.Point(313, 167);
+            this.ConstitutionSave.Location = new System.Drawing.Point(235, 136);
+            this.ConstitutionSave.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ConstitutionSave.Name = "ConstitutionSave";
-            this.ConstitutionSave.Size = new System.Drawing.Size(60, 34);
+            this.ConstitutionSave.Size = new System.Drawing.Size(45, 28);
             this.ConstitutionSave.TabIndex = 21;
             this.ConstitutionSave.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.ConstitutionSave.Visible = false;
@@ -1146,9 +1230,10 @@
             this.ConstitutionMod.BackColor = System.Drawing.Color.Transparent;
             this.ConstitutionMod.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConstitutionMod.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.ConstitutionMod.Location = new System.Drawing.Point(230, 167);
+            this.ConstitutionMod.Location = new System.Drawing.Point(172, 136);
+            this.ConstitutionMod.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ConstitutionMod.Name = "ConstitutionMod";
-            this.ConstitutionMod.Size = new System.Drawing.Size(60, 34);
+            this.ConstitutionMod.Size = new System.Drawing.Size(45, 28);
             this.ConstitutionMod.TabIndex = 20;
             this.ConstitutionMod.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -1157,9 +1242,10 @@
             this.ConstitutionScore.BackColor = System.Drawing.Color.Transparent;
             this.ConstitutionScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConstitutionScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.ConstitutionScore.Location = new System.Drawing.Point(149, 167);
+            this.ConstitutionScore.Location = new System.Drawing.Point(112, 136);
+            this.ConstitutionScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ConstitutionScore.Name = "ConstitutionScore";
-            this.ConstitutionScore.Size = new System.Drawing.Size(60, 34);
+            this.ConstitutionScore.Size = new System.Drawing.Size(45, 28);
             this.ConstitutionScore.TabIndex = 19;
             this.ConstitutionScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -1168,9 +1254,10 @@
             this.IntelligenceSave.BackColor = System.Drawing.Color.Transparent;
             this.IntelligenceSave.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IntelligenceSave.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.IntelligenceSave.Location = new System.Drawing.Point(313, 132);
+            this.IntelligenceSave.Location = new System.Drawing.Point(235, 107);
+            this.IntelligenceSave.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.IntelligenceSave.Name = "IntelligenceSave";
-            this.IntelligenceSave.Size = new System.Drawing.Size(60, 34);
+            this.IntelligenceSave.Size = new System.Drawing.Size(45, 28);
             this.IntelligenceSave.TabIndex = 18;
             this.IntelligenceSave.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.IntelligenceSave.Visible = false;
@@ -1180,9 +1267,10 @@
             this.IntelligenceMod.BackColor = System.Drawing.Color.Transparent;
             this.IntelligenceMod.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IntelligenceMod.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.IntelligenceMod.Location = new System.Drawing.Point(230, 132);
+            this.IntelligenceMod.Location = new System.Drawing.Point(172, 107);
+            this.IntelligenceMod.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.IntelligenceMod.Name = "IntelligenceMod";
-            this.IntelligenceMod.Size = new System.Drawing.Size(60, 34);
+            this.IntelligenceMod.Size = new System.Drawing.Size(45, 28);
             this.IntelligenceMod.TabIndex = 17;
             this.IntelligenceMod.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -1191,9 +1279,10 @@
             this.IntelligenceScore.BackColor = System.Drawing.Color.Transparent;
             this.IntelligenceScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IntelligenceScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.IntelligenceScore.Location = new System.Drawing.Point(149, 132);
+            this.IntelligenceScore.Location = new System.Drawing.Point(112, 107);
+            this.IntelligenceScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.IntelligenceScore.Name = "IntelligenceScore";
-            this.IntelligenceScore.Size = new System.Drawing.Size(60, 34);
+            this.IntelligenceScore.Size = new System.Drawing.Size(45, 28);
             this.IntelligenceScore.TabIndex = 16;
             this.IntelligenceScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -1202,9 +1291,10 @@
             this.DexteritySave.BackColor = System.Drawing.Color.Transparent;
             this.DexteritySave.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DexteritySave.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.DexteritySave.Location = new System.Drawing.Point(313, 97);
+            this.DexteritySave.Location = new System.Drawing.Point(235, 79);
+            this.DexteritySave.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.DexteritySave.Name = "DexteritySave";
-            this.DexteritySave.Size = new System.Drawing.Size(60, 34);
+            this.DexteritySave.Size = new System.Drawing.Size(45, 28);
             this.DexteritySave.TabIndex = 15;
             this.DexteritySave.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.DexteritySave.Visible = false;
@@ -1214,9 +1304,10 @@
             this.DexterityMod.BackColor = System.Drawing.Color.Transparent;
             this.DexterityMod.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DexterityMod.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.DexterityMod.Location = new System.Drawing.Point(230, 97);
+            this.DexterityMod.Location = new System.Drawing.Point(172, 79);
+            this.DexterityMod.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.DexterityMod.Name = "DexterityMod";
-            this.DexterityMod.Size = new System.Drawing.Size(60, 34);
+            this.DexterityMod.Size = new System.Drawing.Size(45, 28);
             this.DexterityMod.TabIndex = 14;
             this.DexterityMod.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -1225,20 +1316,34 @@
             this.DexterityScore.BackColor = System.Drawing.Color.Transparent;
             this.DexterityScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DexterityScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.DexterityScore.Location = new System.Drawing.Point(149, 97);
+            this.DexterityScore.Location = new System.Drawing.Point(112, 79);
+            this.DexterityScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.DexterityScore.Name = "DexterityScore";
-            this.DexterityScore.Size = new System.Drawing.Size(60, 34);
+            this.DexterityScore.Size = new System.Drawing.Size(45, 28);
             this.DexterityScore.TabIndex = 13;
             this.DexterityScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // abscoreTitles
+            // 
+            this.abscoreTitles.BackColor = System.Drawing.Color.Transparent;
+            this.abscoreTitles.Font = new System.Drawing.Font("High Tower Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.abscoreTitles.Location = new System.Drawing.Point(2, 31);
+            this.abscoreTitles.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.abscoreTitles.Name = "abscoreTitles";
+            this.abscoreTitles.Size = new System.Drawing.Size(293, 24);
+            this.abscoreTitles.TabIndex = 2;
+            this.abscoreTitles.Text = "Name        Score    Mod    Save";
+            this.abscoreTitles.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // StrengthSave
             // 
             this.StrengthSave.BackColor = System.Drawing.Color.Transparent;
             this.StrengthSave.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StrengthSave.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.StrengthSave.Location = new System.Drawing.Point(313, 62);
+            this.StrengthSave.Location = new System.Drawing.Point(235, 50);
+            this.StrengthSave.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.StrengthSave.Name = "StrengthSave";
-            this.StrengthSave.Size = new System.Drawing.Size(60, 34);
+            this.StrengthSave.Size = new System.Drawing.Size(45, 28);
             this.StrengthSave.TabIndex = 12;
             this.StrengthSave.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.StrengthSave.Visible = false;
@@ -1248,9 +1353,10 @@
             this.StrengthMod.BackColor = System.Drawing.Color.Transparent;
             this.StrengthMod.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StrengthMod.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.StrengthMod.Location = new System.Drawing.Point(230, 62);
+            this.StrengthMod.Location = new System.Drawing.Point(172, 50);
+            this.StrengthMod.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.StrengthMod.Name = "StrengthMod";
-            this.StrengthMod.Size = new System.Drawing.Size(60, 34);
+            this.StrengthMod.Size = new System.Drawing.Size(45, 28);
             this.StrengthMod.TabIndex = 11;
             this.StrengthMod.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -1259,9 +1365,10 @@
             this.StrengthScore.BackColor = System.Drawing.Color.Transparent;
             this.StrengthScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StrengthScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.StrengthScore.Location = new System.Drawing.Point(149, 62);
+            this.StrengthScore.Location = new System.Drawing.Point(112, 50);
+            this.StrengthScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.StrengthScore.Name = "StrengthScore";
-            this.StrengthScore.Size = new System.Drawing.Size(60, 34);
+            this.StrengthScore.Size = new System.Drawing.Size(45, 28);
             this.StrengthScore.TabIndex = 10;
             this.StrengthScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -1269,9 +1376,10 @@
             // 
             this.Skills.BackColor = System.Drawing.Color.Transparent;
             this.Skills.Font = new System.Drawing.Font("High Tower Text", 24F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Skills.Location = new System.Drawing.Point(405, 4);
+            this.Skills.Location = new System.Drawing.Point(304, 3);
+            this.Skills.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Skills.Name = "Skills";
-            this.Skills.Size = new System.Drawing.Size(666, 48);
+            this.Skills.Size = new System.Drawing.Size(500, 39);
             this.Skills.TabIndex = 9;
             this.Skills.Text = "                           Skills                            ";
             // 
@@ -1279,9 +1387,10 @@
             // 
             this.Charisma.BackColor = System.Drawing.Color.OrangeRed;
             this.Charisma.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Charisma.Location = new System.Drawing.Point(4, 243);
+            this.Charisma.Location = new System.Drawing.Point(3, 197);
+            this.Charisma.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Charisma.Name = "Charisma";
-            this.Charisma.Size = new System.Drawing.Size(128, 23);
+            this.Charisma.Size = new System.Drawing.Size(96, 19);
             this.Charisma.TabIndex = 8;
             this.Charisma.Text = "Charisma";
             // 
@@ -1289,9 +1398,10 @@
             // 
             this.Wisdom.BackColor = System.Drawing.Color.DarkOrchid;
             this.Wisdom.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Wisdom.Location = new System.Drawing.Point(4, 208);
+            this.Wisdom.Location = new System.Drawing.Point(3, 169);
+            this.Wisdom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Wisdom.Name = "Wisdom";
-            this.Wisdom.Size = new System.Drawing.Size(129, 23);
+            this.Wisdom.Size = new System.Drawing.Size(97, 19);
             this.Wisdom.TabIndex = 7;
             this.Wisdom.Text = "Wisdom";
             // 
@@ -1299,9 +1409,10 @@
             // 
             this.Constitution.BackColor = System.Drawing.Color.Orange;
             this.Constitution.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Constitution.Location = new System.Drawing.Point(4, 173);
+            this.Constitution.Location = new System.Drawing.Point(3, 141);
+            this.Constitution.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Constitution.Name = "Constitution";
-            this.Constitution.Size = new System.Drawing.Size(128, 23);
+            this.Constitution.Size = new System.Drawing.Size(96, 19);
             this.Constitution.TabIndex = 6;
             this.Constitution.Text = "Constitution";
             // 
@@ -1309,9 +1420,10 @@
             // 
             this.Intelligence.BackColor = System.Drawing.Color.RoyalBlue;
             this.Intelligence.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Intelligence.Location = new System.Drawing.Point(4, 138);
+            this.Intelligence.Location = new System.Drawing.Point(3, 112);
+            this.Intelligence.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Intelligence.Name = "Intelligence";
-            this.Intelligence.Size = new System.Drawing.Size(129, 23);
+            this.Intelligence.Size = new System.Drawing.Size(97, 19);
             this.Intelligence.TabIndex = 5;
             this.Intelligence.Text = "Intelligence";
             // 
@@ -1319,9 +1431,10 @@
             // 
             this.Dexterity.BackColor = System.Drawing.Color.ForestGreen;
             this.Dexterity.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dexterity.Location = new System.Drawing.Point(4, 103);
+            this.Dexterity.Location = new System.Drawing.Point(3, 84);
+            this.Dexterity.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Dexterity.Name = "Dexterity";
-            this.Dexterity.Size = new System.Drawing.Size(129, 23);
+            this.Dexterity.Size = new System.Drawing.Size(97, 19);
             this.Dexterity.TabIndex = 4;
             this.Dexterity.Text = "Dexterity";
             // 
@@ -1329,30 +1442,21 @@
             // 
             this.Strength.BackColor = System.Drawing.Color.Crimson;
             this.Strength.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Strength.Location = new System.Drawing.Point(4, 68);
+            this.Strength.Location = new System.Drawing.Point(3, 55);
+            this.Strength.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Strength.Name = "Strength";
-            this.Strength.Size = new System.Drawing.Size(129, 23);
+            this.Strength.Size = new System.Drawing.Size(97, 19);
             this.Strength.TabIndex = 3;
             this.Strength.Text = "Strength";
-            // 
-            // abscoreTitles
-            // 
-            this.abscoreTitles.BackColor = System.Drawing.Color.Transparent;
-            this.abscoreTitles.Font = new System.Drawing.Font("High Tower Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.abscoreTitles.Location = new System.Drawing.Point(2, 38);
-            this.abscoreTitles.Name = "abscoreTitles";
-            this.abscoreTitles.Size = new System.Drawing.Size(391, 30);
-            this.abscoreTitles.TabIndex = 2;
-            this.abscoreTitles.Text = "Name        Score    Mod    Save";
-            this.abscoreTitles.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // stats_abilityScoreSaveThrows
             // 
             this.stats_abilityScoreSaveThrows.BackColor = System.Drawing.Color.Transparent;
             this.stats_abilityScoreSaveThrows.Font = new System.Drawing.Font("High Tower Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stats_abilityScoreSaveThrows.Location = new System.Drawing.Point(3, 3);
+            this.stats_abilityScoreSaveThrows.Location = new System.Drawing.Point(2, 2);
+            this.stats_abilityScoreSaveThrows.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.stats_abilityScoreSaveThrows.Name = "stats_abilityScoreSaveThrows";
-            this.stats_abilityScoreSaveThrows.Size = new System.Drawing.Size(390, 35);
+            this.stats_abilityScoreSaveThrows.Size = new System.Drawing.Size(292, 28);
             this.stats_abilityScoreSaveThrows.TabIndex = 1;
             this.stats_abilityScoreSaveThrows.Text = "Ability Scores / Saving throws";
             this.stats_abilityScoreSaveThrows.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1360,9 +1464,10 @@
             // RacialTraits
             // 
             this.RacialTraits.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RacialTraits.Location = new System.Drawing.Point(721, 337);
+            this.RacialTraits.Location = new System.Drawing.Point(541, 274);
+            this.RacialTraits.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RacialTraits.Name = "RacialTraits";
-            this.RacialTraits.Size = new System.Drawing.Size(369, 219);
+            this.RacialTraits.Size = new System.Drawing.Size(278, 179);
             this.RacialTraits.TabIndex = 0;
             this.RacialTraits.Text = "";
             // 
@@ -1411,10 +1516,11 @@
             this.dataGridViewTextBoxColumn38,
             this.dataGridViewTextBoxColumn39});
             this.charactersDataGridView.DataSource = this.charactersBindingSource;
-            this.charactersDataGridView.Location = new System.Drawing.Point(84, 8);
+            this.charactersDataGridView.Location = new System.Drawing.Point(63, 6);
+            this.charactersDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.charactersDataGridView.Name = "charactersDataGridView";
             this.charactersDataGridView.RowTemplate.Height = 24;
-            this.charactersDataGridView.Size = new System.Drawing.Size(147, 61);
+            this.charactersDataGridView.Size = new System.Drawing.Size(110, 50);
             this.charactersDataGridView.TabIndex = 84;
             this.charactersDataGridView.Visible = false;
             // 
@@ -1698,9 +1804,10 @@
             this.combatPanel.Controls.Add(this.armorLabel);
             this.combatPanel.Controls.Add(this.remainingActionsScore);
             this.combatPanel.Controls.Add(this.remainingActions);
-            this.combatPanel.Location = new System.Drawing.Point(131, 104);
+            this.combatPanel.Location = new System.Drawing.Point(98, 84);
+            this.combatPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.combatPanel.Name = "combatPanel";
-            this.combatPanel.Size = new System.Drawing.Size(1090, 564);
+            this.combatPanel.Size = new System.Drawing.Size(818, 458);
             this.combatPanel.TabIndex = 37;
             this.combatPanel.Visible = false;
             // 
@@ -1709,9 +1816,10 @@
             this.actionsResetButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.actionsResetButton.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actionsResetButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.actionsResetButton.Location = new System.Drawing.Point(425, 171);
+            this.actionsResetButton.Location = new System.Drawing.Point(319, 139);
+            this.actionsResetButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.actionsResetButton.Name = "actionsResetButton";
-            this.actionsResetButton.Size = new System.Drawing.Size(109, 31);
+            this.actionsResetButton.Size = new System.Drawing.Size(82, 25);
             this.actionsResetButton.TabIndex = 90;
             this.actionsResetButton.Text = "New Turn";
             this.actionsResetButton.UseVisualStyleBackColor = false;
@@ -1722,9 +1830,10 @@
             this.bonusActionButton.BackColor = System.Drawing.Color.SlateBlue;
             this.bonusActionButton.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bonusActionButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.bonusActionButton.Location = new System.Drawing.Point(92, 529);
+            this.bonusActionButton.Location = new System.Drawing.Point(69, 430);
+            this.bonusActionButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bonusActionButton.Name = "bonusActionButton";
-            this.bonusActionButton.Size = new System.Drawing.Size(239, 31);
+            this.bonusActionButton.Size = new System.Drawing.Size(179, 25);
             this.bonusActionButton.TabIndex = 89;
             this.bonusActionButton.Text = "Use Bonus Action";
             this.bonusActionButton.UseVisualStyleBackColor = false;
@@ -1735,9 +1844,10 @@
             this.improvButton.BackColor = System.Drawing.Color.Orange;
             this.improvButton.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.improvButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.improvButton.Location = new System.Drawing.Point(221, 497);
+            this.improvButton.Location = new System.Drawing.Point(166, 404);
+            this.improvButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.improvButton.Name = "improvButton";
-            this.improvButton.Size = new System.Drawing.Size(181, 31);
+            this.improvButton.Size = new System.Drawing.Size(136, 25);
             this.improvButton.TabIndex = 88;
             this.improvButton.Text = "Improvise";
             this.improvButton.UseVisualStyleBackColor = false;
@@ -1748,9 +1858,10 @@
             this.shoveButton.BackColor = System.Drawing.Color.Orange;
             this.shoveButton.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.shoveButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.shoveButton.Location = new System.Drawing.Point(221, 458);
+            this.shoveButton.Location = new System.Drawing.Point(166, 372);
+            this.shoveButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.shoveButton.Name = "shoveButton";
-            this.shoveButton.Size = new System.Drawing.Size(181, 31);
+            this.shoveButton.Size = new System.Drawing.Size(136, 25);
             this.shoveButton.TabIndex = 87;
             this.shoveButton.Text = "Shove";
             this.shoveButton.UseVisualStyleBackColor = false;
@@ -1761,9 +1872,10 @@
             this.useClassFeatureButton.BackColor = System.Drawing.Color.Orange;
             this.useClassFeatureButton.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.useClassFeatureButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.useClassFeatureButton.Location = new System.Drawing.Point(221, 419);
+            this.useClassFeatureButton.Location = new System.Drawing.Point(166, 340);
+            this.useClassFeatureButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.useClassFeatureButton.Name = "useClassFeatureButton";
-            this.useClassFeatureButton.Size = new System.Drawing.Size(181, 31);
+            this.useClassFeatureButton.Size = new System.Drawing.Size(136, 25);
             this.useClassFeatureButton.TabIndex = 86;
             this.useClassFeatureButton.Text = "Use Class Feature";
             this.useClassFeatureButton.UseVisualStyleBackColor = false;
@@ -1774,9 +1886,10 @@
             this.grappleButton.BackColor = System.Drawing.Color.Orange;
             this.grappleButton.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grappleButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.grappleButton.Location = new System.Drawing.Point(221, 380);
+            this.grappleButton.Location = new System.Drawing.Point(166, 309);
+            this.grappleButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grappleButton.Name = "grappleButton";
-            this.grappleButton.Size = new System.Drawing.Size(181, 31);
+            this.grappleButton.Size = new System.Drawing.Size(136, 25);
             this.grappleButton.TabIndex = 85;
             this.grappleButton.Text = "Grapple";
             this.grappleButton.UseVisualStyleBackColor = false;
@@ -1787,9 +1900,10 @@
             this.useObjectButton.BackColor = System.Drawing.Color.Orange;
             this.useObjectButton.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.useObjectButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.useObjectButton.Location = new System.Drawing.Point(221, 341);
+            this.useObjectButton.Location = new System.Drawing.Point(166, 277);
+            this.useObjectButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.useObjectButton.Name = "useObjectButton";
-            this.useObjectButton.Size = new System.Drawing.Size(181, 31);
+            this.useObjectButton.Size = new System.Drawing.Size(136, 25);
             this.useObjectButton.TabIndex = 84;
             this.useObjectButton.Text = "Use an Object";
             this.useObjectButton.UseVisualStyleBackColor = false;
@@ -1800,9 +1914,10 @@
             this.searchButton.BackColor = System.Drawing.Color.Orange;
             this.searchButton.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.searchButton.Location = new System.Drawing.Point(221, 302);
+            this.searchButton.Location = new System.Drawing.Point(166, 245);
+            this.searchButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(181, 31);
+            this.searchButton.Size = new System.Drawing.Size(136, 25);
             this.searchButton.TabIndex = 83;
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = false;
@@ -1813,9 +1928,10 @@
             this.readyButton.BackColor = System.Drawing.Color.Orange;
             this.readyButton.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.readyButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.readyButton.Location = new System.Drawing.Point(221, 263);
+            this.readyButton.Location = new System.Drawing.Point(166, 214);
+            this.readyButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.readyButton.Name = "readyButton";
-            this.readyButton.Size = new System.Drawing.Size(181, 31);
+            this.readyButton.Size = new System.Drawing.Size(136, 25);
             this.readyButton.TabIndex = 82;
             this.readyButton.Text = "Ready";
             this.readyButton.UseVisualStyleBackColor = false;
@@ -1826,9 +1942,10 @@
             this.hideButton.BackColor = System.Drawing.Color.Orange;
             this.hideButton.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hideButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.hideButton.Location = new System.Drawing.Point(10, 497);
+            this.hideButton.Location = new System.Drawing.Point(8, 404);
+            this.hideButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.hideButton.Name = "hideButton";
-            this.hideButton.Size = new System.Drawing.Size(181, 31);
+            this.hideButton.Size = new System.Drawing.Size(136, 25);
             this.hideButton.TabIndex = 81;
             this.hideButton.Text = "Hide";
             this.hideButton.UseVisualStyleBackColor = false;
@@ -1839,9 +1956,10 @@
             this.helpButton.BackColor = System.Drawing.Color.Orange;
             this.helpButton.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.helpButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.helpButton.Location = new System.Drawing.Point(10, 458);
+            this.helpButton.Location = new System.Drawing.Point(8, 372);
+            this.helpButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.helpButton.Name = "helpButton";
-            this.helpButton.Size = new System.Drawing.Size(181, 31);
+            this.helpButton.Size = new System.Drawing.Size(136, 25);
             this.helpButton.TabIndex = 80;
             this.helpButton.Text = "Help";
             this.helpButton.UseVisualStyleBackColor = false;
@@ -1852,9 +1970,10 @@
             this.dodgeButton.BackColor = System.Drawing.Color.Orange;
             this.dodgeButton.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dodgeButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.dodgeButton.Location = new System.Drawing.Point(10, 419);
+            this.dodgeButton.Location = new System.Drawing.Point(8, 340);
+            this.dodgeButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dodgeButton.Name = "dodgeButton";
-            this.dodgeButton.Size = new System.Drawing.Size(181, 31);
+            this.dodgeButton.Size = new System.Drawing.Size(136, 25);
             this.dodgeButton.TabIndex = 79;
             this.dodgeButton.Text = "Dodge";
             this.dodgeButton.UseVisualStyleBackColor = false;
@@ -1865,9 +1984,10 @@
             this.disengageButton.BackColor = System.Drawing.Color.Orange;
             this.disengageButton.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.disengageButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.disengageButton.Location = new System.Drawing.Point(10, 380);
+            this.disengageButton.Location = new System.Drawing.Point(8, 309);
+            this.disengageButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.disengageButton.Name = "disengageButton";
-            this.disengageButton.Size = new System.Drawing.Size(181, 31);
+            this.disengageButton.Size = new System.Drawing.Size(136, 25);
             this.disengageButton.TabIndex = 78;
             this.disengageButton.Text = "Disengage";
             this.disengageButton.UseVisualStyleBackColor = false;
@@ -1878,9 +1998,10 @@
             this.dashButton.BackColor = System.Drawing.Color.Orange;
             this.dashButton.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dashButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.dashButton.Location = new System.Drawing.Point(10, 341);
+            this.dashButton.Location = new System.Drawing.Point(8, 277);
+            this.dashButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dashButton.Name = "dashButton";
-            this.dashButton.Size = new System.Drawing.Size(181, 31);
+            this.dashButton.Size = new System.Drawing.Size(136, 25);
             this.dashButton.TabIndex = 77;
             this.dashButton.Text = "Dash";
             this.dashButton.UseVisualStyleBackColor = false;
@@ -1891,9 +2012,10 @@
             this.castSpellButton.BackColor = System.Drawing.Color.Orange;
             this.castSpellButton.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.castSpellButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.castSpellButton.Location = new System.Drawing.Point(10, 302);
+            this.castSpellButton.Location = new System.Drawing.Point(8, 245);
+            this.castSpellButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.castSpellButton.Name = "castSpellButton";
-            this.castSpellButton.Size = new System.Drawing.Size(181, 31);
+            this.castSpellButton.Size = new System.Drawing.Size(136, 25);
             this.castSpellButton.TabIndex = 76;
             this.castSpellButton.Text = "Cast Spell";
             this.castSpellButton.UseVisualStyleBackColor = false;
@@ -1904,9 +2026,10 @@
             this.attackButton.BackColor = System.Drawing.Color.Orange;
             this.attackButton.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.attackButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.attackButton.Location = new System.Drawing.Point(10, 263);
+            this.attackButton.Location = new System.Drawing.Point(8, 214);
+            this.attackButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.attackButton.Name = "attackButton";
-            this.attackButton.Size = new System.Drawing.Size(181, 31);
+            this.attackButton.Size = new System.Drawing.Size(136, 25);
             this.attackButton.TabIndex = 44;
             this.attackButton.Text = "Attack";
             this.attackButton.UseVisualStyleBackColor = false;
@@ -1929,19 +2052,21 @@
             "Chain Mail",
             "Splint",
             "Plate"});
-            this.armorValue.Location = new System.Drawing.Point(500, 7);
+            this.armorValue.Location = new System.Drawing.Point(375, 6);
+            this.armorValue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.armorValue.Name = "armorValue";
-            this.armorValue.Size = new System.Drawing.Size(205, 40);
+            this.armorValue.Size = new System.Drawing.Size(155, 34);
             this.armorValue.TabIndex = 75;
             this.armorValue.SelectedIndexChanged += new System.EventHandler(this.armorValue_SelectedIndexChanged);
             // 
             // RHandEquip
             // 
             this.RHandEquip.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RHandEquip.Location = new System.Drawing.Point(540, 104);
+            this.RHandEquip.Location = new System.Drawing.Point(405, 84);
+            this.RHandEquip.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RHandEquip.Name = "RHandEquip";
             this.RHandEquip.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Horizontal;
-            this.RHandEquip.Size = new System.Drawing.Size(172, 44);
+            this.RHandEquip.Size = new System.Drawing.Size(130, 36);
             this.RHandEquip.TabIndex = 72;
             this.RHandEquip.Text = "";
             this.RHandEquip.TextChanged += new System.EventHandler(this.RHandEquip_TextChanged);
@@ -1949,10 +2074,11 @@
             // LHandEquip
             // 
             this.LHandEquip.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LHandEquip.Location = new System.Drawing.Point(540, 57);
+            this.LHandEquip.Location = new System.Drawing.Point(405, 46);
+            this.LHandEquip.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LHandEquip.Name = "LHandEquip";
             this.LHandEquip.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Horizontal;
-            this.LHandEquip.Size = new System.Drawing.Size(172, 44);
+            this.LHandEquip.Size = new System.Drawing.Size(130, 36);
             this.LHandEquip.TabIndex = 71;
             this.LHandEquip.Text = "";
             this.LHandEquip.TextChanged += new System.EventHandler(this.LHandEquip_TextChanged);
@@ -1962,9 +2088,10 @@
             this.remainingBonusScore.BackColor = System.Drawing.Color.SandyBrown;
             this.remainingBonusScore.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.remainingBonusScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.remainingBonusScore.Location = new System.Drawing.Point(348, 213);
+            this.remainingBonusScore.Location = new System.Drawing.Point(261, 173);
+            this.remainingBonusScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.remainingBonusScore.Name = "remainingBonusScore";
-            this.remainingBonusScore.Size = new System.Drawing.Size(68, 39);
+            this.remainingBonusScore.Size = new System.Drawing.Size(51, 32);
             this.remainingBonusScore.TabIndex = 55;
             this.remainingBonusScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -1972,9 +2099,10 @@
             // 
             this.remainingBonus.BackColor = System.Drawing.Color.SlateBlue;
             this.remainingBonus.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.remainingBonus.Location = new System.Drawing.Point(6, 213);
+            this.remainingBonus.Location = new System.Drawing.Point(4, 173);
+            this.remainingBonus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.remainingBonus.Name = "remainingBonus";
-            this.remainingBonus.Size = new System.Drawing.Size(336, 39);
+            this.remainingBonus.Size = new System.Drawing.Size(252, 32);
             this.remainingBonus.TabIndex = 54;
             this.remainingBonus.Text = "Bonus actions left:";
             this.remainingBonus.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1984,18 +2112,20 @@
             this.quickReferenceTextBox.BackColor = System.Drawing.Color.SandyBrown;
             this.quickReferenceTextBox.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quickReferenceTextBox.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.quickReferenceTextBox.Location = new System.Drawing.Point(421, 210);
+            this.quickReferenceTextBox.Location = new System.Drawing.Point(316, 171);
+            this.quickReferenceTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.quickReferenceTextBox.Name = "quickReferenceTextBox";
-            this.quickReferenceTextBox.Size = new System.Drawing.Size(655, 346);
+            this.quickReferenceTextBox.Size = new System.Drawing.Size(492, 282);
             this.quickReferenceTextBox.TabIndex = 53;
             this.quickReferenceTextBox.Text = resources.GetString("quickReferenceTextBox.Text");
             // 
             // quickReference
             // 
             this.quickReference.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quickReference.Location = new System.Drawing.Point(605, 172);
+            this.quickReference.Location = new System.Drawing.Point(454, 140);
+            this.quickReference.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.quickReference.Name = "quickReference";
-            this.quickReference.Size = new System.Drawing.Size(321, 39);
+            this.quickReference.Size = new System.Drawing.Size(241, 32);
             this.quickReference.TabIndex = 52;
             this.quickReference.Text = "Quick References\r\n";
             this.quickReference.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -2004,28 +2134,31 @@
             // 
             this.otherEquippedHint.AutoSize = true;
             this.otherEquippedHint.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.otherEquippedHint.Location = new System.Drawing.Point(822, 28);
+            this.otherEquippedHint.Location = new System.Drawing.Point(616, 23);
+            this.otherEquippedHint.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.otherEquippedHint.Name = "otherEquippedHint";
-            this.otherEquippedHint.Size = new System.Drawing.Size(261, 20);
+            this.otherEquippedHint.Size = new System.Drawing.Size(209, 16);
             this.otherEquippedHint.TabIndex = 51;
             this.otherEquippedHint.Text = "(magical items, disguises, capes, etc)";
             // 
             // otherEquippedTextBox
             // 
             this.otherEquippedTextBox.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.otherEquippedTextBox.Location = new System.Drawing.Point(736, 50);
+            this.otherEquippedTextBox.Location = new System.Drawing.Point(552, 41);
+            this.otherEquippedTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.otherEquippedTextBox.Name = "otherEquippedTextBox";
             this.otherEquippedTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Horizontal;
-            this.otherEquippedTextBox.Size = new System.Drawing.Size(351, 104);
+            this.otherEquippedTextBox.Size = new System.Drawing.Size(264, 85);
             this.otherEquippedTextBox.TabIndex = 50;
             this.otherEquippedTextBox.Text = "";
             // 
             // otherEquipped
             // 
             this.otherEquipped.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.otherEquipped.Location = new System.Drawing.Point(698, 7);
+            this.otherEquipped.Location = new System.Drawing.Point(524, 6);
+            this.otherEquipped.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.otherEquipped.Name = "otherEquipped";
-            this.otherEquipped.Size = new System.Drawing.Size(137, 42);
+            this.otherEquipped.Size = new System.Drawing.Size(103, 34);
             this.otherEquipped.TabIndex = 49;
             this.otherEquipped.Text = "Other:";
             this.otherEquipped.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -2033,9 +2166,10 @@
             // lhEquipped
             // 
             this.lhEquipped.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lhEquipped.Location = new System.Drawing.Point(355, 58);
+            this.lhEquipped.Location = new System.Drawing.Point(266, 47);
+            this.lhEquipped.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lhEquipped.Name = "lhEquipped";
-            this.lhEquipped.Size = new System.Drawing.Size(196, 39);
+            this.lhEquipped.Size = new System.Drawing.Size(147, 32);
             this.lhEquipped.TabIndex = 45;
             this.lhEquipped.Text = "Left Hand:";
             this.lhEquipped.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -2051,17 +2185,19 @@
             this.armInitSpeedPanel.Controls.Add(this.initiative);
             this.armInitSpeedPanel.Controls.Add(this.speed);
             this.armInitSpeedPanel.Controls.Add(this.speedScore);
-            this.armInitSpeedPanel.Location = new System.Drawing.Point(10, 7);
+            this.armInitSpeedPanel.Location = new System.Drawing.Point(8, 6);
+            this.armInitSpeedPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.armInitSpeedPanel.Name = "armInitSpeedPanel";
-            this.armInitSpeedPanel.Size = new System.Drawing.Size(329, 147);
+            this.armInitSpeedPanel.Size = new System.Drawing.Size(247, 119);
             this.armInitSpeedPanel.TabIndex = 44;
             // 
             // unchangingSpeedScore
             // 
             this.unchangingSpeedScore.AutoSize = true;
-            this.unchangingSpeedScore.Location = new System.Drawing.Point(26, 114);
+            this.unchangingSpeedScore.Location = new System.Drawing.Point(20, 93);
+            this.unchangingSpeedScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.unchangingSpeedScore.Name = "unchangingSpeedScore";
-            this.unchangingSpeedScore.Size = new System.Drawing.Size(0, 17);
+            this.unchangingSpeedScore.Size = new System.Drawing.Size(0, 13);
             this.unchangingSpeedScore.TabIndex = 43;
             this.unchangingSpeedScore.Visible = false;
             // 
@@ -2070,9 +2206,10 @@
             this.armorClassValue.BackColor = System.Drawing.Color.Transparent;
             this.armorClassValue.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.armorClassValue.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.armorClassValue.Location = new System.Drawing.Point(249, 7);
+            this.armorClassValue.Location = new System.Drawing.Point(187, 6);
+            this.armorClassValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.armorClassValue.Name = "armorClassValue";
-            this.armorClassValue.Size = new System.Drawing.Size(68, 39);
+            this.armorClassValue.Size = new System.Drawing.Size(51, 32);
             this.armorClassValue.TabIndex = 42;
             this.armorClassValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -2081,9 +2218,10 @@
             this.InitiativeButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.InitiativeButton.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InitiativeButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.InitiativeButton.Location = new System.Drawing.Point(8, 58);
+            this.InitiativeButton.Location = new System.Drawing.Point(6, 47);
+            this.InitiativeButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.InitiativeButton.Name = "InitiativeButton";
-            this.InitiativeButton.Size = new System.Drawing.Size(70, 31);
+            this.InitiativeButton.Size = new System.Drawing.Size(52, 25);
             this.InitiativeButton.TabIndex = 41;
             this.InitiativeButton.Text = "Roll";
             this.InitiativeButton.UseVisualStyleBackColor = false;
@@ -2093,9 +2231,10 @@
             // 
             this.armorClass.BackColor = System.Drawing.Color.Transparent;
             this.armorClass.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.armorClass.Location = new System.Drawing.Point(8, 6);
+            this.armorClass.Location = new System.Drawing.Point(6, 5);
+            this.armorClass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.armorClass.Name = "armorClass";
-            this.armorClass.Size = new System.Drawing.Size(223, 42);
+            this.armorClass.Size = new System.Drawing.Size(167, 34);
             this.armorClass.TabIndex = 0;
             this.armorClass.Text = "Armor Class";
             this.armorClass.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -2105,9 +2244,10 @@
             this.initiativeScore.BackColor = System.Drawing.Color.Transparent;
             this.initiativeScore.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.initiativeScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.initiativeScore.Location = new System.Drawing.Point(249, 53);
+            this.initiativeScore.Location = new System.Drawing.Point(187, 43);
+            this.initiativeScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.initiativeScore.Name = "initiativeScore";
-            this.initiativeScore.Size = new System.Drawing.Size(68, 39);
+            this.initiativeScore.Size = new System.Drawing.Size(51, 32);
             this.initiativeScore.TabIndex = 38;
             this.initiativeScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -2115,9 +2255,10 @@
             // 
             this.initiative.BackColor = System.Drawing.Color.Transparent;
             this.initiative.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.initiative.Location = new System.Drawing.Point(75, 52);
+            this.initiative.Location = new System.Drawing.Point(56, 42);
+            this.initiative.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.initiative.Name = "initiative";
-            this.initiative.Size = new System.Drawing.Size(175, 51);
+            this.initiative.Size = new System.Drawing.Size(131, 41);
             this.initiative.TabIndex = 37;
             this.initiative.Text = "Initiative";
             this.initiative.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -2126,9 +2267,10 @@
             // 
             this.speed.BackColor = System.Drawing.Color.Transparent;
             this.speed.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.speed.Location = new System.Drawing.Point(107, 95);
+            this.speed.Location = new System.Drawing.Point(80, 77);
+            this.speed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.speed.Name = "speed";
-            this.speed.Size = new System.Drawing.Size(135, 39);
+            this.speed.Size = new System.Drawing.Size(101, 32);
             this.speed.TabIndex = 40;
             this.speed.Text = "Speed";
             this.speed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2138,18 +2280,20 @@
             this.speedScore.BackColor = System.Drawing.Color.Transparent;
             this.speedScore.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.speedScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.speedScore.Location = new System.Drawing.Point(249, 97);
+            this.speedScore.Location = new System.Drawing.Point(187, 79);
+            this.speedScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.speedScore.Name = "speedScore";
-            this.speedScore.Size = new System.Drawing.Size(68, 39);
+            this.speedScore.Size = new System.Drawing.Size(51, 32);
             this.speedScore.TabIndex = 39;
             this.speedScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // rhEquipped
             // 
             this.rhEquipped.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rhEquipped.Location = new System.Drawing.Point(333, 108);
+            this.rhEquipped.Location = new System.Drawing.Point(250, 88);
+            this.rhEquipped.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.rhEquipped.Name = "rhEquipped";
-            this.rhEquipped.Size = new System.Drawing.Size(218, 39);
+            this.rhEquipped.Size = new System.Drawing.Size(164, 32);
             this.rhEquipped.TabIndex = 46;
             this.rhEquipped.Text = "Right Hand:";
             this.rhEquipped.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -2157,9 +2301,10 @@
             // armorLabel
             // 
             this.armorLabel.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.armorLabel.Location = new System.Drawing.Point(364, 7);
+            this.armorLabel.Location = new System.Drawing.Point(273, 6);
+            this.armorLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.armorLabel.Name = "armorLabel";
-            this.armorLabel.Size = new System.Drawing.Size(136, 39);
+            this.armorLabel.Size = new System.Drawing.Size(102, 32);
             this.armorLabel.TabIndex = 43;
             this.armorLabel.Text = "Armor:";
             this.armorLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -2169,9 +2314,10 @@
             this.remainingActionsScore.BackColor = System.Drawing.Color.SandyBrown;
             this.remainingActionsScore.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.remainingActionsScore.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.remainingActionsScore.Location = new System.Drawing.Point(348, 167);
+            this.remainingActionsScore.Location = new System.Drawing.Point(261, 136);
+            this.remainingActionsScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.remainingActionsScore.Name = "remainingActionsScore";
-            this.remainingActionsScore.Size = new System.Drawing.Size(68, 39);
+            this.remainingActionsScore.Size = new System.Drawing.Size(51, 32);
             this.remainingActionsScore.TabIndex = 42;
             this.remainingActionsScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -2179,9 +2325,10 @@
             // 
             this.remainingActions.BackColor = System.Drawing.Color.Orange;
             this.remainingActions.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.remainingActions.Location = new System.Drawing.Point(3, 167);
+            this.remainingActions.Location = new System.Drawing.Point(2, 136);
+            this.remainingActions.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.remainingActions.Name = "remainingActions";
-            this.remainingActions.Size = new System.Drawing.Size(339, 39);
+            this.remainingActions.Size = new System.Drawing.Size(254, 32);
             this.remainingActions.TabIndex = 41;
             this.remainingActions.Text = "Actions Remaining:";
             this.remainingActions.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -2195,9 +2342,10 @@
             this.magicPanel.Controls.Add(this.spellAttackBonusPanel);
             this.magicPanel.Controls.Add(this.spellSaveDCPanel);
             this.magicPanel.Controls.Add(this.spellAbilityPanel);
-            this.magicPanel.Location = new System.Drawing.Point(131, 104);
+            this.magicPanel.Location = new System.Drawing.Point(98, 84);
+            this.magicPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.magicPanel.Name = "magicPanel";
-            this.magicPanel.Size = new System.Drawing.Size(1090, 564);
+            this.magicPanel.Size = new System.Drawing.Size(818, 458);
             this.magicPanel.TabIndex = 38;
             this.magicPanel.Visible = false;
             // 
@@ -2211,12 +2359,13 @@
             this.spellList.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.spellList.FullRowSelect = true;
             this.spellList.GridLines = true;
-            this.spellList.Location = new System.Drawing.Point(3, 252);
-            this.spellList.MaximumSize = new System.Drawing.Size(1078, 303);
-            this.spellList.MinimumSize = new System.Drawing.Size(1078, 303);
+            this.spellList.Location = new System.Drawing.Point(2, 205);
+            this.spellList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.spellList.MaximumSize = new System.Drawing.Size(810, 247);
+            this.spellList.MinimumSize = new System.Drawing.Size(810, 247);
             this.spellList.Name = "spellList";
             this.spellList.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.spellList.Size = new System.Drawing.Size(1078, 303);
+            this.spellList.Size = new System.Drawing.Size(810, 247);
             this.spellList.TabIndex = 4;
             this.spellList.UseCompatibleStateImageBehavior = false;
             this.spellList.View = System.Windows.Forms.View.Details;
@@ -2282,18 +2431,20 @@
             this.spellSlotsPanel.Controls.Add(this.spellSlotsRemaining);
             this.spellSlotsPanel.Controls.Add(this.usePointsButton);
             this.spellSlotsPanel.Controls.Add(this.kiPointsValue);
-            this.spellSlotsPanel.Location = new System.Drawing.Point(8, 119);
+            this.spellSlotsPanel.Location = new System.Drawing.Point(6, 97);
+            this.spellSlotsPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.spellSlotsPanel.Name = "spellSlotsPanel";
-            this.spellSlotsPanel.Size = new System.Drawing.Size(1079, 124);
+            this.spellSlotsPanel.Size = new System.Drawing.Size(809, 101);
             this.spellSlotsPanel.TabIndex = 3;
             // 
             // unchangingKiPoints
             // 
             this.unchangingKiPoints.BackColor = System.Drawing.Color.Transparent;
             this.unchangingKiPoints.Font = new System.Drawing.Font("High Tower Text", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.unchangingKiPoints.Location = new System.Drawing.Point(415, 19);
+            this.unchangingKiPoints.Location = new System.Drawing.Point(311, 15);
+            this.unchangingKiPoints.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.unchangingKiPoints.Name = "unchangingKiPoints";
-            this.unchangingKiPoints.Size = new System.Drawing.Size(176, 69);
+            this.unchangingKiPoints.Size = new System.Drawing.Size(132, 56);
             this.unchangingKiPoints.TabIndex = 93;
             this.unchangingKiPoints.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.unchangingKiPoints.Visible = false;
@@ -2302,9 +2453,10 @@
             // 
             this.WarlockSpellSlots.BackColor = System.Drawing.Color.Transparent;
             this.WarlockSpellSlots.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WarlockSpellSlots.Location = new System.Drawing.Point(337, 9);
+            this.WarlockSpellSlots.Location = new System.Drawing.Point(253, 7);
+            this.WarlockSpellSlots.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.WarlockSpellSlots.Name = "WarlockSpellSlots";
-            this.WarlockSpellSlots.Size = new System.Drawing.Size(78, 53);
+            this.WarlockSpellSlots.Size = new System.Drawing.Size(58, 43);
             this.WarlockSpellSlots.TabIndex = 87;
             this.WarlockSpellSlots.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.WarlockSpellSlots.Visible = false;
@@ -2314,9 +2466,10 @@
             this.cantripsValue.AutoSize = true;
             this.cantripsValue.BackColor = System.Drawing.Color.Transparent;
             this.cantripsValue.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cantripsValue.Location = new System.Drawing.Point(120, 47);
+            this.cantripsValue.Location = new System.Drawing.Point(90, 38);
+            this.cantripsValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cantripsValue.Name = "cantripsValue";
-            this.cantripsValue.Size = new System.Drawing.Size(0, 23);
+            this.cantripsValue.Size = new System.Drawing.Size(0, 19);
             this.cantripsValue.TabIndex = 84;
             // 
             // cantripLabel
@@ -2324,9 +2477,10 @@
             this.cantripLabel.AutoSize = true;
             this.cantripLabel.BackColor = System.Drawing.Color.Transparent;
             this.cantripLabel.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cantripLabel.Location = new System.Drawing.Point(32, 46);
+            this.cantripLabel.Location = new System.Drawing.Point(24, 37);
+            this.cantripLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cantripLabel.Name = "cantripLabel";
-            this.cantripLabel.Size = new System.Drawing.Size(87, 23);
+            this.cantripLabel.Size = new System.Drawing.Size(69, 19);
             this.cantripLabel.TabIndex = 83;
             this.cantripLabel.Text = "Cantrips:";
             // 
@@ -2335,9 +2489,10 @@
             this.level9Choose.AutoSize = true;
             this.level9Choose.BackColor = System.Drawing.Color.DodgerBlue;
             this.level9Choose.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.level9Choose.Location = new System.Drawing.Point(1005, 95);
+            this.level9Choose.Location = new System.Drawing.Point(754, 77);
+            this.level9Choose.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.level9Choose.Name = "level9Choose";
-            this.level9Choose.Size = new System.Drawing.Size(40, 20);
+            this.level9Choose.Size = new System.Drawing.Size(34, 16);
             this.level9Choose.TabIndex = 82;
             this.level9Choose.Text = "Cast";
             this.level9Choose.Click += new System.EventHandler(this.level9Choose_Click);
@@ -2347,9 +2502,10 @@
             this.level8Choose.AutoSize = true;
             this.level8Choose.BackColor = System.Drawing.Color.DodgerBlue;
             this.level8Choose.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.level8Choose.Location = new System.Drawing.Point(920, 95);
+            this.level8Choose.Location = new System.Drawing.Point(690, 77);
+            this.level8Choose.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.level8Choose.Name = "level8Choose";
-            this.level8Choose.Size = new System.Drawing.Size(40, 20);
+            this.level8Choose.Size = new System.Drawing.Size(34, 16);
             this.level8Choose.TabIndex = 81;
             this.level8Choose.Text = "Cast";
             this.level8Choose.Click += new System.EventHandler(this.level8Choose_Click);
@@ -2359,9 +2515,10 @@
             this.level7Choose.AutoSize = true;
             this.level7Choose.BackColor = System.Drawing.Color.DodgerBlue;
             this.level7Choose.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.level7Choose.Location = new System.Drawing.Point(836, 95);
+            this.level7Choose.Location = new System.Drawing.Point(627, 77);
+            this.level7Choose.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.level7Choose.Name = "level7Choose";
-            this.level7Choose.Size = new System.Drawing.Size(40, 20);
+            this.level7Choose.Size = new System.Drawing.Size(34, 16);
             this.level7Choose.TabIndex = 80;
             this.level7Choose.Text = "Cast";
             this.level7Choose.Click += new System.EventHandler(this.level7Choose_Click);
@@ -2371,9 +2528,10 @@
             this.level6Choose.AutoSize = true;
             this.level6Choose.BackColor = System.Drawing.Color.DodgerBlue;
             this.level6Choose.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.level6Choose.Location = new System.Drawing.Point(741, 95);
+            this.level6Choose.Location = new System.Drawing.Point(556, 77);
+            this.level6Choose.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.level6Choose.Name = "level6Choose";
-            this.level6Choose.Size = new System.Drawing.Size(40, 20);
+            this.level6Choose.Size = new System.Drawing.Size(34, 16);
             this.level6Choose.TabIndex = 79;
             this.level6Choose.Text = "Cast";
             this.level6Choose.Click += new System.EventHandler(this.level6Choose_Click);
@@ -2383,9 +2541,10 @@
             this.level5Choose.AutoSize = true;
             this.level5Choose.BackColor = System.Drawing.Color.DodgerBlue;
             this.level5Choose.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.level5Choose.Location = new System.Drawing.Point(657, 95);
+            this.level5Choose.Location = new System.Drawing.Point(493, 77);
+            this.level5Choose.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.level5Choose.Name = "level5Choose";
-            this.level5Choose.Size = new System.Drawing.Size(40, 20);
+            this.level5Choose.Size = new System.Drawing.Size(34, 16);
             this.level5Choose.TabIndex = 78;
             this.level5Choose.Text = "Cast";
             this.level5Choose.Click += new System.EventHandler(this.level5Choose_Click);
@@ -2394,9 +2553,10 @@
             // 
             this.warlockInvocations.BackColor = System.Drawing.Color.Transparent;
             this.warlockInvocations.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.warlockInvocations.Location = new System.Drawing.Point(654, 72);
+            this.warlockInvocations.Location = new System.Drawing.Point(490, 58);
+            this.warlockInvocations.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.warlockInvocations.Name = "warlockInvocations";
-            this.warlockInvocations.Size = new System.Drawing.Size(65, 48);
+            this.warlockInvocations.Size = new System.Drawing.Size(49, 39);
             this.warlockInvocations.TabIndex = 91;
             this.warlockInvocations.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.warlockInvocations.Visible = false;
@@ -2406,9 +2566,10 @@
             this.level4Choose.AutoSize = true;
             this.level4Choose.BackColor = System.Drawing.Color.DodgerBlue;
             this.level4Choose.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.level4Choose.Location = new System.Drawing.Point(569, 95);
+            this.level4Choose.Location = new System.Drawing.Point(427, 77);
+            this.level4Choose.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.level4Choose.Name = "level4Choose";
-            this.level4Choose.Size = new System.Drawing.Size(40, 20);
+            this.level4Choose.Size = new System.Drawing.Size(34, 16);
             this.level4Choose.TabIndex = 77;
             this.level4Choose.Text = "Cast";
             this.level4Choose.Click += new System.EventHandler(this.level4Choose_Click);
@@ -2418,9 +2579,10 @@
             this.level3Choose.AutoSize = true;
             this.level3Choose.BackColor = System.Drawing.Color.DodgerBlue;
             this.level3Choose.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.level3Choose.Location = new System.Drawing.Point(490, 95);
+            this.level3Choose.Location = new System.Drawing.Point(368, 77);
+            this.level3Choose.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.level3Choose.Name = "level3Choose";
-            this.level3Choose.Size = new System.Drawing.Size(40, 20);
+            this.level3Choose.Size = new System.Drawing.Size(34, 16);
             this.level3Choose.TabIndex = 76;
             this.level3Choose.Text = "Cast";
             this.level3Choose.Click += new System.EventHandler(this.level3Choose_Click);
@@ -2430,9 +2592,10 @@
             this.WarlockInvocationsLabel.AutoSize = true;
             this.WarlockInvocationsLabel.BackColor = System.Drawing.Color.Transparent;
             this.WarlockInvocationsLabel.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WarlockInvocationsLabel.Location = new System.Drawing.Point(455, 80);
+            this.WarlockInvocationsLabel.Location = new System.Drawing.Point(341, 65);
+            this.WarlockInvocationsLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.WarlockInvocationsLabel.Name = "WarlockInvocationsLabel";
-            this.WarlockInvocationsLabel.Size = new System.Drawing.Size(181, 39);
+            this.WarlockInvocationsLabel.Size = new System.Drawing.Size(149, 32);
             this.WarlockInvocationsLabel.TabIndex = 90;
             this.WarlockInvocationsLabel.Text = "Invocations:";
             this.WarlockInvocationsLabel.Visible = false;
@@ -2442,9 +2605,10 @@
             this.level2Choose.AutoSize = true;
             this.level2Choose.BackColor = System.Drawing.Color.DodgerBlue;
             this.level2Choose.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.level2Choose.Location = new System.Drawing.Point(411, 95);
+            this.level2Choose.Location = new System.Drawing.Point(308, 77);
+            this.level2Choose.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.level2Choose.Name = "level2Choose";
-            this.level2Choose.Size = new System.Drawing.Size(40, 20);
+            this.level2Choose.Size = new System.Drawing.Size(34, 16);
             this.level2Choose.TabIndex = 75;
             this.level2Choose.Text = "Cast";
             this.level2Choose.Click += new System.EventHandler(this.level2Choose_Click);
@@ -2454,9 +2618,10 @@
             this.level1Choose.AutoSize = true;
             this.level1Choose.BackColor = System.Drawing.Color.DodgerBlue;
             this.level1Choose.Font = new System.Drawing.Font("High Tower Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.level1Choose.Location = new System.Drawing.Point(342, 95);
+            this.level1Choose.Location = new System.Drawing.Point(256, 77);
+            this.level1Choose.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.level1Choose.Name = "level1Choose";
-            this.level1Choose.Size = new System.Drawing.Size(40, 20);
+            this.level1Choose.Size = new System.Drawing.Size(34, 16);
             this.level1Choose.TabIndex = 74;
             this.level1Choose.Text = "Cast";
             this.level1Choose.Click += new System.EventHandler(this.level1Choose_Click);
@@ -2465,9 +2630,10 @@
             // 
             this.level9LeftScore.BackColor = System.Drawing.Color.Transparent;
             this.level9LeftScore.Font = new System.Drawing.Font("High Tower Text", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.level9LeftScore.Location = new System.Drawing.Point(999, 40);
+            this.level9LeftScore.Location = new System.Drawing.Point(749, 32);
+            this.level9LeftScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.level9LeftScore.Name = "level9LeftScore";
-            this.level9LeftScore.Size = new System.Drawing.Size(53, 46);
+            this.level9LeftScore.Size = new System.Drawing.Size(40, 37);
             this.level9LeftScore.TabIndex = 73;
             this.level9LeftScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2475,9 +2641,10 @@
             // 
             this.level8LeftScore.BackColor = System.Drawing.Color.Transparent;
             this.level8LeftScore.Font = new System.Drawing.Font("High Tower Text", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.level8LeftScore.Location = new System.Drawing.Point(914, 40);
+            this.level8LeftScore.Location = new System.Drawing.Point(686, 32);
+            this.level8LeftScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.level8LeftScore.Name = "level8LeftScore";
-            this.level8LeftScore.Size = new System.Drawing.Size(53, 46);
+            this.level8LeftScore.Size = new System.Drawing.Size(40, 37);
             this.level8LeftScore.TabIndex = 72;
             this.level8LeftScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2485,9 +2652,10 @@
             // 
             this.level7LeftScore.BackColor = System.Drawing.Color.Transparent;
             this.level7LeftScore.Font = new System.Drawing.Font("High Tower Text", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.level7LeftScore.Location = new System.Drawing.Point(830, 40);
+            this.level7LeftScore.Location = new System.Drawing.Point(622, 32);
+            this.level7LeftScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.level7LeftScore.Name = "level7LeftScore";
-            this.level7LeftScore.Size = new System.Drawing.Size(53, 46);
+            this.level7LeftScore.Size = new System.Drawing.Size(40, 37);
             this.level7LeftScore.TabIndex = 71;
             this.level7LeftScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2496,9 +2664,10 @@
             this.WarlockSlotLevel.AutoSize = true;
             this.WarlockSlotLevel.BackColor = System.Drawing.Color.Transparent;
             this.WarlockSlotLevel.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WarlockSlotLevel.Location = new System.Drawing.Point(446, 20);
+            this.WarlockSlotLevel.Location = new System.Drawing.Point(334, 16);
+            this.WarlockSlotLevel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.WarlockSlotLevel.Name = "WarlockSlotLevel";
-            this.WarlockSlotLevel.Size = new System.Drawing.Size(160, 39);
+            this.WarlockSlotLevel.Size = new System.Drawing.Size(133, 32);
             this.WarlockSlotLevel.TabIndex = 88;
             this.WarlockSlotLevel.Text = "Slot Level:";
             this.WarlockSlotLevel.Visible = false;
@@ -2509,9 +2678,10 @@
             this.useSlotButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.useSlotButton.Enabled = false;
             this.useSlotButton.Font = new System.Drawing.Font("High Tower Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.useSlotButton.Location = new System.Drawing.Point(335, 86);
+            this.useSlotButton.Location = new System.Drawing.Point(251, 70);
+            this.useSlotButton.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.useSlotButton.Name = "useSlotButton";
-            this.useSlotButton.Size = new System.Drawing.Size(97, 28);
+            this.useSlotButton.Size = new System.Drawing.Size(78, 22);
             this.useSlotButton.TabIndex = 92;
             this.useSlotButton.Text = "Use Slot";
             this.useSlotButton.Visible = false;
@@ -2521,9 +2691,10 @@
             // 
             this.level6LeftScore.BackColor = System.Drawing.Color.Transparent;
             this.level6LeftScore.Font = new System.Drawing.Font("High Tower Text", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.level6LeftScore.Location = new System.Drawing.Point(735, 40);
+            this.level6LeftScore.Location = new System.Drawing.Point(551, 32);
+            this.level6LeftScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.level6LeftScore.Name = "level6LeftScore";
-            this.level6LeftScore.Size = new System.Drawing.Size(53, 46);
+            this.level6LeftScore.Size = new System.Drawing.Size(40, 37);
             this.level6LeftScore.TabIndex = 70;
             this.level6LeftScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2531,9 +2702,10 @@
             // 
             this.level5LeftScore.BackColor = System.Drawing.Color.Transparent;
             this.level5LeftScore.Font = new System.Drawing.Font("High Tower Text", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.level5LeftScore.Location = new System.Drawing.Point(651, 40);
+            this.level5LeftScore.Location = new System.Drawing.Point(488, 32);
+            this.level5LeftScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.level5LeftScore.Name = "level5LeftScore";
-            this.level5LeftScore.Size = new System.Drawing.Size(53, 46);
+            this.level5LeftScore.Size = new System.Drawing.Size(40, 37);
             this.level5LeftScore.TabIndex = 69;
             this.level5LeftScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2541,9 +2713,10 @@
             // 
             this.level4LeftScore.BackColor = System.Drawing.Color.Transparent;
             this.level4LeftScore.Font = new System.Drawing.Font("High Tower Text", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.level4LeftScore.Location = new System.Drawing.Point(563, 40);
+            this.level4LeftScore.Location = new System.Drawing.Point(422, 32);
+            this.level4LeftScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.level4LeftScore.Name = "level4LeftScore";
-            this.level4LeftScore.Size = new System.Drawing.Size(53, 46);
+            this.level4LeftScore.Size = new System.Drawing.Size(40, 37);
             this.level4LeftScore.TabIndex = 68;
             this.level4LeftScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2551,9 +2724,10 @@
             // 
             this.level3LeftScore.BackColor = System.Drawing.Color.Transparent;
             this.level3LeftScore.Font = new System.Drawing.Font("High Tower Text", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.level3LeftScore.Location = new System.Drawing.Point(484, 40);
+            this.level3LeftScore.Location = new System.Drawing.Point(363, 32);
+            this.level3LeftScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.level3LeftScore.Name = "level3LeftScore";
-            this.level3LeftScore.Size = new System.Drawing.Size(53, 46);
+            this.level3LeftScore.Size = new System.Drawing.Size(40, 37);
             this.level3LeftScore.TabIndex = 67;
             this.level3LeftScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2561,9 +2735,10 @@
             // 
             this.level2LeftScore.BackColor = System.Drawing.Color.Transparent;
             this.level2LeftScore.Font = new System.Drawing.Font("High Tower Text", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.level2LeftScore.Location = new System.Drawing.Point(405, 40);
+            this.level2LeftScore.Location = new System.Drawing.Point(304, 32);
+            this.level2LeftScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.level2LeftScore.Name = "level2LeftScore";
-            this.level2LeftScore.Size = new System.Drawing.Size(53, 46);
+            this.level2LeftScore.Size = new System.Drawing.Size(40, 37);
             this.level2LeftScore.TabIndex = 66;
             this.level2LeftScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2571,9 +2746,10 @@
             // 
             this.level1LeftScore.BackColor = System.Drawing.Color.Transparent;
             this.level1LeftScore.Font = new System.Drawing.Font("High Tower Text", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.level1LeftScore.Location = new System.Drawing.Point(336, 40);
+            this.level1LeftScore.Location = new System.Drawing.Point(252, 32);
+            this.level1LeftScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.level1LeftScore.Name = "level1LeftScore";
-            this.level1LeftScore.Size = new System.Drawing.Size(53, 46);
+            this.level1LeftScore.Size = new System.Drawing.Size(40, 37);
             this.level1LeftScore.TabIndex = 65;
             this.level1LeftScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2582,9 +2758,10 @@
             this.removeSpellButton.AutoSize = true;
             this.removeSpellButton.BackColor = System.Drawing.Color.Crimson;
             this.removeSpellButton.Font = new System.Drawing.Font("High Tower Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.removeSpellButton.Location = new System.Drawing.Point(151, 78);
+            this.removeSpellButton.Location = new System.Drawing.Point(113, 63);
+            this.removeSpellButton.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.removeSpellButton.Name = "removeSpellButton";
-            this.removeSpellButton.Size = new System.Drawing.Size(158, 28);
+            this.removeSpellButton.Size = new System.Drawing.Size(135, 22);
             this.removeSpellButton.TabIndex = 11;
             this.removeSpellButton.Text = "Remove a Spell";
             this.removeSpellButton.Click += new System.EventHandler(this.removeSpellButton_Click);
@@ -2594,9 +2771,10 @@
             this.addSpellButton.AutoSize = true;
             this.addSpellButton.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.addSpellButton.Font = new System.Drawing.Font("High Tower Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addSpellButton.Location = new System.Drawing.Point(3, 78);
+            this.addSpellButton.Location = new System.Drawing.Point(2, 63);
+            this.addSpellButton.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.addSpellButton.Name = "addSpellButton";
-            this.addSpellButton.Size = new System.Drawing.Size(122, 28);
+            this.addSpellButton.Size = new System.Drawing.Size(106, 22);
             this.addSpellButton.TabIndex = 10;
             this.addSpellButton.Text = "Add a Spell";
             this.addSpellButton.Click += new System.EventHandler(this.addSpellButton_Click);
@@ -2605,9 +2783,10 @@
             // 
             this.spellLevel9Label.AutoSize = true;
             this.spellLevel9Label.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spellLevel9Label.Location = new System.Drawing.Point(994, 9);
+            this.spellLevel9Label.Location = new System.Drawing.Point(746, 7);
+            this.spellLevel9Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.spellLevel9Label.Name = "spellLevel9Label";
-            this.spellLevel9Label.Size = new System.Drawing.Size(69, 23);
+            this.spellLevel9Label.Size = new System.Drawing.Size(55, 19);
             this.spellLevel9Label.TabIndex = 9;
             this.spellLevel9Label.Text = "Level 9";
             // 
@@ -2615,9 +2794,10 @@
             // 
             this.spellLevel8Label.AutoSize = true;
             this.spellLevel8Label.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spellLevel8Label.Location = new System.Drawing.Point(908, 9);
+            this.spellLevel8Label.Location = new System.Drawing.Point(681, 7);
+            this.spellLevel8Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.spellLevel8Label.Name = "spellLevel8Label";
-            this.spellLevel8Label.Size = new System.Drawing.Size(70, 23);
+            this.spellLevel8Label.Size = new System.Drawing.Size(56, 19);
             this.spellLevel8Label.TabIndex = 8;
             this.spellLevel8Label.Text = "Level 8";
             // 
@@ -2625,9 +2805,10 @@
             // 
             this.spellLevel7Label.AutoSize = true;
             this.spellLevel7Label.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spellLevel7Label.Location = new System.Drawing.Point(822, 9);
+            this.spellLevel7Label.Location = new System.Drawing.Point(616, 7);
+            this.spellLevel7Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.spellLevel7Label.Name = "spellLevel7Label";
-            this.spellLevel7Label.Size = new System.Drawing.Size(69, 23);
+            this.spellLevel7Label.Size = new System.Drawing.Size(55, 19);
             this.spellLevel7Label.TabIndex = 7;
             this.spellLevel7Label.Text = "Level 7";
             // 
@@ -2635,9 +2816,10 @@
             // 
             this.spellLevel6Label.AutoSize = true;
             this.spellLevel6Label.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spellLevel6Label.Location = new System.Drawing.Point(728, 9);
+            this.spellLevel6Label.Location = new System.Drawing.Point(546, 7);
+            this.spellLevel6Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.spellLevel6Label.Name = "spellLevel6Label";
-            this.spellLevel6Label.Size = new System.Drawing.Size(70, 23);
+            this.spellLevel6Label.Size = new System.Drawing.Size(56, 19);
             this.spellLevel6Label.TabIndex = 6;
             this.spellLevel6Label.Text = "Level 6";
             // 
@@ -2645,9 +2827,10 @@
             // 
             this.spellLevel5Label.AutoSize = true;
             this.spellLevel5Label.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spellLevel5Label.Location = new System.Drawing.Point(643, 9);
+            this.spellLevel5Label.Location = new System.Drawing.Point(482, 7);
+            this.spellLevel5Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.spellLevel5Label.Name = "spellLevel5Label";
-            this.spellLevel5Label.Size = new System.Drawing.Size(68, 23);
+            this.spellLevel5Label.Size = new System.Drawing.Size(54, 19);
             this.spellLevel5Label.TabIndex = 5;
             this.spellLevel5Label.Text = "Level 5";
             // 
@@ -2655,9 +2838,10 @@
             // 
             this.WarlockSlotLevelValue.BackColor = System.Drawing.Color.Transparent;
             this.WarlockSlotLevelValue.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WarlockSlotLevelValue.Location = new System.Drawing.Point(624, 18);
+            this.WarlockSlotLevelValue.Location = new System.Drawing.Point(468, 15);
+            this.WarlockSlotLevelValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.WarlockSlotLevelValue.Name = "WarlockSlotLevelValue";
-            this.WarlockSlotLevelValue.Size = new System.Drawing.Size(95, 43);
+            this.WarlockSlotLevelValue.Size = new System.Drawing.Size(71, 35);
             this.WarlockSlotLevelValue.TabIndex = 89;
             this.WarlockSlotLevelValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.WarlockSlotLevelValue.Visible = false;
@@ -2666,9 +2850,10 @@
             // 
             this.spellLevel4Label.AutoSize = true;
             this.spellLevel4Label.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spellLevel4Label.Location = new System.Drawing.Point(557, 8);
+            this.spellLevel4Label.Location = new System.Drawing.Point(418, 6);
+            this.spellLevel4Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.spellLevel4Label.Name = "spellLevel4Label";
-            this.spellLevel4Label.Size = new System.Drawing.Size(70, 23);
+            this.spellLevel4Label.Size = new System.Drawing.Size(56, 19);
             this.spellLevel4Label.TabIndex = 4;
             this.spellLevel4Label.Text = "Level 4";
             // 
@@ -2676,9 +2861,10 @@
             // 
             this.spellLevel3Label.AutoSize = true;
             this.spellLevel3Label.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spellLevel3Label.Location = new System.Drawing.Point(480, 8);
+            this.spellLevel3Label.Location = new System.Drawing.Point(360, 6);
+            this.spellLevel3Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.spellLevel3Label.Name = "spellLevel3Label";
-            this.spellLevel3Label.Size = new System.Drawing.Size(68, 23);
+            this.spellLevel3Label.Size = new System.Drawing.Size(54, 19);
             this.spellLevel3Label.TabIndex = 3;
             this.spellLevel3Label.Text = "Level 3";
             // 
@@ -2686,9 +2872,10 @@
             // 
             this.spellLevel2Label.AutoSize = true;
             this.spellLevel2Label.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spellLevel2Label.Location = new System.Drawing.Point(400, 9);
+            this.spellLevel2Label.Location = new System.Drawing.Point(300, 7);
+            this.spellLevel2Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.spellLevel2Label.Name = "spellLevel2Label";
-            this.spellLevel2Label.Size = new System.Drawing.Size(68, 23);
+            this.spellLevel2Label.Size = new System.Drawing.Size(55, 19);
             this.spellLevel2Label.TabIndex = 2;
             this.spellLevel2Label.Text = "Level 2";
             // 
@@ -2696,9 +2883,10 @@
             // 
             this.spellLevel1Label.AutoSize = true;
             this.spellLevel1Label.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spellLevel1Label.Location = new System.Drawing.Point(331, 9);
+            this.spellLevel1Label.Location = new System.Drawing.Point(248, 7);
+            this.spellLevel1Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.spellLevel1Label.Name = "spellLevel1Label";
-            this.spellLevel1Label.Size = new System.Drawing.Size(66, 23);
+            this.spellLevel1Label.Size = new System.Drawing.Size(53, 19);
             this.spellLevel1Label.TabIndex = 1;
             this.spellLevel1Label.Text = "Level 1";
             // 
@@ -2707,9 +2895,10 @@
             this.spellSlotsRemaining.AutoSize = true;
             this.spellSlotsRemaining.BackColor = System.Drawing.Color.Transparent;
             this.spellSlotsRemaining.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spellSlotsRemaining.Location = new System.Drawing.Point(-5, 3);
+            this.spellSlotsRemaining.Location = new System.Drawing.Point(-4, 2);
+            this.spellSlotsRemaining.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.spellSlotsRemaining.Name = "spellSlotsRemaining";
-            this.spellSlotsRemaining.Size = new System.Drawing.Size(324, 39);
+            this.spellSlotsRemaining.Size = new System.Drawing.Size(263, 32);
             this.spellSlotsRemaining.TabIndex = 0;
             this.spellSlotsRemaining.Text = "Spell Slots Remaining:";
             // 
@@ -2717,9 +2906,10 @@
             // 
             this.usePointsButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.usePointsButton.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usePointsButton.Location = new System.Drawing.Point(745, 35);
+            this.usePointsButton.Location = new System.Drawing.Point(559, 28);
+            this.usePointsButton.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.usePointsButton.Name = "usePointsButton";
-            this.usePointsButton.Size = new System.Drawing.Size(168, 40);
+            this.usePointsButton.Size = new System.Drawing.Size(126, 32);
             this.usePointsButton.TabIndex = 86;
             this.usePointsButton.Text = "Use Points";
             this.usePointsButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -2730,9 +2920,10 @@
             // 
             this.kiPointsValue.BackColor = System.Drawing.Color.NavajoWhite;
             this.kiPointsValue.Font = new System.Drawing.Font("High Tower Text", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kiPointsValue.Location = new System.Drawing.Point(415, 19);
+            this.kiPointsValue.Location = new System.Drawing.Point(311, 15);
+            this.kiPointsValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.kiPointsValue.Name = "kiPointsValue";
-            this.kiPointsValue.Size = new System.Drawing.Size(176, 69);
+            this.kiPointsValue.Size = new System.Drawing.Size(132, 56);
             this.kiPointsValue.TabIndex = 85;
             this.kiPointsValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.kiPointsValue.Visible = false;
@@ -2742,18 +2933,20 @@
             this.spellAttackBonusPanel.BackColor = System.Drawing.Color.MediumPurple;
             this.spellAttackBonusPanel.Controls.Add(this.spellAttackBonusValue);
             this.spellAttackBonusPanel.Controls.Add(this.spellAttackBonusLabel);
-            this.spellAttackBonusPanel.Location = new System.Drawing.Point(756, 12);
+            this.spellAttackBonusPanel.Location = new System.Drawing.Point(567, 10);
+            this.spellAttackBonusPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.spellAttackBonusPanel.Name = "spellAttackBonusPanel";
-            this.spellAttackBonusPanel.Size = new System.Drawing.Size(298, 100);
+            this.spellAttackBonusPanel.Size = new System.Drawing.Size(224, 81);
             this.spellAttackBonusPanel.TabIndex = 2;
             // 
             // spellAttackBonusValue
             // 
             this.spellAttackBonusValue.BackColor = System.Drawing.Color.Gold;
             this.spellAttackBonusValue.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spellAttackBonusValue.Location = new System.Drawing.Point(28, 51);
+            this.spellAttackBonusValue.Location = new System.Drawing.Point(21, 41);
+            this.spellAttackBonusValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.spellAttackBonusValue.Name = "spellAttackBonusValue";
-            this.spellAttackBonusValue.Size = new System.Drawing.Size(236, 32);
+            this.spellAttackBonusValue.Size = new System.Drawing.Size(177, 26);
             this.spellAttackBonusValue.TabIndex = 1;
             this.spellAttackBonusValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -2762,9 +2955,10 @@
             this.spellAttackBonusLabel.AutoSize = true;
             this.spellAttackBonusLabel.BackColor = System.Drawing.Color.Transparent;
             this.spellAttackBonusLabel.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spellAttackBonusLabel.Location = new System.Drawing.Point(28, 9);
+            this.spellAttackBonusLabel.Location = new System.Drawing.Point(21, 7);
+            this.spellAttackBonusLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.spellAttackBonusLabel.Name = "spellAttackBonusLabel";
-            this.spellAttackBonusLabel.Size = new System.Drawing.Size(236, 32);
+            this.spellAttackBonusLabel.Size = new System.Drawing.Size(188, 26);
             this.spellAttackBonusLabel.TabIndex = 0;
             this.spellAttackBonusLabel.Text = "Spell Attack Bonus";
             // 
@@ -2773,18 +2967,20 @@
             this.spellSaveDCPanel.BackColor = System.Drawing.Color.MediumPurple;
             this.spellSaveDCPanel.Controls.Add(this.spellSaveDCValue);
             this.spellSaveDCPanel.Controls.Add(this.spellSaveDCLAbel);
-            this.spellSaveDCPanel.Location = new System.Drawing.Point(405, 12);
+            this.spellSaveDCPanel.Location = new System.Drawing.Point(304, 10);
+            this.spellSaveDCPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.spellSaveDCPanel.Name = "spellSaveDCPanel";
-            this.spellSaveDCPanel.Size = new System.Drawing.Size(298, 100);
+            this.spellSaveDCPanel.Size = new System.Drawing.Size(224, 81);
             this.spellSaveDCPanel.TabIndex = 2;
             // 
             // spellSaveDCValue
             // 
             this.spellSaveDCValue.BackColor = System.Drawing.Color.Gold;
             this.spellSaveDCValue.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spellSaveDCValue.Location = new System.Drawing.Point(28, 51);
+            this.spellSaveDCValue.Location = new System.Drawing.Point(21, 41);
+            this.spellSaveDCValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.spellSaveDCValue.Name = "spellSaveDCValue";
-            this.spellSaveDCValue.Size = new System.Drawing.Size(236, 32);
+            this.spellSaveDCValue.Size = new System.Drawing.Size(177, 26);
             this.spellSaveDCValue.TabIndex = 1;
             this.spellSaveDCValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -2793,9 +2989,10 @@
             this.spellSaveDCLAbel.AutoSize = true;
             this.spellSaveDCLAbel.BackColor = System.Drawing.Color.Transparent;
             this.spellSaveDCLAbel.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spellSaveDCLAbel.Location = new System.Drawing.Point(59, 12);
+            this.spellSaveDCLAbel.Location = new System.Drawing.Point(44, 10);
+            this.spellSaveDCLAbel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.spellSaveDCLAbel.Name = "spellSaveDCLAbel";
-            this.spellSaveDCLAbel.Size = new System.Drawing.Size(181, 32);
+            this.spellSaveDCLAbel.Size = new System.Drawing.Size(145, 26);
             this.spellSaveDCLAbel.TabIndex = 0;
             this.spellSaveDCLAbel.Text = "Spell Save DC";
             // 
@@ -2804,18 +3001,20 @@
             this.spellAbilityPanel.BackColor = System.Drawing.Color.MediumPurple;
             this.spellAbilityPanel.Controls.Add(this.spellAbilityValue);
             this.spellAbilityPanel.Controls.Add(this.spellAbilityLabel);
-            this.spellAbilityPanel.Location = new System.Drawing.Point(44, 12);
+            this.spellAbilityPanel.Location = new System.Drawing.Point(33, 10);
+            this.spellAbilityPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.spellAbilityPanel.Name = "spellAbilityPanel";
-            this.spellAbilityPanel.Size = new System.Drawing.Size(298, 100);
+            this.spellAbilityPanel.Size = new System.Drawing.Size(224, 81);
             this.spellAbilityPanel.TabIndex = 0;
             // 
             // spellAbilityValue
             // 
             this.spellAbilityValue.BackColor = System.Drawing.Color.Gold;
             this.spellAbilityValue.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spellAbilityValue.Location = new System.Drawing.Point(28, 51);
+            this.spellAbilityValue.Location = new System.Drawing.Point(21, 41);
+            this.spellAbilityValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.spellAbilityValue.Name = "spellAbilityValue";
-            this.spellAbilityValue.Size = new System.Drawing.Size(236, 32);
+            this.spellAbilityValue.Size = new System.Drawing.Size(177, 26);
             this.spellAbilityValue.TabIndex = 1;
             this.spellAbilityValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -2824,9 +3023,10 @@
             this.spellAbilityLabel.AutoSize = true;
             this.spellAbilityLabel.BackColor = System.Drawing.Color.Transparent;
             this.spellAbilityLabel.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spellAbilityLabel.Location = new System.Drawing.Point(28, 9);
+            this.spellAbilityLabel.Location = new System.Drawing.Point(21, 7);
+            this.spellAbilityLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.spellAbilityLabel.Name = "spellAbilityLabel";
-            this.spellAbilityLabel.Size = new System.Drawing.Size(236, 32);
+            this.spellAbilityLabel.Size = new System.Drawing.Size(193, 26);
             this.spellAbilityLabel.TabIndex = 0;
             this.spellAbilityLabel.Text = "Spellcasting Ability";
             // 
@@ -2836,9 +3036,10 @@
             this.char_Name.Cursor = System.Windows.Forms.Cursors.Default;
             this.char_Name.Font = new System.Drawing.Font("High Tower Text", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.char_Name.ForeColor = System.Drawing.Color.Black;
-            this.char_Name.Location = new System.Drawing.Point(6, 5);
+            this.char_Name.Location = new System.Drawing.Point(4, 4);
+            this.char_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.char_Name.Name = "char_Name";
-            this.char_Name.Size = new System.Drawing.Size(249, 46);
+            this.char_Name.Size = new System.Drawing.Size(187, 37);
             this.char_Name.TabIndex = 35;
             this.char_Name.Text = "Char_Name";
             this.char_Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2847,11 +3048,12 @@
             // 
             this.currentLevelValue.BackColor = System.Drawing.Color.Transparent;
             this.currentLevelValue.Font = new System.Drawing.Font("High Tower Text", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentLevelValue.Location = new System.Drawing.Point(247, 51);
-            this.currentLevelValue.MaximumSize = new System.Drawing.Size(64, 46);
-            this.currentLevelValue.MinimumSize = new System.Drawing.Size(64, 46);
+            this.currentLevelValue.Location = new System.Drawing.Point(185, 41);
+            this.currentLevelValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.currentLevelValue.MaximumSize = new System.Drawing.Size(48, 37);
+            this.currentLevelValue.MinimumSize = new System.Drawing.Size(48, 37);
             this.currentLevelValue.Name = "currentLevelValue";
-            this.currentLevelValue.Size = new System.Drawing.Size(64, 46);
+            this.currentLevelValue.Size = new System.Drawing.Size(48, 37);
             this.currentLevelValue.TabIndex = 40;
             this.currentLevelValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2860,9 +3062,10 @@
             this.currentLevel.AutoSize = true;
             this.currentLevel.BackColor = System.Drawing.Color.Transparent;
             this.currentLevel.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentLevel.Location = new System.Drawing.Point(251, 28);
+            this.currentLevel.Location = new System.Drawing.Point(188, 23);
+            this.currentLevel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.currentLevel.Name = "currentLevel";
-            this.currentLevel.Size = new System.Drawing.Size(55, 23);
+            this.currentLevel.Size = new System.Drawing.Size(44, 19);
             this.currentLevel.TabIndex = 39;
             this.currentLevel.Text = "Level";
             // 
@@ -2870,9 +3073,10 @@
             // 
             this.hitPointsMeter.BackColor = System.Drawing.Color.Firebrick;
             this.hitPointsMeter.ForeColor = System.Drawing.Color.Firebrick;
-            this.hitPointsMeter.Location = new System.Drawing.Point(784, 12);
+            this.hitPointsMeter.Location = new System.Drawing.Point(588, 10);
+            this.hitPointsMeter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.hitPointsMeter.Name = "hitPointsMeter";
-            this.hitPointsMeter.Size = new System.Drawing.Size(437, 39);
+            this.hitPointsMeter.Size = new System.Drawing.Size(328, 32);
             this.hitPointsMeter.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.hitPointsMeter.TabIndex = 45;
             this.hitPointsMeter.Value = 100;
@@ -2882,9 +3086,10 @@
             this.HitPointLabel.AutoSize = true;
             this.HitPointLabel.BackColor = System.Drawing.Color.Crimson;
             this.HitPointLabel.Font = new System.Drawing.Font("High Tower Text", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HitPointLabel.Location = new System.Drawing.Point(702, 9);
+            this.HitPointLabel.Location = new System.Drawing.Point(526, 7);
+            this.HitPointLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.HitPointLabel.Name = "HitPointLabel";
-            this.HitPointLabel.Size = new System.Drawing.Size(79, 48);
+            this.HitPointLabel.Size = new System.Drawing.Size(65, 37);
             this.HitPointLabel.TabIndex = 46;
             this.HitPointLabel.Text = "HP";
             // 
@@ -2893,9 +3098,10 @@
             this.remainingHitDice.AutoSize = true;
             this.remainingHitDice.BackColor = System.Drawing.Color.Transparent;
             this.remainingHitDice.Font = new System.Drawing.Font("High Tower Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.remainingHitDice.Location = new System.Drawing.Point(662, 76);
+            this.remainingHitDice.Location = new System.Drawing.Point(496, 62);
+            this.remainingHitDice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.remainingHitDice.Name = "remainingHitDice";
-            this.remainingHitDice.Size = new System.Drawing.Size(207, 28);
+            this.remainingHitDice.Size = new System.Drawing.Size(179, 22);
             this.remainingHitDice.TabIndex = 49;
             this.remainingHitDice.Text = "Remaining Hit Dice:";
             // 
@@ -2903,11 +3109,12 @@
             // 
             this.hitDiceScore.BackColor = System.Drawing.Color.Transparent;
             this.hitDiceScore.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hitDiceScore.Location = new System.Drawing.Point(885, 70);
-            this.hitDiceScore.MaximumSize = new System.Drawing.Size(62, 35);
-            this.hitDiceScore.MinimumSize = new System.Drawing.Size(62, 35);
+            this.hitDiceScore.Location = new System.Drawing.Point(664, 57);
+            this.hitDiceScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.hitDiceScore.MaximumSize = new System.Drawing.Size(46, 28);
+            this.hitDiceScore.MinimumSize = new System.Drawing.Size(46, 28);
             this.hitDiceScore.Name = "hitDiceScore";
-            this.hitDiceScore.Size = new System.Drawing.Size(62, 35);
+            this.hitDiceScore.Size = new System.Drawing.Size(46, 28);
             this.hitDiceScore.TabIndex = 50;
             this.hitDiceScore.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -2920,9 +3127,10 @@
             this.inventoryPanel.Controls.Add(this.moneyTreasureTab);
             this.inventoryPanel.Controls.Add(this.equipmentGearTab);
             this.inventoryPanel.Controls.Add(this.weaponsArmorTab);
-            this.inventoryPanel.Location = new System.Drawing.Point(131, 104);
+            this.inventoryPanel.Location = new System.Drawing.Point(98, 84);
+            this.inventoryPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.inventoryPanel.Name = "inventoryPanel";
-            this.inventoryPanel.Size = new System.Drawing.Size(1090, 563);
+            this.inventoryPanel.Size = new System.Drawing.Size(818, 457);
             this.inventoryPanel.TabIndex = 37;
             this.inventoryPanel.Visible = false;
             // 
@@ -2950,19 +3158,47 @@
             this.moneyNTreasurePanel.Controls.Add(this.addToMoneyTableButton);
             this.moneyNTreasurePanel.Controls.Add(this.treasureList);
             this.moneyNTreasurePanel.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.moneyNTreasurePanel.Location = new System.Drawing.Point(7, 45);
+            this.moneyNTreasurePanel.Location = new System.Drawing.Point(5, 37);
+            this.moneyNTreasurePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.moneyNTreasurePanel.Name = "moneyNTreasurePanel";
-            this.moneyNTreasurePanel.Size = new System.Drawing.Size(1070, 519);
+            this.moneyNTreasurePanel.Size = new System.Drawing.Size(802, 422);
             this.moneyNTreasurePanel.TabIndex = 6;
             this.moneyNTreasurePanel.Visible = false;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("High Tower Text", 24F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label4.Location = new System.Drawing.Point(526, 11);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(148, 46);
+            this.label4.TabIndex = 89;
+            this.label4.Text = "Treasure";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("High Tower Text", 24F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Location = new System.Drawing.Point(126, 11);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(148, 46);
+            this.label2.TabIndex = 88;
+            this.label2.Text = "Money";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // editMoneyButton
             // 
             this.editMoneyButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.editMoneyButton.Font = new System.Drawing.Font("High Tower Text", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editMoneyButton.Location = new System.Drawing.Point(311, 144);
+            this.editMoneyButton.Location = new System.Drawing.Point(233, 117);
+            this.editMoneyButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.editMoneyButton.Name = "editMoneyButton";
-            this.editMoneyButton.Size = new System.Drawing.Size(216, 82);
+            this.editMoneyButton.Size = new System.Drawing.Size(162, 67);
             this.editMoneyButton.TabIndex = 87;
             this.editMoneyButton.Text = "Manage";
             this.editMoneyButton.UseVisualStyleBackColor = false;
@@ -2971,9 +3207,10 @@
             // moneyNTreasureMarker
             // 
             this.moneyNTreasureMarker.BackColor = System.Drawing.Color.Chartreuse;
-            this.moneyNTreasureMarker.Location = new System.Drawing.Point(815, 0);
+            this.moneyNTreasureMarker.Location = new System.Drawing.Point(611, 0);
+            this.moneyNTreasureMarker.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.moneyNTreasureMarker.Name = "moneyNTreasureMarker";
-            this.moneyNTreasureMarker.Size = new System.Drawing.Size(137, 8);
+            this.moneyNTreasureMarker.Size = new System.Drawing.Size(103, 6);
             this.moneyNTreasureMarker.TabIndex = 57;
             // 
             // totalMoneyValue
@@ -2981,9 +3218,10 @@
             this.totalMoneyValue.BackColor = System.Drawing.Color.Transparent;
             this.totalMoneyValue.Font = new System.Drawing.Font("High Tower Text", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalMoneyValue.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.totalMoneyValue.Location = new System.Drawing.Point(285, 265);
+            this.totalMoneyValue.Location = new System.Drawing.Point(214, 215);
+            this.totalMoneyValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.totalMoneyValue.Name = "totalMoneyValue";
-            this.totalMoneyValue.Size = new System.Drawing.Size(220, 45);
+            this.totalMoneyValue.Size = new System.Drawing.Size(165, 37);
             this.totalMoneyValue.TabIndex = 56;
             this.totalMoneyValue.Text = "0";
             this.totalMoneyValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -2993,9 +3231,10 @@
             this.totalMoneyLabel.BackColor = System.Drawing.Color.Transparent;
             this.totalMoneyLabel.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalMoneyLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.totalMoneyLabel.Location = new System.Drawing.Point(35, 265);
+            this.totalMoneyLabel.Location = new System.Drawing.Point(26, 215);
+            this.totalMoneyLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.totalMoneyLabel.Name = "totalMoneyLabel";
-            this.totalMoneyLabel.Size = new System.Drawing.Size(110, 45);
+            this.totalMoneyLabel.Size = new System.Drawing.Size(82, 37);
             this.totalMoneyLabel.TabIndex = 55;
             this.totalMoneyLabel.Text = "Total";
             this.totalMoneyLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3005,9 +3244,10 @@
             this.platinumValue.BackColor = System.Drawing.Color.Transparent;
             this.platinumValue.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.platinumValue.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.platinumValue.Location = new System.Drawing.Point(189, 225);
+            this.platinumValue.Location = new System.Drawing.Point(142, 183);
+            this.platinumValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.platinumValue.Name = "platinumValue";
-            this.platinumValue.Size = new System.Drawing.Size(110, 26);
+            this.platinumValue.Size = new System.Drawing.Size(82, 21);
             this.platinumValue.TabIndex = 52;
             this.platinumValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -3016,9 +3256,10 @@
             this.platinumLabel.BackColor = System.Drawing.Color.Transparent;
             this.platinumLabel.Font = new System.Drawing.Font("High Tower Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.platinumLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.platinumLabel.Location = new System.Drawing.Point(13, 223);
+            this.platinumLabel.Location = new System.Drawing.Point(10, 181);
+            this.platinumLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.platinumLabel.Name = "platinumLabel";
-            this.platinumLabel.Size = new System.Drawing.Size(177, 26);
+            this.platinumLabel.Size = new System.Drawing.Size(133, 21);
             this.platinumLabel.TabIndex = 51;
             this.platinumLabel.Text = "Platinum Pieces";
             this.platinumLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3028,9 +3269,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(128, 278);
+            this.label3.Location = new System.Drawing.Point(96, 226);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(173, 27);
+            this.label3.Size = new System.Drawing.Size(130, 22);
             this.label3.TabIndex = 58;
             this.label3.Text = "(in Gold Pieces)";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3040,9 +3282,10 @@
             this.goldValue.BackColor = System.Drawing.Color.Transparent;
             this.goldValue.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.goldValue.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.goldValue.Location = new System.Drawing.Point(189, 190);
+            this.goldValue.Location = new System.Drawing.Point(142, 154);
+            this.goldValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.goldValue.Name = "goldValue";
-            this.goldValue.Size = new System.Drawing.Size(110, 26);
+            this.goldValue.Size = new System.Drawing.Size(82, 21);
             this.goldValue.TabIndex = 48;
             this.goldValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -3051,9 +3294,10 @@
             this.goldLabel.BackColor = System.Drawing.Color.Transparent;
             this.goldLabel.Font = new System.Drawing.Font("High Tower Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.goldLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.goldLabel.Location = new System.Drawing.Point(13, 188);
+            this.goldLabel.Location = new System.Drawing.Point(10, 153);
+            this.goldLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.goldLabel.Name = "goldLabel";
-            this.goldLabel.Size = new System.Drawing.Size(177, 26);
+            this.goldLabel.Size = new System.Drawing.Size(133, 21);
             this.goldLabel.TabIndex = 47;
             this.goldLabel.Text = "Gold Pieces";
             this.goldLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3063,9 +3307,10 @@
             this.electrumValue.BackColor = System.Drawing.Color.Transparent;
             this.electrumValue.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.electrumValue.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.electrumValue.Location = new System.Drawing.Point(189, 151);
+            this.electrumValue.Location = new System.Drawing.Point(142, 123);
+            this.electrumValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.electrumValue.Name = "electrumValue";
-            this.electrumValue.Size = new System.Drawing.Size(110, 26);
+            this.electrumValue.Size = new System.Drawing.Size(82, 21);
             this.electrumValue.TabIndex = 44;
             this.electrumValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -3074,9 +3319,10 @@
             this.ElectrumLabel.BackColor = System.Drawing.Color.Transparent;
             this.ElectrumLabel.Font = new System.Drawing.Font("High Tower Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ElectrumLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ElectrumLabel.Location = new System.Drawing.Point(13, 149);
+            this.ElectrumLabel.Location = new System.Drawing.Point(10, 121);
+            this.ElectrumLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ElectrumLabel.Name = "ElectrumLabel";
-            this.ElectrumLabel.Size = new System.Drawing.Size(177, 26);
+            this.ElectrumLabel.Size = new System.Drawing.Size(133, 21);
             this.ElectrumLabel.TabIndex = 43;
             this.ElectrumLabel.Text = "Electrum Pieces";
             this.ElectrumLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3086,9 +3332,10 @@
             this.silverValue.BackColor = System.Drawing.Color.Transparent;
             this.silverValue.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.silverValue.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.silverValue.Location = new System.Drawing.Point(189, 112);
+            this.silverValue.Location = new System.Drawing.Point(142, 91);
+            this.silverValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.silverValue.Name = "silverValue";
-            this.silverValue.Size = new System.Drawing.Size(110, 26);
+            this.silverValue.Size = new System.Drawing.Size(82, 21);
             this.silverValue.TabIndex = 40;
             this.silverValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -3097,9 +3344,10 @@
             this.silverLabel.BackColor = System.Drawing.Color.Transparent;
             this.silverLabel.Font = new System.Drawing.Font("High Tower Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.silverLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.silverLabel.Location = new System.Drawing.Point(13, 110);
+            this.silverLabel.Location = new System.Drawing.Point(10, 89);
+            this.silverLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.silverLabel.Name = "silverLabel";
-            this.silverLabel.Size = new System.Drawing.Size(177, 26);
+            this.silverLabel.Size = new System.Drawing.Size(133, 21);
             this.silverLabel.TabIndex = 39;
             this.silverLabel.Text = "Silver Pieces";
             this.silverLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3109,9 +3357,10 @@
             this.copperValue.BackColor = System.Drawing.Color.Transparent;
             this.copperValue.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.copperValue.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.copperValue.Location = new System.Drawing.Point(189, 76);
+            this.copperValue.Location = new System.Drawing.Point(142, 62);
+            this.copperValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.copperValue.Name = "copperValue";
-            this.copperValue.Size = new System.Drawing.Size(110, 26);
+            this.copperValue.Size = new System.Drawing.Size(82, 21);
             this.copperValue.TabIndex = 36;
             this.copperValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -3120,9 +3369,10 @@
             this.copperLabel.BackColor = System.Drawing.Color.Transparent;
             this.copperLabel.Font = new System.Drawing.Font("High Tower Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.copperLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.copperLabel.Location = new System.Drawing.Point(13, 74);
+            this.copperLabel.Location = new System.Drawing.Point(10, 60);
+            this.copperLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.copperLabel.Name = "copperLabel";
-            this.copperLabel.Size = new System.Drawing.Size(177, 26);
+            this.copperLabel.Size = new System.Drawing.Size(133, 21);
             this.copperLabel.TabIndex = 15;
             this.copperLabel.Text = "Copper Pieces";
             this.copperLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3130,9 +3380,10 @@
             // moneyPic
             // 
             this.moneyPic.Image = ((System.Drawing.Image)(resources.GetObject("moneyPic.Image")));
-            this.moneyPic.Location = new System.Drawing.Point(6, 321);
+            this.moneyPic.Location = new System.Drawing.Point(4, 261);
+            this.moneyPic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.moneyPic.Name = "moneyPic";
-            this.moneyPic.Size = new System.Drawing.Size(522, 187);
+            this.moneyPic.Size = new System.Drawing.Size(392, 152);
             this.moneyPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.moneyPic.TabIndex = 14;
             this.moneyPic.TabStop = false;
@@ -3142,9 +3393,10 @@
             this.removeFromMoneyTableButton.BackColor = System.Drawing.Color.Brown;
             this.removeFromMoneyTableButton.Font = new System.Drawing.Font("High Tower Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.removeFromMoneyTableButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.removeFromMoneyTableButton.Location = new System.Drawing.Point(846, 81);
+            this.removeFromMoneyTableButton.Location = new System.Drawing.Point(634, 66);
+            this.removeFromMoneyTableButton.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.removeFromMoneyTableButton.Name = "removeFromMoneyTableButton";
-            this.removeFromMoneyTableButton.Size = new System.Drawing.Size(183, 26);
+            this.removeFromMoneyTableButton.Size = new System.Drawing.Size(137, 21);
             this.removeFromMoneyTableButton.TabIndex = 8;
             this.removeFromMoneyTableButton.Text = "Remove Item";
             this.removeFromMoneyTableButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3155,9 +3407,10 @@
             this.addToMoneyTableButton.BackColor = System.Drawing.Color.SeaGreen;
             this.addToMoneyTableButton.Font = new System.Drawing.Font("High Tower Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addToMoneyTableButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.addToMoneyTableButton.Location = new System.Drawing.Point(574, 81);
+            this.addToMoneyTableButton.Location = new System.Drawing.Point(430, 66);
+            this.addToMoneyTableButton.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.addToMoneyTableButton.Name = "addToMoneyTableButton";
-            this.addToMoneyTableButton.Size = new System.Drawing.Size(177, 26);
+            this.addToMoneyTableButton.Size = new System.Drawing.Size(133, 21);
             this.addToMoneyTableButton.TabIndex = 7;
             this.addToMoneyTableButton.Text = "Add Item";
             this.addToMoneyTableButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3174,9 +3427,10 @@
             this.treasureList.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.treasureList.FullRowSelect = true;
             this.treasureList.GridLines = true;
-            this.treasureList.Location = new System.Drawing.Point(539, 112);
+            this.treasureList.Location = new System.Drawing.Point(404, 91);
+            this.treasureList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.treasureList.Name = "treasureList";
-            this.treasureList.Size = new System.Drawing.Size(528, 395);
+            this.treasureList.Size = new System.Drawing.Size(397, 322);
             this.treasureList.TabIndex = 0;
             this.treasureList.UseCompatibleStateImageBehavior = false;
             this.treasureList.View = System.Windows.Forms.View.Details;
@@ -3208,17 +3462,19 @@
             this.weaponsNArmorPanel.Controls.Add(this.addToWeaponTableButton);
             this.weaponsNArmorPanel.Controls.Add(this.weaponsNArmorListview);
             this.weaponsNArmorPanel.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.weaponsNArmorPanel.Location = new System.Drawing.Point(7, 45);
+            this.weaponsNArmorPanel.Location = new System.Drawing.Point(5, 37);
+            this.weaponsNArmorPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.weaponsNArmorPanel.Name = "weaponsNArmorPanel";
-            this.weaponsNArmorPanel.Size = new System.Drawing.Size(1070, 519);
+            this.weaponsNArmorPanel.Size = new System.Drawing.Size(802, 422);
             this.weaponsNArmorPanel.TabIndex = 4;
             // 
             // weaponsNArmorMarker
             // 
             this.weaponsNArmorMarker.BackColor = System.Drawing.Color.Chartreuse;
-            this.weaponsNArmorMarker.Location = new System.Drawing.Point(97, 1);
+            this.weaponsNArmorMarker.Location = new System.Drawing.Point(73, 1);
+            this.weaponsNArmorMarker.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.weaponsNArmorMarker.Name = "weaponsNArmorMarker";
-            this.weaponsNArmorMarker.Size = new System.Drawing.Size(137, 8);
+            this.weaponsNArmorMarker.Size = new System.Drawing.Size(103, 6);
             this.weaponsNArmorMarker.TabIndex = 58;
             // 
             // removeFromWeaponTableButton
@@ -3226,9 +3482,10 @@
             this.removeFromWeaponTableButton.BackColor = System.Drawing.Color.Brown;
             this.removeFromWeaponTableButton.Font = new System.Drawing.Font("High Tower Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.removeFromWeaponTableButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.removeFromWeaponTableButton.Location = new System.Drawing.Point(543, 11);
+            this.removeFromWeaponTableButton.Location = new System.Drawing.Point(407, 9);
+            this.removeFromWeaponTableButton.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.removeFromWeaponTableButton.Name = "removeFromWeaponTableButton";
-            this.removeFromWeaponTableButton.Size = new System.Drawing.Size(304, 26);
+            this.removeFromWeaponTableButton.Size = new System.Drawing.Size(228, 21);
             this.removeFromWeaponTableButton.TabIndex = 10;
             this.removeFromWeaponTableButton.Text = "Remove Item";
             this.removeFromWeaponTableButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3240,9 +3497,10 @@
             this.addToWeaponTableButton.Font = new System.Drawing.Font("High Tower Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addToWeaponTableButton.ForeColor = System.Drawing.SystemColors.ControlText;
             this.addToWeaponTableButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.addToWeaponTableButton.Location = new System.Drawing.Point(130, 11);
+            this.addToWeaponTableButton.Location = new System.Drawing.Point(98, 9);
+            this.addToWeaponTableButton.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.addToWeaponTableButton.Name = "addToWeaponTableButton";
-            this.addToWeaponTableButton.Size = new System.Drawing.Size(304, 26);
+            this.addToWeaponTableButton.Size = new System.Drawing.Size(228, 21);
             this.addToWeaponTableButton.TabIndex = 9;
             this.addToWeaponTableButton.Text = "Add Item";
             this.addToWeaponTableButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3260,9 +3518,10 @@
             this.weaponsNArmorListview.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.weaponsNArmorListview.FullRowSelect = true;
             this.weaponsNArmorListview.GridLines = true;
-            this.weaponsNArmorListview.Location = new System.Drawing.Point(3, 38);
+            this.weaponsNArmorListview.Location = new System.Drawing.Point(2, 31);
+            this.weaponsNArmorListview.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.weaponsNArmorListview.Name = "weaponsNArmorListview";
-            this.weaponsNArmorListview.Size = new System.Drawing.Size(1064, 466);
+            this.weaponsNArmorListview.Size = new System.Drawing.Size(799, 379);
             this.weaponsNArmorListview.TabIndex = 0;
             this.weaponsNArmorListview.UseCompatibleStateImageBehavior = false;
             this.weaponsNArmorListview.View = System.Windows.Forms.View.Details;
@@ -3300,18 +3559,20 @@
             this.equipmentNGearPanel.Controls.Add(this.removeFromEquipmentTableButton);
             this.equipmentNGearPanel.Controls.Add(this.equipmentNGearList);
             this.equipmentNGearPanel.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.equipmentNGearPanel.Location = new System.Drawing.Point(7, 45);
+            this.equipmentNGearPanel.Location = new System.Drawing.Point(5, 37);
+            this.equipmentNGearPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.equipmentNGearPanel.Name = "equipmentNGearPanel";
-            this.equipmentNGearPanel.Size = new System.Drawing.Size(1070, 519);
+            this.equipmentNGearPanel.Size = new System.Drawing.Size(802, 422);
             this.equipmentNGearPanel.TabIndex = 5;
             this.equipmentNGearPanel.Visible = false;
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Chartreuse;
-            this.label1.Location = new System.Drawing.Point(439, 1);
+            this.label1.Location = new System.Drawing.Point(329, 1);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 8);
+            this.label1.Size = new System.Drawing.Size(103, 6);
             this.label1.TabIndex = 59;
             // 
             // addtoEquipmentTableButton
@@ -3320,9 +3581,10 @@
             this.addtoEquipmentTableButton.Font = new System.Drawing.Font("High Tower Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addtoEquipmentTableButton.ForeColor = System.Drawing.SystemColors.ControlText;
             this.addtoEquipmentTableButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.addtoEquipmentTableButton.Location = new System.Drawing.Point(130, 11);
+            this.addtoEquipmentTableButton.Location = new System.Drawing.Point(98, 9);
+            this.addtoEquipmentTableButton.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.addtoEquipmentTableButton.Name = "addtoEquipmentTableButton";
-            this.addtoEquipmentTableButton.Size = new System.Drawing.Size(304, 26);
+            this.addtoEquipmentTableButton.Size = new System.Drawing.Size(228, 21);
             this.addtoEquipmentTableButton.TabIndex = 10;
             this.addtoEquipmentTableButton.Text = "Add Item";
             this.addtoEquipmentTableButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3333,9 +3595,10 @@
             this.removeFromEquipmentTableButton.BackColor = System.Drawing.Color.Brown;
             this.removeFromEquipmentTableButton.Font = new System.Drawing.Font("High Tower Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.removeFromEquipmentTableButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.removeFromEquipmentTableButton.Location = new System.Drawing.Point(543, 11);
+            this.removeFromEquipmentTableButton.Location = new System.Drawing.Point(407, 9);
+            this.removeFromEquipmentTableButton.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.removeFromEquipmentTableButton.Name = "removeFromEquipmentTableButton";
-            this.removeFromEquipmentTableButton.Size = new System.Drawing.Size(304, 26);
+            this.removeFromEquipmentTableButton.Size = new System.Drawing.Size(228, 21);
             this.removeFromEquipmentTableButton.TabIndex = 9;
             this.removeFromEquipmentTableButton.Text = "Remove Item";
             this.removeFromEquipmentTableButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3353,9 +3616,10 @@
             this.equipmentNGearList.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.equipmentNGearList.FullRowSelect = true;
             this.equipmentNGearList.GridLines = true;
-            this.equipmentNGearList.Location = new System.Drawing.Point(3, 38);
+            this.equipmentNGearList.Location = new System.Drawing.Point(2, 31);
+            this.equipmentNGearList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.equipmentNGearList.Name = "equipmentNGearList";
-            this.equipmentNGearList.Size = new System.Drawing.Size(1064, 466);
+            this.equipmentNGearList.Size = new System.Drawing.Size(799, 379);
             this.equipmentNGearList.TabIndex = 0;
             this.equipmentNGearList.UseCompatibleStateImageBehavior = false;
             this.equipmentNGearList.View = System.Windows.Forms.View.Details;
@@ -3390,9 +3654,10 @@
             this.moneyTreasureTab.BackColor = System.Drawing.Color.SeaGreen;
             this.moneyTreasureTab.Font = new System.Drawing.Font("High Tower Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moneyTreasureTab.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.moneyTreasureTab.Location = new System.Drawing.Point(697, 7);
+            this.moneyTreasureTab.Location = new System.Drawing.Point(523, 6);
+            this.moneyTreasureTab.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.moneyTreasureTab.Name = "moneyTreasureTab";
-            this.moneyTreasureTab.Size = new System.Drawing.Size(380, 32);
+            this.moneyTreasureTab.Size = new System.Drawing.Size(285, 26);
             this.moneyTreasureTab.TabIndex = 3;
             this.moneyTreasureTab.Text = "Money and Treasure";
             this.moneyTreasureTab.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3403,9 +3668,10 @@
             this.equipmentGearTab.BackColor = System.Drawing.Color.SteelBlue;
             this.equipmentGearTab.Font = new System.Drawing.Font("High Tower Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.equipmentGearTab.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.equipmentGearTab.Location = new System.Drawing.Point(352, 7);
+            this.equipmentGearTab.Location = new System.Drawing.Point(264, 6);
+            this.equipmentGearTab.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.equipmentGearTab.Name = "equipmentGearTab";
-            this.equipmentGearTab.Size = new System.Drawing.Size(335, 32);
+            this.equipmentGearTab.Size = new System.Drawing.Size(251, 26);
             this.equipmentGearTab.TabIndex = 1;
             this.equipmentGearTab.Text = "Equipment And Gear";
             this.equipmentGearTab.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3416,9 +3682,10 @@
             this.weaponsArmorTab.BackColor = System.Drawing.Color.Brown;
             this.weaponsArmorTab.Font = new System.Drawing.Font("High Tower Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.weaponsArmorTab.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.weaponsArmorTab.Location = new System.Drawing.Point(8, 7);
+            this.weaponsArmorTab.Location = new System.Drawing.Point(6, 6);
+            this.weaponsArmorTab.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.weaponsArmorTab.Name = "weaponsArmorTab";
-            this.weaponsArmorTab.Size = new System.Drawing.Size(338, 32);
+            this.weaponsArmorTab.Size = new System.Drawing.Size(254, 26);
             this.weaponsArmorTab.TabIndex = 0;
             this.weaponsArmorTab.Text = "Weapons And Armor";
             this.weaponsArmorTab.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3443,27 +3710,30 @@
             this.backgroundPanel.Controls.Add(this.backgroundFeatureLabel);
             this.backgroundPanel.Controls.Add(this.backgroundValue);
             this.backgroundPanel.Controls.Add(this.backgroundLabel);
-            this.backgroundPanel.Location = new System.Drawing.Point(131, 104);
+            this.backgroundPanel.Location = new System.Drawing.Point(98, 84);
+            this.backgroundPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.backgroundPanel.Name = "backgroundPanel";
-            this.backgroundPanel.Size = new System.Drawing.Size(1090, 563);
+            this.backgroundPanel.Size = new System.Drawing.Size(818, 457);
             this.backgroundPanel.TabIndex = 37;
             this.backgroundPanel.Visible = false;
             // 
             // flawsBox
             // 
             this.flawsBox.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flawsBox.Location = new System.Drawing.Point(543, 438);
+            this.flawsBox.Location = new System.Drawing.Point(407, 356);
+            this.flawsBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flawsBox.Name = "flawsBox";
-            this.flawsBox.Size = new System.Drawing.Size(531, 108);
+            this.flawsBox.Size = new System.Drawing.Size(399, 88);
             this.flawsBox.TabIndex = 78;
             this.flawsBox.Text = "";
             // 
             // flawsLabel
             // 
             this.flawsLabel.Font = new System.Drawing.Font("High Tower Text", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flawsLabel.Location = new System.Drawing.Point(541, 406);
+            this.flawsLabel.Location = new System.Drawing.Point(406, 330);
+            this.flawsLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.flawsLabel.Name = "flawsLabel";
-            this.flawsLabel.Size = new System.Drawing.Size(109, 29);
+            this.flawsLabel.Size = new System.Drawing.Size(82, 24);
             this.flawsLabel.TabIndex = 79;
             this.flawsLabel.Text = "Flaws";
             this.flawsLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3471,18 +3741,20 @@
             // bondsBox
             // 
             this.bondsBox.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bondsBox.Location = new System.Drawing.Point(540, 285);
+            this.bondsBox.Location = new System.Drawing.Point(405, 232);
+            this.bondsBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bondsBox.Name = "bondsBox";
-            this.bondsBox.Size = new System.Drawing.Size(531, 118);
+            this.bondsBox.Size = new System.Drawing.Size(399, 97);
             this.bondsBox.TabIndex = 76;
             this.bondsBox.Text = "";
             // 
             // bondsLabel
             // 
             this.bondsLabel.Font = new System.Drawing.Font("High Tower Text", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bondsLabel.Location = new System.Drawing.Point(541, 253);
+            this.bondsLabel.Location = new System.Drawing.Point(406, 206);
+            this.bondsLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bondsLabel.Name = "bondsLabel";
-            this.bondsLabel.Size = new System.Drawing.Size(104, 29);
+            this.bondsLabel.Size = new System.Drawing.Size(78, 24);
             this.bondsLabel.TabIndex = 77;
             this.bondsLabel.Text = "Bonds";
             this.bondsLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3490,36 +3762,40 @@
             // idealsBox
             // 
             this.idealsBox.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idealsBox.Location = new System.Drawing.Point(540, 155);
+            this.idealsBox.Location = new System.Drawing.Point(405, 126);
+            this.idealsBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.idealsBox.Name = "idealsBox";
-            this.idealsBox.Size = new System.Drawing.Size(531, 96);
+            this.idealsBox.Size = new System.Drawing.Size(399, 79);
             this.idealsBox.TabIndex = 74;
             this.idealsBox.Text = "";
             // 
             // alliesNOrgBox
             // 
             this.alliesNOrgBox.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alliesNOrgBox.Location = new System.Drawing.Point(13, 359);
+            this.alliesNOrgBox.Location = new System.Drawing.Point(10, 292);
+            this.alliesNOrgBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.alliesNOrgBox.Name = "alliesNOrgBox";
-            this.alliesNOrgBox.Size = new System.Drawing.Size(498, 197);
+            this.alliesNOrgBox.Size = new System.Drawing.Size(374, 161);
             this.alliesNOrgBox.TabIndex = 72;
             this.alliesNOrgBox.Text = "";
             // 
             // backstoryBox
             // 
             this.backstoryBox.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backstoryBox.Location = new System.Drawing.Point(11, 131);
+            this.backstoryBox.Location = new System.Drawing.Point(8, 106);
+            this.backstoryBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.backstoryBox.Name = "backstoryBox";
-            this.backstoryBox.Size = new System.Drawing.Size(500, 201);
+            this.backstoryBox.Size = new System.Drawing.Size(376, 164);
             this.backstoryBox.TabIndex = 68;
             this.backstoryBox.Text = "";
             // 
             // alliesNOrgLabel
             // 
             this.alliesNOrgLabel.Font = new System.Drawing.Font("High Tower Text", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alliesNOrgLabel.Location = new System.Drawing.Point(0, 329);
+            this.alliesNOrgLabel.Location = new System.Drawing.Point(0, 267);
+            this.alliesNOrgLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.alliesNOrgLabel.Name = "alliesNOrgLabel";
-            this.alliesNOrgLabel.Size = new System.Drawing.Size(302, 34);
+            this.alliesNOrgLabel.Size = new System.Drawing.Size(226, 28);
             this.alliesNOrgLabel.TabIndex = 73;
             this.alliesNOrgLabel.Text = "Allies and Organizations";
             this.alliesNOrgLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3527,18 +3803,20 @@
             // traitsBox
             // 
             this.traitsBox.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.traitsBox.Location = new System.Drawing.Point(540, 40);
+            this.traitsBox.Location = new System.Drawing.Point(405, 32);
+            this.traitsBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.traitsBox.Name = "traitsBox";
-            this.traitsBox.Size = new System.Drawing.Size(531, 89);
+            this.traitsBox.Size = new System.Drawing.Size(399, 73);
             this.traitsBox.TabIndex = 70;
             this.traitsBox.Text = "";
             // 
             // traitsLabel
             // 
             this.traitsLabel.Font = new System.Drawing.Font("High Tower Text", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.traitsLabel.Location = new System.Drawing.Point(541, 10);
+            this.traitsLabel.Location = new System.Drawing.Point(406, 8);
+            this.traitsLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.traitsLabel.Name = "traitsLabel";
-            this.traitsLabel.Size = new System.Drawing.Size(215, 29);
+            this.traitsLabel.Size = new System.Drawing.Size(161, 24);
             this.traitsLabel.TabIndex = 71;
             this.traitsLabel.Text = "Personality Traits";
             this.traitsLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3546,9 +3824,10 @@
             // idealsLabel
             // 
             this.idealsLabel.Font = new System.Drawing.Font("High Tower Text", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idealsLabel.Location = new System.Drawing.Point(538, 128);
+            this.idealsLabel.Location = new System.Drawing.Point(404, 104);
+            this.idealsLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.idealsLabel.Name = "idealsLabel";
-            this.idealsLabel.Size = new System.Drawing.Size(107, 29);
+            this.idealsLabel.Size = new System.Drawing.Size(80, 24);
             this.idealsLabel.TabIndex = 75;
             this.idealsLabel.Text = "Ideals";
             this.idealsLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3556,9 +3835,10 @@
             // backstoryLabel
             // 
             this.backstoryLabel.Font = new System.Drawing.Font("High Tower Text", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backstoryLabel.Location = new System.Drawing.Point(8, 101);
+            this.backstoryLabel.Location = new System.Drawing.Point(6, 82);
+            this.backstoryLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.backstoryLabel.Name = "backstoryLabel";
-            this.backstoryLabel.Size = new System.Drawing.Size(128, 34);
+            this.backstoryLabel.Size = new System.Drawing.Size(96, 28);
             this.backstoryLabel.TabIndex = 69;
             this.backstoryLabel.Text = "Backstory";
             this.backstoryLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3567,18 +3847,20 @@
             // 
             this.backgroundFeatureValue.BackColor = System.Drawing.Color.Transparent;
             this.backgroundFeatureValue.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backgroundFeatureValue.Location = new System.Drawing.Point(149, 55);
+            this.backgroundFeatureValue.Location = new System.Drawing.Point(112, 45);
+            this.backgroundFeatureValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.backgroundFeatureValue.Name = "backgroundFeatureValue";
-            this.backgroundFeatureValue.Size = new System.Drawing.Size(362, 37);
+            this.backgroundFeatureValue.Size = new System.Drawing.Size(272, 30);
             this.backgroundFeatureValue.TabIndex = 67;
             this.backgroundFeatureValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // backgroundFeatureLabel
             // 
             this.backgroundFeatureLabel.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backgroundFeatureLabel.Location = new System.Drawing.Point(3, 51);
+            this.backgroundFeatureLabel.Location = new System.Drawing.Point(2, 41);
+            this.backgroundFeatureLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.backgroundFeatureLabel.Name = "backgroundFeatureLabel";
-            this.backgroundFeatureLabel.Size = new System.Drawing.Size(148, 39);
+            this.backgroundFeatureLabel.Size = new System.Drawing.Size(111, 32);
             this.backgroundFeatureLabel.TabIndex = 66;
             this.backgroundFeatureLabel.Text = "Feature";
             this.backgroundFeatureLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3587,18 +3869,20 @@
             // 
             this.backgroundValue.BackColor = System.Drawing.Color.Transparent;
             this.backgroundValue.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backgroundValue.Location = new System.Drawing.Point(223, 9);
+            this.backgroundValue.Location = new System.Drawing.Point(167, 7);
+            this.backgroundValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.backgroundValue.Name = "backgroundValue";
-            this.backgroundValue.Size = new System.Drawing.Size(193, 37);
+            this.backgroundValue.Size = new System.Drawing.Size(145, 30);
             this.backgroundValue.TabIndex = 65;
             this.backgroundValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // backgroundLabel
             // 
             this.backgroundLabel.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backgroundLabel.Location = new System.Drawing.Point(6, 5);
+            this.backgroundLabel.Location = new System.Drawing.Point(4, 4);
+            this.backgroundLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.backgroundLabel.Name = "backgroundLabel";
-            this.backgroundLabel.Size = new System.Drawing.Size(209, 39);
+            this.backgroundLabel.Size = new System.Drawing.Size(157, 32);
             this.backgroundLabel.TabIndex = 1;
             this.backgroundLabel.Text = "Background";
             this.backgroundLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3609,9 +3893,10 @@
             this.quitNSavePanel.Controls.Add(this.noQuitButton);
             this.quitNSavePanel.Controls.Add(this.yesQuitButton);
             this.quitNSavePanel.Controls.Add(this.saveNQuitPrompt);
-            this.quitNSavePanel.Location = new System.Drawing.Point(131, 107);
+            this.quitNSavePanel.Location = new System.Drawing.Point(98, 87);
+            this.quitNSavePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.quitNSavePanel.Name = "quitNSavePanel";
-            this.quitNSavePanel.Size = new System.Drawing.Size(1090, 560);
+            this.quitNSavePanel.Size = new System.Drawing.Size(818, 455);
             this.quitNSavePanel.TabIndex = 38;
             this.quitNSavePanel.Visible = false;
             // 
@@ -3619,10 +3904,11 @@
             // 
             this.noQuitButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.noQuitButton.Font = new System.Drawing.Font("High Tower Text", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.noQuitButton.Location = new System.Drawing.Point(672, 302);
+            this.noQuitButton.Location = new System.Drawing.Point(504, 245);
+            this.noQuitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.noQuitButton.Name = "noQuitButton";
             this.noQuitButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.noQuitButton.Size = new System.Drawing.Size(285, 154);
+            this.noQuitButton.Size = new System.Drawing.Size(214, 125);
             this.noQuitButton.TabIndex = 88;
             this.noQuitButton.Text = "No";
             this.noQuitButton.UseVisualStyleBackColor = false;
@@ -3632,10 +3918,11 @@
             // 
             this.yesQuitButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.yesQuitButton.Font = new System.Drawing.Font("High Tower Text", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yesQuitButton.Location = new System.Drawing.Point(142, 302);
+            this.yesQuitButton.Location = new System.Drawing.Point(106, 245);
+            this.yesQuitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.yesQuitButton.Name = "yesQuitButton";
             this.yesQuitButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.yesQuitButton.Size = new System.Drawing.Size(285, 145);
+            this.yesQuitButton.Size = new System.Drawing.Size(214, 118);
             this.yesQuitButton.TabIndex = 87;
             this.yesQuitButton.Text = "Yes";
             this.yesQuitButton.UseVisualStyleBackColor = false;
@@ -3644,9 +3931,10 @@
             // saveNQuitPrompt
             // 
             this.saveNQuitPrompt.Font = new System.Drawing.Font("High Tower Text", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveNQuitPrompt.Location = new System.Drawing.Point(122, 51);
+            this.saveNQuitPrompt.Location = new System.Drawing.Point(92, 41);
+            this.saveNQuitPrompt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.saveNQuitPrompt.Name = "saveNQuitPrompt";
-            this.saveNQuitPrompt.Size = new System.Drawing.Size(848, 221);
+            this.saveNQuitPrompt.Size = new System.Drawing.Size(636, 180);
             this.saveNQuitPrompt.TabIndex = 0;
             this.saveNQuitPrompt.Text = "Save before quitting to Menu?";
             this.saveNQuitPrompt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3656,9 +3944,10 @@
             this.nowXpValue.BackColor = System.Drawing.Color.SandyBrown;
             this.nowXpValue.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nowXpValue.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.nowXpValue.Location = new System.Drawing.Point(450, 51);
+            this.nowXpValue.Location = new System.Drawing.Point(338, 41);
+            this.nowXpValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nowXpValue.Name = "nowXpValue";
-            this.nowXpValue.Size = new System.Drawing.Size(97, 26);
+            this.nowXpValue.Size = new System.Drawing.Size(73, 21);
             this.nowXpValue.TabIndex = 35;
             this.nowXpValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -3667,9 +3956,10 @@
             this.nextXpValue.BackColor = System.Drawing.Color.Peru;
             this.nextXpValue.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nextXpValue.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.nextXpValue.Location = new System.Drawing.Point(450, 78);
+            this.nextXpValue.Location = new System.Drawing.Point(338, 63);
+            this.nextXpValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nextXpValue.Name = "nextXpValue";
-            this.nextXpValue.Size = new System.Drawing.Size(97, 26);
+            this.nextXpValue.Size = new System.Drawing.Size(73, 21);
             this.nextXpValue.TabIndex = 64;
             this.nextXpValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -3677,9 +3967,10 @@
             // 
             this.statImageButton.BackColor = System.Drawing.Color.Transparent;
             this.statImageButton.Image = ((System.Drawing.Image)(resources.GetObject("statImageButton.Image")));
-            this.statImageButton.Location = new System.Drawing.Point(7, 104);
+            this.statImageButton.Location = new System.Drawing.Point(5, 84);
+            this.statImageButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.statImageButton.Name = "statImageButton";
-            this.statImageButton.Size = new System.Drawing.Size(118, 88);
+            this.statImageButton.Size = new System.Drawing.Size(88, 72);
             this.statImageButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.statImageButton.TabIndex = 65;
             this.statImageButton.TabStop = false;
@@ -3689,9 +3980,10 @@
             // 
             this.combatImageButton.BackColor = System.Drawing.Color.Transparent;
             this.combatImageButton.Image = ((System.Drawing.Image)(resources.GetObject("combatImageButton.Image")));
-            this.combatImageButton.Location = new System.Drawing.Point(7, 200);
+            this.combatImageButton.Location = new System.Drawing.Point(5, 162);
+            this.combatImageButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.combatImageButton.Name = "combatImageButton";
-            this.combatImageButton.Size = new System.Drawing.Size(118, 88);
+            this.combatImageButton.Size = new System.Drawing.Size(88, 72);
             this.combatImageButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.combatImageButton.TabIndex = 66;
             this.combatImageButton.TabStop = false;
@@ -3701,9 +3993,10 @@
             // 
             this.magicImageButton.BackColor = System.Drawing.Color.Transparent;
             this.magicImageButton.Image = ((System.Drawing.Image)(resources.GetObject("magicImageButton.Image")));
-            this.magicImageButton.Location = new System.Drawing.Point(7, 296);
+            this.magicImageButton.Location = new System.Drawing.Point(5, 240);
+            this.magicImageButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.magicImageButton.Name = "magicImageButton";
-            this.magicImageButton.Size = new System.Drawing.Size(118, 88);
+            this.magicImageButton.Size = new System.Drawing.Size(88, 72);
             this.magicImageButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.magicImageButton.TabIndex = 67;
             this.magicImageButton.TabStop = false;
@@ -3713,9 +4006,10 @@
             // 
             this.inventoryImageButton.BackColor = System.Drawing.Color.Transparent;
             this.inventoryImageButton.Image = ((System.Drawing.Image)(resources.GetObject("inventoryImageButton.Image")));
-            this.inventoryImageButton.Location = new System.Drawing.Point(7, 392);
+            this.inventoryImageButton.Location = new System.Drawing.Point(5, 318);
+            this.inventoryImageButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.inventoryImageButton.Name = "inventoryImageButton";
-            this.inventoryImageButton.Size = new System.Drawing.Size(118, 88);
+            this.inventoryImageButton.Size = new System.Drawing.Size(88, 72);
             this.inventoryImageButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.inventoryImageButton.TabIndex = 68;
             this.inventoryImageButton.TabStop = false;
@@ -3725,9 +4019,10 @@
             // 
             this.backgroundImageButton.BackColor = System.Drawing.Color.Transparent;
             this.backgroundImageButton.Image = ((System.Drawing.Image)(resources.GetObject("backgroundImageButton.Image")));
-            this.backgroundImageButton.Location = new System.Drawing.Point(7, 488);
+            this.backgroundImageButton.Location = new System.Drawing.Point(5, 396);
+            this.backgroundImageButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.backgroundImageButton.Name = "backgroundImageButton";
-            this.backgroundImageButton.Size = new System.Drawing.Size(118, 88);
+            this.backgroundImageButton.Size = new System.Drawing.Size(88, 72);
             this.backgroundImageButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.backgroundImageButton.TabIndex = 69;
             this.backgroundImageButton.TabStop = false;
@@ -3737,9 +4032,10 @@
             // 
             this.saveNQuitImageButton.BackColor = System.Drawing.Color.Transparent;
             this.saveNQuitImageButton.Image = ((System.Drawing.Image)(resources.GetObject("saveNQuitImageButton.Image")));
-            this.saveNQuitImageButton.Location = new System.Drawing.Point(7, 584);
+            this.saveNQuitImageButton.Location = new System.Drawing.Point(5, 474);
+            this.saveNQuitImageButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.saveNQuitImageButton.Name = "saveNQuitImageButton";
-            this.saveNQuitImageButton.Size = new System.Drawing.Size(118, 88);
+            this.saveNQuitImageButton.Size = new System.Drawing.Size(88, 72);
             this.saveNQuitImageButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.saveNQuitImageButton.TabIndex = 70;
             this.saveNQuitImageButton.TabStop = false;
@@ -3748,9 +4044,10 @@
             // characterUniqueID
             // 
             this.characterUniqueID.AutoSize = true;
-            this.characterUniqueID.Location = new System.Drawing.Point(153, 72);
+            this.characterUniqueID.Location = new System.Drawing.Point(115, 58);
+            this.characterUniqueID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.characterUniqueID.Name = "characterUniqueID";
-            this.characterUniqueID.Size = new System.Drawing.Size(0, 17);
+            this.characterUniqueID.Size = new System.Drawing.Size(0, 13);
             this.characterUniqueID.TabIndex = 71;
             this.characterUniqueID.Visible = false;
             // 
@@ -3758,11 +4055,12 @@
             // 
             this.unchangingHitDice.BackColor = System.Drawing.Color.Transparent;
             this.unchangingHitDice.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.unchangingHitDice.Location = new System.Drawing.Point(915, 69);
-            this.unchangingHitDice.MaximumSize = new System.Drawing.Size(62, 35);
-            this.unchangingHitDice.MinimumSize = new System.Drawing.Size(62, 35);
+            this.unchangingHitDice.Location = new System.Drawing.Point(686, 56);
+            this.unchangingHitDice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.unchangingHitDice.MaximumSize = new System.Drawing.Size(46, 28);
+            this.unchangingHitDice.MinimumSize = new System.Drawing.Size(46, 28);
             this.unchangingHitDice.Name = "unchangingHitDice";
-            this.unchangingHitDice.Size = new System.Drawing.Size(62, 35);
+            this.unchangingHitDice.Size = new System.Drawing.Size(46, 28);
             this.unchangingHitDice.TabIndex = 72;
             this.unchangingHitDice.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.unchangingHitDice.Visible = false;
@@ -3794,7 +4092,7 @@
             this.charactersBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.charactersBindingNavigator.Name = "charactersBindingNavigator";
             this.charactersBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.charactersBindingNavigator.Size = new System.Drawing.Size(1233, 27);
+            this.charactersBindingNavigator.Size = new System.Drawing.Size(926, 27);
             this.charactersBindingNavigator.TabIndex = 73;
             this.charactersBindingNavigator.Text = "bindingNavigator1";
             this.charactersBindingNavigator.Visible = false;
@@ -3811,7 +4109,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -3852,7 +4150,7 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(38, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
@@ -3916,9 +4214,10 @@
             this.levelUpButton.BackColor = System.Drawing.Color.Gray;
             this.levelUpButton.Enabled = false;
             this.levelUpButton.Font = new System.Drawing.Font("High Tower Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.levelUpButton.Location = new System.Drawing.Point(375, 4);
+            this.levelUpButton.Location = new System.Drawing.Point(281, 3);
+            this.levelUpButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.levelUpButton.Name = "levelUpButton";
-            this.levelUpButton.Size = new System.Drawing.Size(198, 43);
+            this.levelUpButton.Size = new System.Drawing.Size(148, 35);
             this.levelUpButton.TabIndex = 85;
             this.levelUpButton.Text = "Level Up";
             this.levelUpButton.UseVisualStyleBackColor = false;
@@ -3928,9 +4227,10 @@
             // 
             this.addXpButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.addXpButton.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addXpButton.Location = new System.Drawing.Point(561, 57);
+            this.addXpButton.Location = new System.Drawing.Point(421, 46);
+            this.addXpButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addXpButton.Name = "addXpButton";
-            this.addXpButton.Size = new System.Drawing.Size(95, 43);
+            this.addXpButton.Size = new System.Drawing.Size(71, 35);
             this.addXpButton.TabIndex = 86;
             this.addXpButton.Text = "Add XP";
             this.addXpButton.UseVisualStyleBackColor = false;
@@ -3940,9 +4240,10 @@
             // 
             this.editHealthButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.editHealthButton.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editHealthButton.Location = new System.Drawing.Point(632, 12);
+            this.editHealthButton.Location = new System.Drawing.Point(474, 10);
+            this.editHealthButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.editHealthButton.Name = "editHealthButton";
-            this.editHealthButton.Size = new System.Drawing.Size(67, 39);
+            this.editHealthButton.Size = new System.Drawing.Size(50, 32);
             this.editHealthButton.TabIndex = 87;
             this.editHealthButton.Text = "Edit";
             this.editHealthButton.UseVisualStyleBackColor = false;
@@ -3952,9 +4253,10 @@
             // 
             this.shortRestButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.shortRestButton.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.shortRestButton.Location = new System.Drawing.Point(953, 61);
+            this.shortRestButton.Location = new System.Drawing.Point(715, 50);
+            this.shortRestButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.shortRestButton.Name = "shortRestButton";
-            this.shortRestButton.Size = new System.Drawing.Size(122, 39);
+            this.shortRestButton.Size = new System.Drawing.Size(92, 32);
             this.shortRestButton.TabIndex = 88;
             this.shortRestButton.Text = "Short Rest";
             this.shortRestButton.UseVisualStyleBackColor = false;
@@ -3964,66 +4266,23 @@
             // 
             this.longRestButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.longRestButton.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.longRestButton.Location = new System.Drawing.Point(1099, 61);
+            this.longRestButton.Location = new System.Drawing.Point(824, 50);
+            this.longRestButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.longRestButton.Name = "longRestButton";
-            this.longRestButton.Size = new System.Drawing.Size(122, 39);
+            this.longRestButton.Size = new System.Drawing.Size(92, 32);
             this.longRestButton.TabIndex = 89;
             this.longRestButton.Text = "Long Rest";
             this.longRestButton.UseVisualStyleBackColor = false;
             this.longRestButton.Click += new System.EventHandler(this.longRestButton_Click_1);
             // 
-            // ClassTraitsNAbilities
-            // 
-            this.ClassTraitsNAbilities.AutoSize = true;
-            this.ClassTraitsNAbilities.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClassTraitsNAbilities.Location = new System.Drawing.Point(407, 311);
-            this.ClassTraitsNAbilities.Name = "ClassTraitsNAbilities";
-            this.ClassTraitsNAbilities.Size = new System.Drawing.Size(221, 23);
-            this.ClassTraitsNAbilities.TabIndex = 85;
-            this.ClassTraitsNAbilities.Text = "Class Traits and Abilities";
-            // 
-            // racialTraitsNAbilities
-            // 
-            this.racialTraitsNAbilities.AutoSize = true;
-            this.racialTraitsNAbilities.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.racialTraitsNAbilities.Location = new System.Drawing.Point(786, 311);
-            this.racialTraitsNAbilities.Name = "racialTraitsNAbilities";
-            this.racialTraitsNAbilities.Size = new System.Drawing.Size(230, 23);
-            this.racialTraitsNAbilities.TabIndex = 86;
-            this.racialTraitsNAbilities.Text = "Racial Traits and Abilities";
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("High Tower Text", 24F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(168, 14);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(198, 56);
-            this.label2.TabIndex = 88;
-            this.label2.Text = "Money";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("High Tower Text", 24F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(702, 14);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(198, 56);
-            this.label4.TabIndex = 89;
-            this.label4.Text = "Treasure";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // Character_Manager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1233, 673);
+            this.ClientSize = new System.Drawing.Size(926, 553);
             this.Controls.Add(this.longRestButton);
             this.Controls.Add(this.shortRestButton);
             this.Controls.Add(this.editHealthButton);
@@ -4059,8 +4318,9 @@
             this.Controls.Add(this.currentLevel);
             this.Controls.Add(this.charactersDataGridView);
             this.DoubleBuffered = true;
-            this.MaximumSize = new System.Drawing.Size(1251, 720);
-            this.MinimumSize = new System.Drawing.Size(1251, 720);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximumSize = new System.Drawing.Size(942, 592);
+            this.MinimumSize = new System.Drawing.Size(942, 592);
             this.Name = "Character_Manager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Character_Manager";

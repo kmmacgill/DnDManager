@@ -54,7 +54,7 @@ namespace DnD_Character_Manager
                     //2nd panel
                     LHandEquip.Text = rowItems[20].ToString();
                     RHandEquip.Text = rowItems[21].ToString();
-                    armorValue.Text = rowItems[22].ToString();
+                    armorEquip.Text = rowItems[22].ToString();
                     otherEquippedTextBox.Text = rowItems[23].ToString();
                     speedScore.Text = rowItems[37].ToString();
                     unchangingSpeedScore.Text = speedScore.Text;
@@ -2961,7 +2961,7 @@ namespace DnD_Character_Manager
         private string determineArmorClass()
         {
             string armorClass = "";
-            switch (armorValue.Text.ToLower())
+            switch (armorEquip.Text.ToLower())
             {
                 case "padded":
                     armorClass =  armorClassValue.Text = (11 + int.Parse(DexterityMod.Text)).ToString();
@@ -4647,7 +4647,7 @@ namespace DnD_Character_Manager
                                 int.Parse(StrengthScore.Text), int.Parse(DexterityScore.Text), int.Parse(IntelligenceScore.Text),
                                 int.Parse(ConstitutionScore.Text), int.Parse(CharismaScore.Text), int.Parse(WisdomScore.Text),
                                 permanentAbilitySaves.Text, HiddenskillProficiencies.Text, proficienciesTextBox.Text, languagesTextBox.Text,
-                                LHandEquip.Text, RHandEquip.Text, armorValue.Text, otherEquippedTextBox.Text,
+                                LHandEquip.Text, RHandEquip.Text, armorEquip.Text, otherEquippedTextBox.Text,
                                 characterUniqueID.Text, int.Parse(copperValue.Text), int.Parse(silverValue.Text), int.Parse(electrumValue.Text),
                                 int.Parse(goldValue.Text), int.Parse(platinumValue.Text), backgroundValue.Text, backstoryBox.Text, alliesNOrgBox.Text,
                                 traitsBox.Text, idealsBox.Text, bondsBox.Text, flawsBox.Text, int.Parse(unchangingSpeedScore.Text), int.Parse(kiPointsValue.Text));
@@ -4701,6 +4701,20 @@ namespace DnD_Character_Manager
             if (RHandEquip.Text.ToLower().Contains("shield"))
             {
                 armorClassValue.Text = (Int32.Parse(armorClassValue.Text) + 2).ToString();
+            }
+        }
+
+        private void combatPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void quickReferences_Click(object sender, EventArgs e)
+        {
+            QuickReferences qrForm = new QuickReferences();
+            if (qrForm.ShowDialog(this) == DialogResult.OK)
+            {
+               //do something...
             }
         }
     }

@@ -15,7 +15,7 @@ namespace DnD_Character_Manager
         static void Main()
         {
             //COMMENT COMMENT 123 BRADLEy DO YoU READ ME?!
-            //poop
+            //got the poop, and sent it back
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             new Main_Menu().Show();

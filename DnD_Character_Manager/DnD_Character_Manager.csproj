@@ -165,6 +165,12 @@
     <Compile Include="QuickReferences.Designer.cs">
       <DependentUpon>QuickReferences.cs</DependentUpon>
     </Compile>
+    <Compile Include="References.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="References.Designer.cs">
+      <DependentUpon>References.cs</DependentUpon>
+    </Compile>
     <Compile Include="ShortRestForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,6 +236,9 @@
     </Compile>
     <EmbeddedResource Include="QuickReferences.resx">
       <DependentUpon>QuickReferences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="References.resx">
+      <DependentUpon>References.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ShortRestForm.resx">
       <DependentUpon>ShortRestForm.cs</DependentUpon>

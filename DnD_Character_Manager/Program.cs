@@ -14,6 +14,7 @@ namespace DnD_Character_Manager
         [STAThread]
         static void Main()
         {
+            //COMMENT COMMENT 123 BRADLEy DO YoU READ ME?!
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             new Main_Menu().Show();

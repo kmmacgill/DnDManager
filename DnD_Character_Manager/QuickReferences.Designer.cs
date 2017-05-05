@@ -139,6 +139,7 @@
             this.button9.TabIndex = 8;
             this.button9.Text = "Obstacles";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // label1
             // 
@@ -169,6 +170,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.DoubleBuffered = true;
             this.Name = "QuickReferences";
             this.Text = "QuickReferences";
             this.ResumeLayout(false);

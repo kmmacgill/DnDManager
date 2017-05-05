@@ -4714,7 +4714,7 @@ namespace DnD_Character_Manager
             QuickReferences qrForm = new QuickReferences();
             if (qrForm.ShowDialog(this) == DialogResult.OK)
             {
-               //do something...
+               //closes by itself when you click away
             }
         }
     }

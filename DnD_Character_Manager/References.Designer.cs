@@ -29,45 +29,36 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(References));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.helpfulText = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // helpfulText
             // 
-            this.textBox1.Location = new System.Drawing.Point(35, 71);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(0, 20);
-            this.textBox1.TabIndex = 0;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(12, 12);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(393, 390);
-            this.textBox2.TabIndex = 1;
+            this.helpfulText.Font = new System.Drawing.Font("High Tower Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.helpfulText.Location = new System.Drawing.Point(12, 9);
+            this.helpfulText.Name = "helpfulText";
+            this.helpfulText.Size = new System.Drawing.Size(532, 492);
+            this.helpfulText.TabIndex = 2;
+            this.helpfulText.Text = "Helpful Text";
+            this.helpfulText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // References
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(417, 414);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.ClientSize = new System.Drawing.Size(556, 510);
+            this.Controls.Add(this.helpfulText);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "References";
-            this.Text = "References";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Deactivate += new System.EventHandler(this.References_Deactivate);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.Label helpfulText;
     }
 }

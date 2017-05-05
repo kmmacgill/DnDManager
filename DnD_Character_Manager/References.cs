@@ -12,9 +12,10 @@ namespace DnD_Character_Manager
 {
     public partial class References : Form
     {
-        public References()
+        public References(String input)
         {
             InitializeComponent();
+            helpfulText.Text = input;
         }
 
         private void References_Deactivate(object sender, EventArgs e)

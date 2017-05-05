@@ -158,6 +158,15 @@
             this.charactersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dnD_Character_ManagerDBDataSet = new DnD_Character_Manager.DnD_Character_ManagerDBDataSet();
             this.combatPanel = new System.Windows.Forms.Panel();
+            this.RHandEquip = new System.Windows.Forms.ComboBox();
+            this.LHandEquip = new System.Windows.Forms.ComboBox();
+            this.feetEquip = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.legEquip = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.headEquip = new System.Windows.Forms.ComboBox();
+            this.cloakEquip = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.quickReferences = new System.Windows.Forms.Button();
             this.actionsResetButton = new System.Windows.Forms.Button();
             this.bonusActionButton = new System.Windows.Forms.Button();
@@ -194,6 +203,7 @@
             this.armorLabel = new System.Windows.Forms.Label();
             this.remainingActionsScore = new System.Windows.Forms.Label();
             this.remainingActions = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.magicPanel = new System.Windows.Forms.Panel();
             this.spellList = new System.Windows.Forms.ListView();
             this.spell_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -358,16 +368,6 @@
             this.editHealthButton = new System.Windows.Forms.Button();
             this.shortRestButton = new System.Windows.Forms.Button();
             this.longRestButton = new System.Windows.Forms.Button();
-            this.cloakEquip = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.headEquip = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.legEquip = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.feetEquip = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.LHandEquip = new System.Windows.Forms.ComboBox();
-            this.RHandEquip = new System.Windows.Forms.ComboBox();
             this.statPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.charactersDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.charactersBindingSource)).BeginInit();
@@ -1744,6 +1744,174 @@
             this.combatPanel.Visible = false;
             this.combatPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.combatPanel_Paint);
             // 
+            // RHandEquip
+            // 
+            this.RHandEquip.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RHandEquip.FormattingEnabled = true;
+            this.RHandEquip.Items.AddRange(new object[] {
+            "Padded",
+            "Leather",
+            "Studded Leather",
+            "Hide",
+            "Chain Shirt",
+            "Scale Mail",
+            "Breastplate",
+            "Half Plate",
+            "Ring Mail",
+            "Chain Mail",
+            "Splint",
+            "Plate"});
+            this.RHandEquip.Location = new System.Drawing.Point(560, 480);
+            this.RHandEquip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.RHandEquip.Name = "RHandEquip";
+            this.RHandEquip.Size = new System.Drawing.Size(177, 40);
+            this.RHandEquip.TabIndex = 101;
+            // 
+            // LHandEquip
+            // 
+            this.LHandEquip.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LHandEquip.FormattingEnabled = true;
+            this.LHandEquip.Items.AddRange(new object[] {
+            "Padded",
+            "Leather",
+            "Studded Leather",
+            "Hide",
+            "Chain Shirt",
+            "Scale Mail",
+            "Breastplate",
+            "Half Plate",
+            "Ring Mail",
+            "Chain Mail",
+            "Splint",
+            "Plate"});
+            this.LHandEquip.Location = new System.Drawing.Point(560, 432);
+            this.LHandEquip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LHandEquip.Name = "LHandEquip";
+            this.LHandEquip.Size = new System.Drawing.Size(177, 40);
+            this.LHandEquip.TabIndex = 100;
+            // 
+            // feetEquip
+            // 
+            this.feetEquip.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.feetEquip.FormattingEnabled = true;
+            this.feetEquip.Items.AddRange(new object[] {
+            "Padded",
+            "Leather",
+            "Studded Leather",
+            "Hide",
+            "Chain Shirt",
+            "Scale Mail",
+            "Breastplate",
+            "Half Plate",
+            "Ring Mail",
+            "Chain Mail",
+            "Splint",
+            "Plate"});
+            this.feetEquip.Location = new System.Drawing.Point(560, 384);
+            this.feetEquip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.feetEquip.Name = "feetEquip";
+            this.feetEquip.Size = new System.Drawing.Size(177, 40);
+            this.feetEquip.TabIndex = 99;
+            // 
+            // label8
+            // 
+            this.label8.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(422, 376);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(146, 39);
+            this.label8.TabIndex = 98;
+            this.label8.Text = "Feet:";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // legEquip
+            // 
+            this.legEquip.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.legEquip.FormattingEnabled = true;
+            this.legEquip.Items.AddRange(new object[] {
+            "Padded",
+            "Leather",
+            "Studded Leather",
+            "Hide",
+            "Chain Shirt",
+            "Scale Mail",
+            "Breastplate",
+            "Half Plate",
+            "Ring Mail",
+            "Chain Mail",
+            "Splint",
+            "Plate"});
+            this.legEquip.Location = new System.Drawing.Point(560, 336);
+            this.legEquip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.legEquip.Name = "legEquip";
+            this.legEquip.Size = new System.Drawing.Size(177, 40);
+            this.legEquip.TabIndex = 97;
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(422, 328);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(146, 39);
+            this.label7.TabIndex = 96;
+            this.label7.Text = "Legs:";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // headEquip
+            // 
+            this.headEquip.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.headEquip.FormattingEnabled = true;
+            this.headEquip.Items.AddRange(new object[] {
+            "Padded",
+            "Leather",
+            "Studded Leather",
+            "Hide",
+            "Chain Shirt",
+            "Scale Mail",
+            "Breastplate",
+            "Half Plate",
+            "Ring Mail",
+            "Chain Mail",
+            "Splint",
+            "Plate"});
+            this.headEquip.Location = new System.Drawing.Point(560, 192);
+            this.headEquip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.headEquip.Name = "headEquip";
+            this.headEquip.Size = new System.Drawing.Size(177, 40);
+            this.headEquip.TabIndex = 95;
+            // 
+            // cloakEquip
+            // 
+            this.cloakEquip.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cloakEquip.FormattingEnabled = true;
+            this.cloakEquip.Items.AddRange(new object[] {
+            "Padded",
+            "Leather",
+            "Studded Leather",
+            "Hide",
+            "Chain Shirt",
+            "Scale Mail",
+            "Breastplate",
+            "Half Plate",
+            "Ring Mail",
+            "Chain Mail",
+            "Splint",
+            "Plate"});
+            this.cloakEquip.Location = new System.Drawing.Point(560, 240);
+            this.cloakEquip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cloakEquip.Name = "cloakEquip";
+            this.cloakEquip.Size = new System.Drawing.Size(177, 40);
+            this.cloakEquip.TabIndex = 93;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(422, 232);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(146, 39);
+            this.label5.TabIndex = 92;
+            this.label5.Text = "Cloak:";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // quickReferences
             // 
             this.quickReferences.BackColor = System.Drawing.Color.DodgerBlue;
@@ -1999,7 +2167,7 @@
             "Chain Mail",
             "Splint",
             "Plate"});
-            this.armorEquip.Location = new System.Drawing.Point(560, 241);
+            this.armorEquip.Location = new System.Drawing.Point(560, 288);
             this.armorEquip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.armorEquip.Name = "armorEquip";
             this.armorEquip.Size = new System.Drawing.Size(177, 40);
@@ -2052,7 +2220,7 @@
             // lhEquipped
             // 
             this.lhEquipped.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lhEquipped.Location = new System.Drawing.Point(387, 385);
+            this.lhEquipped.Location = new System.Drawing.Point(387, 432);
             this.lhEquipped.Name = "lhEquipped";
             this.lhEquipped.Size = new System.Drawing.Size(196, 39);
             this.lhEquipped.TabIndex = 45;
@@ -2168,7 +2336,7 @@
             // rhEquipped
             // 
             this.rhEquipped.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rhEquipped.Location = new System.Drawing.Point(387, 433);
+            this.rhEquipped.Location = new System.Drawing.Point(387, 480);
             this.rhEquipped.Name = "rhEquipped";
             this.rhEquipped.Size = new System.Drawing.Size(196, 39);
             this.rhEquipped.TabIndex = 46;
@@ -2178,7 +2346,7 @@
             // armorLabel
             // 
             this.armorLabel.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.armorLabel.Location = new System.Drawing.Point(422, 233);
+            this.armorLabel.Location = new System.Drawing.Point(422, 280);
             this.armorLabel.Name = "armorLabel";
             this.armorLabel.Size = new System.Drawing.Size(146, 39);
             this.armorLabel.TabIndex = 43;
@@ -2206,6 +2374,16 @@
             this.remainingActions.TabIndex = 41;
             this.remainingActions.Text = "Actions Remaining:";
             this.remainingActions.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(422, 184);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(146, 39);
+            this.label6.TabIndex = 94;
+            this.label6.Text = "Head:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // magicPanel
             // 
@@ -4054,184 +4232,6 @@
             this.longRestButton.UseVisualStyleBackColor = false;
             this.longRestButton.Click += new System.EventHandler(this.longRestButton_Click_1);
             // 
-            // cloakEquip
-            // 
-            this.cloakEquip.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cloakEquip.FormattingEnabled = true;
-            this.cloakEquip.Items.AddRange(new object[] {
-            "Padded",
-            "Leather",
-            "Studded Leather",
-            "Hide",
-            "Chain Shirt",
-            "Scale Mail",
-            "Breastplate",
-            "Half Plate",
-            "Ring Mail",
-            "Chain Mail",
-            "Splint",
-            "Plate"});
-            this.cloakEquip.Location = new System.Drawing.Point(560, 193);
-            this.cloakEquip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cloakEquip.Name = "cloakEquip";
-            this.cloakEquip.Size = new System.Drawing.Size(177, 40);
-            this.cloakEquip.TabIndex = 93;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(422, 185);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(146, 39);
-            this.label5.TabIndex = 92;
-            this.label5.Text = "Cloak:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // headEquip
-            // 
-            this.headEquip.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.headEquip.FormattingEnabled = true;
-            this.headEquip.Items.AddRange(new object[] {
-            "Padded",
-            "Leather",
-            "Studded Leather",
-            "Hide",
-            "Chain Shirt",
-            "Scale Mail",
-            "Breastplate",
-            "Half Plate",
-            "Ring Mail",
-            "Chain Mail",
-            "Splint",
-            "Plate"});
-            this.headEquip.Location = new System.Drawing.Point(560, 145);
-            this.headEquip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.headEquip.Name = "headEquip";
-            this.headEquip.Size = new System.Drawing.Size(177, 40);
-            this.headEquip.TabIndex = 95;
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(422, 137);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(146, 39);
-            this.label6.TabIndex = 94;
-            this.label6.Text = "Head:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // legEquip
-            // 
-            this.legEquip.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.legEquip.FormattingEnabled = true;
-            this.legEquip.Items.AddRange(new object[] {
-            "Padded",
-            "Leather",
-            "Studded Leather",
-            "Hide",
-            "Chain Shirt",
-            "Scale Mail",
-            "Breastplate",
-            "Half Plate",
-            "Ring Mail",
-            "Chain Mail",
-            "Splint",
-            "Plate"});
-            this.legEquip.Location = new System.Drawing.Point(560, 289);
-            this.legEquip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.legEquip.Name = "legEquip";
-            this.legEquip.Size = new System.Drawing.Size(177, 40);
-            this.legEquip.TabIndex = 97;
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(422, 281);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(146, 39);
-            this.label7.TabIndex = 96;
-            this.label7.Text = "Legs:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // feetEquip
-            // 
-            this.feetEquip.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.feetEquip.FormattingEnabled = true;
-            this.feetEquip.Items.AddRange(new object[] {
-            "Padded",
-            "Leather",
-            "Studded Leather",
-            "Hide",
-            "Chain Shirt",
-            "Scale Mail",
-            "Breastplate",
-            "Half Plate",
-            "Ring Mail",
-            "Chain Mail",
-            "Splint",
-            "Plate"});
-            this.feetEquip.Location = new System.Drawing.Point(560, 337);
-            this.feetEquip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.feetEquip.Name = "feetEquip";
-            this.feetEquip.Size = new System.Drawing.Size(177, 40);
-            this.feetEquip.TabIndex = 99;
-            // 
-            // label8
-            // 
-            this.label8.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(422, 329);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(146, 39);
-            this.label8.TabIndex = 98;
-            this.label8.Text = "Feet:";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // LHandEquip
-            // 
-            this.LHandEquip.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LHandEquip.FormattingEnabled = true;
-            this.LHandEquip.Items.AddRange(new object[] {
-            "Padded",
-            "Leather",
-            "Studded Leather",
-            "Hide",
-            "Chain Shirt",
-            "Scale Mail",
-            "Breastplate",
-            "Half Plate",
-            "Ring Mail",
-            "Chain Mail",
-            "Splint",
-            "Plate"});
-            this.LHandEquip.Location = new System.Drawing.Point(560, 385);
-            this.LHandEquip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.LHandEquip.Name = "LHandEquip";
-            this.LHandEquip.Size = new System.Drawing.Size(177, 40);
-            this.LHandEquip.TabIndex = 100;
-            // 
-            // RHandEquip
-            // 
-            this.RHandEquip.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RHandEquip.FormattingEnabled = true;
-            this.RHandEquip.Items.AddRange(new object[] {
-            "Padded",
-            "Leather",
-            "Studded Leather",
-            "Hide",
-            "Chain Shirt",
-            "Scale Mail",
-            "Breastplate",
-            "Half Plate",
-            "Ring Mail",
-            "Chain Mail",
-            "Splint",
-            "Plate"});
-            this.RHandEquip.Location = new System.Drawing.Point(560, 433);
-            this.RHandEquip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.RHandEquip.Name = "RHandEquip";
-            this.RHandEquip.Size = new System.Drawing.Size(177, 40);
-            this.RHandEquip.TabIndex = 101;
-            // 
             // Character_Manager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -4239,10 +4239,10 @@
             this.AutoScroll = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1232, 671);
+            this.ClientSize = new System.Drawing.Size(1233, 673);
             this.Controls.Add(this.longRestButton);
-            this.Controls.Add(this.shortRestButton);
             this.Controls.Add(this.editHealthButton);
+            this.Controls.Add(this.shortRestButton);
             this.Controls.Add(this.addXpButton);
             this.Controls.Add(this.levelUpButton);
             this.Controls.Add(this.charactersBindingNavigator);
@@ -4275,10 +4275,9 @@
             this.Controls.Add(this.currentLevel);
             this.Controls.Add(this.charactersDataGridView);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximumSize = new System.Drawing.Size(1250, 718);
-            this.MinimumSize = new System.Drawing.Size(1250, 718);
+            this.MaximumSize = new System.Drawing.Size(1251, 720);
+            this.MinimumSize = new System.Drawing.Size(1251, 720);
             this.Name = "Character_Manager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Character_Manager";

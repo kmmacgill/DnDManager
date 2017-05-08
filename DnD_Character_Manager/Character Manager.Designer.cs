@@ -165,8 +165,6 @@
             this.legEquip = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.headEquip = new System.Windows.Forms.ComboBox();
-            this.cloakEquip = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.quickReferences = new System.Windows.Forms.Button();
             this.actionsResetButton = new System.Windows.Forms.Button();
             this.bonusActionButton = new System.Windows.Forms.Button();
@@ -1705,8 +1703,6 @@
             this.combatPanel.Controls.Add(this.legEquip);
             this.combatPanel.Controls.Add(this.label7);
             this.combatPanel.Controls.Add(this.headEquip);
-            this.combatPanel.Controls.Add(this.cloakEquip);
-            this.combatPanel.Controls.Add(this.label5);
             this.combatPanel.Controls.Add(this.quickReferences);
             this.combatPanel.Controls.Add(this.actionsResetButton);
             this.combatPanel.Controls.Add(this.bonusActionButton);
@@ -1761,7 +1757,7 @@
             "Chain Mail",
             "Splint",
             "Plate"});
-            this.RHandEquip.Location = new System.Drawing.Point(560, 480);
+            this.RHandEquip.Location = new System.Drawing.Point(560, 454);
             this.RHandEquip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.RHandEquip.Name = "RHandEquip";
             this.RHandEquip.Size = new System.Drawing.Size(177, 40);
@@ -1784,7 +1780,7 @@
             "Chain Mail",
             "Splint",
             "Plate"});
-            this.LHandEquip.Location = new System.Drawing.Point(560, 432);
+            this.LHandEquip.Location = new System.Drawing.Point(560, 406);
             this.LHandEquip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LHandEquip.Name = "LHandEquip";
             this.LHandEquip.Size = new System.Drawing.Size(177, 40);
@@ -1807,7 +1803,7 @@
             "Chain Mail",
             "Splint",
             "Plate"});
-            this.feetEquip.Location = new System.Drawing.Point(560, 384);
+            this.feetEquip.Location = new System.Drawing.Point(560, 358);
             this.feetEquip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.feetEquip.Name = "feetEquip";
             this.feetEquip.Size = new System.Drawing.Size(177, 40);
@@ -1816,7 +1812,7 @@
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(422, 376);
+            this.label8.Location = new System.Drawing.Point(422, 350);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(146, 39);
             this.label8.TabIndex = 98;
@@ -1840,7 +1836,7 @@
             "Chain Mail",
             "Splint",
             "Plate"});
-            this.legEquip.Location = new System.Drawing.Point(560, 336);
+            this.legEquip.Location = new System.Drawing.Point(560, 310);
             this.legEquip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.legEquip.Name = "legEquip";
             this.legEquip.Size = new System.Drawing.Size(177, 40);
@@ -1849,7 +1845,7 @@
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(422, 328);
+            this.label7.Location = new System.Drawing.Point(422, 302);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(146, 39);
             this.label7.TabIndex = 96;
@@ -1873,44 +1869,11 @@
             "Chain Mail",
             "Splint",
             "Plate"});
-            this.headEquip.Location = new System.Drawing.Point(560, 192);
+            this.headEquip.Location = new System.Drawing.Point(560, 208);
             this.headEquip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.headEquip.Name = "headEquip";
             this.headEquip.Size = new System.Drawing.Size(177, 40);
             this.headEquip.TabIndex = 95;
-            // 
-            // cloakEquip
-            // 
-            this.cloakEquip.Font = new System.Drawing.Font("High Tower Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cloakEquip.FormattingEnabled = true;
-            this.cloakEquip.Items.AddRange(new object[] {
-            "Padded",
-            "Leather",
-            "Studded Leather",
-            "Hide",
-            "Chain Shirt",
-            "Scale Mail",
-            "Breastplate",
-            "Half Plate",
-            "Ring Mail",
-            "Chain Mail",
-            "Splint",
-            "Plate"});
-            this.cloakEquip.Location = new System.Drawing.Point(560, 240);
-            this.cloakEquip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cloakEquip.Name = "cloakEquip";
-            this.cloakEquip.Size = new System.Drawing.Size(177, 40);
-            this.cloakEquip.TabIndex = 93;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(422, 232);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(146, 39);
-            this.label5.TabIndex = 92;
-            this.label5.Text = "Cloak:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // quickReferences
             // 
@@ -2167,7 +2130,7 @@
             "Chain Mail",
             "Splint",
             "Plate"});
-            this.armorEquip.Location = new System.Drawing.Point(560, 288);
+            this.armorEquip.Location = new System.Drawing.Point(560, 262);
             this.armorEquip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.armorEquip.Name = "armorEquip";
             this.armorEquip.Size = new System.Drawing.Size(177, 40);
@@ -2220,7 +2183,7 @@
             // lhEquipped
             // 
             this.lhEquipped.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lhEquipped.Location = new System.Drawing.Point(387, 432);
+            this.lhEquipped.Location = new System.Drawing.Point(387, 406);
             this.lhEquipped.Name = "lhEquipped";
             this.lhEquipped.Size = new System.Drawing.Size(196, 39);
             this.lhEquipped.TabIndex = 45;
@@ -2336,7 +2299,7 @@
             // rhEquipped
             // 
             this.rhEquipped.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rhEquipped.Location = new System.Drawing.Point(387, 480);
+            this.rhEquipped.Location = new System.Drawing.Point(387, 454);
             this.rhEquipped.Name = "rhEquipped";
             this.rhEquipped.Size = new System.Drawing.Size(196, 39);
             this.rhEquipped.TabIndex = 46;
@@ -2346,7 +2309,7 @@
             // armorLabel
             // 
             this.armorLabel.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.armorLabel.Location = new System.Drawing.Point(422, 280);
+            this.armorLabel.Location = new System.Drawing.Point(422, 254);
             this.armorLabel.Name = "armorLabel";
             this.armorLabel.Size = new System.Drawing.Size(146, 39);
             this.armorLabel.TabIndex = 43;
@@ -2378,7 +2341,7 @@
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("High Tower Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(422, 184);
+            this.label6.Location = new System.Drawing.Point(422, 200);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(146, 39);
             this.label6.TabIndex = 94;
@@ -3121,8 +3084,8 @@
             // 
             this.inventoryPanel.BackColor = System.Drawing.Color.Transparent;
             this.inventoryPanel.Controls.Add(this.weaponsNArmorPanel);
-            this.inventoryPanel.Controls.Add(this.moneyNTreasurePanel);
             this.inventoryPanel.Controls.Add(this.equipmentNGearPanel);
+            this.inventoryPanel.Controls.Add(this.moneyNTreasurePanel);
             this.inventoryPanel.Controls.Add(this.moneyTreasureTab);
             this.inventoryPanel.Controls.Add(this.equipmentGearTab);
             this.inventoryPanel.Controls.Add(this.weaponsArmorTab);
@@ -3140,10 +3103,10 @@
             this.weaponsNArmorPanel.Controls.Add(this.addToWeaponTableButton);
             this.weaponsNArmorPanel.Controls.Add(this.weaponsNArmorListview);
             this.weaponsNArmorPanel.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.weaponsNArmorPanel.Location = new System.Drawing.Point(7, 46);
+            this.weaponsNArmorPanel.Location = new System.Drawing.Point(7, 174);
             this.weaponsNArmorPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.weaponsNArmorPanel.Name = "weaponsNArmorPanel";
-            this.weaponsNArmorPanel.Size = new System.Drawing.Size(1069, 519);
+            this.weaponsNArmorPanel.Size = new System.Drawing.Size(1069, 391);
             this.weaponsNArmorPanel.TabIndex = 4;
             // 
             // weaponsNArmorMarker
@@ -3250,10 +3213,10 @@
             this.moneyNTreasurePanel.Controls.Add(this.addToMoneyTableButton);
             this.moneyNTreasurePanel.Controls.Add(this.treasureList);
             this.moneyNTreasurePanel.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.moneyNTreasurePanel.Location = new System.Drawing.Point(7, 46);
+            this.moneyNTreasurePanel.Location = new System.Drawing.Point(7, 132);
             this.moneyNTreasurePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.moneyNTreasurePanel.Name = "moneyNTreasurePanel";
-            this.moneyNTreasurePanel.Size = new System.Drawing.Size(1069, 519);
+            this.moneyNTreasurePanel.Size = new System.Drawing.Size(1069, 433);
             this.moneyNTreasurePanel.TabIndex = 6;
             this.moneyNTreasurePanel.Visible = false;
             // 
@@ -3537,10 +3500,10 @@
             this.equipmentNGearPanel.Controls.Add(this.removeFromEquipmentTableButton);
             this.equipmentNGearPanel.Controls.Add(this.equipmentNGearList);
             this.equipmentNGearPanel.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.equipmentNGearPanel.Location = new System.Drawing.Point(7, 46);
+            this.equipmentNGearPanel.Location = new System.Drawing.Point(7, 48);
             this.equipmentNGearPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.equipmentNGearPanel.Name = "equipmentNGearPanel";
-            this.equipmentNGearPanel.Size = new System.Drawing.Size(1069, 519);
+            this.equipmentNGearPanel.Size = new System.Drawing.Size(1069, 517);
             this.equipmentNGearPanel.TabIndex = 5;
             this.equipmentNGearPanel.Visible = false;
             // 
@@ -4049,7 +4012,7 @@
             this.charactersBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.charactersBindingNavigator.Name = "charactersBindingNavigator";
             this.charactersBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.charactersBindingNavigator.Size = new System.Drawing.Size(1222, 27);
+            this.charactersBindingNavigator.Size = new System.Drawing.Size(1233, 27);
             this.charactersBindingNavigator.TabIndex = 73;
             this.charactersBindingNavigator.Text = "bindingNavigator1";
             this.charactersBindingNavigator.Visible = false;
@@ -4656,8 +4619,6 @@
         private System.Windows.Forms.ComboBox legEquip;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox headEquip;
-        private System.Windows.Forms.ComboBox cloakEquip;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
     }
 }
